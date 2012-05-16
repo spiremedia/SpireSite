@@ -1,0 +1,17 @@
+
+-- =============================================
+-- Author:		DRE
+-- =============================================
+CREATE TRIGGER [dbo].[insertSitePagesTrigger] 
+   ON  [dbo].[sitepages]
+   FOR INSERT
+AS 
+	DECLARE @id varchar(35),
+			@siteid varchar(100)
+BEGIN
+	SET NOCOUNT ON;
+	
+	SELECT @id = id, @siteid = siteid FROM inserted
+	EXEC dbo.updateSetting @id, @siteid
+			
+END

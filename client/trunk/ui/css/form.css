@@ -1,0 +1,299 @@
+
+form {display:inline}
+
+form.userform input.usrFrmSubmit,
+.button, 
+.button span { 
+	background: url(/ui/images/buttons/plainBtn_bg.png) left top no-repeat; line-height: 20px; display: inline-block; color: #fff; font-weight: bold; font-size: 10px; cursor: pointer; 
+}
+.button span { background-position: right top; padding: 2px 14px 10px !important; margin-left: 3px;  }
+.button:hover { text-decoration: none; }
+
+
+ul.asset {
+	padding-left:35px;
+	list-style-type:none;
+	padding-top:7px;
+	padding-bottom:7px;
+}
+ul.asset li {
+	height:auto;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+.supportingData {
+	background-repeat:no-repeat;
+	background-position:0 2px;
+	display:block;
+	height:auto;
+	padding-left: 0 !important;
+	padding-top:3px;
+	padding-bottom:11px;
+	position:relative;
+	left:0px;
+	top:1px;
+}
+.supportingData a {
+	padding-left: 23px !important;
+}
+
+
+.doc_mp3 {background-image:url(/ui/images/doctypes/mp3.gif);}
+.doc_doc {background-image:url(/ui/images/doctypes/doc.gif);}
+.doc_txt {background-image:url(/ui/images/doctypes/txt.gif);}
+.doc_pdf {background-image:url(/ui/images/doctypes/pdf.gif);}
+.doc_png {background-image:url(/ui/images/doctypes/png.gif);}
+.doc_rtf {background-image:url(/ui/images/doctypes/rtf.gif);}
+.doc_gif {background-image:url(/ui/images/doctypes/gif.gif);}
+.doc_jpg {background-image:url(/ui/images/doctypes/jpg.gif);}
+.doc_xls {background-image:url(/ui/images/doctypes/xls.gif);}
+.doc_ppt {background-image:url(/ui/images/doctypes/ppt.gif);}
+.doc_unknown {background-image:url(/ui/images/doctypes/unknown.gif);}
+
+.userform div.formMessage {
+	color:#e80009;
+	font-weight:bold;
+	margin-bottom:4px !important;
+}
+.userform ul.errors {
+	margin-top:0;
+	margin-bottom:18px;
+	padding-top:0;
+	color:#e80009;
+	font-weight:bold;
+}
+.userform ul.errors li,
+.forms ul.errors li {
+	
+	color:#e80009;
+	font-weight:bold;
+	margin-left:15px;
+}
+.forms ul {
+	
+	margin-bottom:15px;
+}
+.userform label.error ,
+.forms .formMessage
+{
+	color:#e80009;
+	font-weight:bold;
+}
+
+		 
+/****
+*
+*	User Defined (esm) Forms
+*
+****/
+
+form.userform div,
+form.userform p {
+	font-size: 1em;
+	margin: 0 0 8px 0;
+	padding: 0;
+	padding-bottom:8px;
+}
+form.loginform {
+
+}
+form.userform label{
+	float:left;
+	width:140px;
+	padding-top:2px;
+	padding-right:4px;
+	text-align:right;
+	vertical-align:middle;
+}
+
+form.userform .formitem_radio label {
+	float:none;
+}
+form.userform .formitem_checkbox label {
+	float:none;
+}
+
+form.userform input, form.userform select, form.userform textarea {
+	font-size:11px;
+	border:1px solid #D7D7D7;
+	padding:3px;
+	/*standardized form additions - DW
+	margin-left:10px; */
+	
+}
+form.checkoutclientshippingform .formitem textarea {
+	width: 400px; !important;
+}
+/*
+This forces them all to have these.  textarea 100px wide?
+	Also its exactly duplicated right above!
+form.userform input, form.userform select, form.userform textarea {
+	font-size:11px;
+	standardized form additions - DW
+	
+	margin-left:10px;
+	width:100px; 
+}
+*/
+
+form.userform .formitem_radio label{
+	display:inline;
+}
+
+span.formreqd {
+	color:#e80009;
+	font-weight:bold;
+}
+
+form.userform label.usrFrmLabel {
+	padding-bottom:1px;
+}
+
+form.userform input.usrFrmInputText {
+	width:290px;
+}
+
+form.userform textarea.usrFrmTextArea {
+	width:390px;
+	height:110px;
+}
+
+form.userform input.usrFrmCheckRadio {
+	border:0;
+	background:none;
+}
+
+form.userform .formsection .sectionlabel {
+	font-weight:bold;
+	font-size:12px;
+}
+form.userform .formsection {
+	
+}
+form.userform .formsubsection {
+	font-weight:bold;
+}
+
+form.userform input.usrFrmSubmit {
+	border:0;
+	background-position: right top; padding: 4px 14px 10px !important; margin-left: 3px; margin-right: -3px;
+	_padding-top:1px;
+	_margin-right:0px;
+}
+
+div.hiddenloginform,
+div.hiddenloginform a{
+	color:white;
+	font-weight:normal;
+}
+
+body form.userform input.img {
+	margin-bottom:0px;
+	margin-top:0px;
+	vertical-align: top;
+	text-align: right;
+	border:0;
+}
+
+a.bluelink {
+	color:#0e3d61;	
+}
+
+form.userform div.review {
+	padding-left:15px;	
+}
+
+#registrationForm label{
+	float:left;
+	width:140px;
+	padding-top:2px;
+	text-align:right;
+	vertical-align:middle;
+}	
+#registrationForm p{
+
+}
+#registrationForm input{
+	margin-left:10px;
+	width:100px;
+}	
+#registrationForm select{
+	margin-left:10px;
+	width:108px;
+}	
+#registrationForm textarea{
+	margin-left:10px;
+	width:338px;
+	height:100px;
+}
+#registrationForm #submit{
+	width:60px;
+	height:23px;
+	padding-left:150px;
+	margin:0;
+}
+
+
+#forgotsubmit {
+	margin-left:50px;
+	background-image:url("/ui/images/buttons/standardblueBtn.png");
+	color:#fff;		
+	height:21px;	
+	width:108px;
+	margin-left:150px;
+	margin-top:3px;
+	padding-bottom:5px;
+	border:none;
+	*margin-left:152px;
+}
+
+input.submit-img {
+	background: none no-repeat top left;
+	cursor: pointer;
+	overflow: hidden;
+	padding: 0;
+	/*text-indent: -9999px;
+	_text-indent:0;*/
+	margin: 0 2px 0 0;
+	font-size: 0 !important;
+	color:#126db4;
+	width: auto;
+	border:0 !important;
+}
+
+input.submit-img-resume {
+	background:url(/ui/images/cart/resumeShoppngBtn.gif) top left no-repeat;
+	width:119px;
+	height:20px;
+}
+
+input.submit-img-update-cart {
+	background:url(/ui/images/cart/updateCartBtn.gif) top left no-repeat;
+	width:92px;	
+	height:20px;
+}
+
+input.submit-img-checkout {
+	background:url(/ui/images/cart/checkoutBtn.gif) top left no-repeat;
+	width:78px;
+	height:20px;
+}
+button {
+	border:none;	
+	background:none;
+	padding:0;
+	/* ie hack for shrinking borders on a button */
+	*padding: 0 .25em;
+    *width: auto;
+    *overflow:visible;
+}
+
+body.home div.content div.forms div.pocntnt input.usrFrmInputText{
+	width:150px;
+}
+body.home div.content div.forms div.pocntnt label{
+	display:inline;
+	width:auto;	
+	padding-right:10px;
+}
+

@@ -1,0 +1,1 @@
+<cfset lcl.{varname} = getDataItem('{varname}')>

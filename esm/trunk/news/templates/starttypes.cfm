@@ -1,0 +1,1 @@
+Welcome to the News Types start page!

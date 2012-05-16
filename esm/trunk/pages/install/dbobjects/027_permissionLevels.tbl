@@ -1,0 +1,10 @@
+CREATE TABLE [dbo].[permissionLevels](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[description] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[modified] [datetime] NOT NULL CONSTRAINT [DF_permissionLevels_modified]  DEFAULT (getdate()),
+	[deleted] [bit] NOT NULL CONSTRAINT [DF_permissionLevels_deleted]  DEFAULT ((0)),
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[created] [datetime] NULL,
+	[changedby] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY]

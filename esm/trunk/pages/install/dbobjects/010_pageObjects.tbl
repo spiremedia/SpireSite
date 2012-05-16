@@ -1,0 +1,14 @@
+
+
+CREATE TABLE [dbo].[pageObjects](
+	[id] [varchar](35) NOT NULL,
+	[name] [varchar](30) NOT NULL,
+	[module] [varchar](30) NOT NULL,
+	[data] [ntext] NULL,
+	[pageid] [varchar](35) NOT NULL,
+	[siteid] [varchar](35) NOT NULL,
+	[status] [varchar](50) NOT NULL,
+	[deleted] [bit] NOT NULL DEFAULT ((0)),
+	[memberType] [nvarchar](50) NULL,
+	[title] [varchar](100) NULL
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]

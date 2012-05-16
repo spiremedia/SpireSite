@@ -1,0 +1,3 @@
+<cfcomponent name="{foldername}" extends="resources.abstractController">
+	
+</cfcomponent>

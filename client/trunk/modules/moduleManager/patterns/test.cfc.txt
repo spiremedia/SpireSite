@@ -1,0 +1,11 @@
+<cfcomponent displayname="{testfilename}" extends="mxunit.framework.TestCase">
+		
+	<cffunction name="setUp" returntype="void" access="public">
+		<cfset variables.requestObject = request.requestObject>
+		<cfset variables.controller = createObject("component","modules.{foldername}.controller")>
+	</cffunction>
+    
+	<cffunction name="teardown" returntype="void" access="public">
+	
+	</cffunction>
+</cfcomponent>

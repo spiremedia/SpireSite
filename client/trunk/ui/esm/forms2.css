@@ -1,0 +1,20 @@
+.forms2dump {
+	font-size:9px;
+	font-weight:normal;
+	font-family:arial;
+	list-style:none;
+}
+.forms2dump li {
+	list-style:none;
+	margin-bottom:5px;
+}
+.forms2dump ul.container {
+	border:1px solid gray;
+}
+
+fieldset.container legend{
+	color:red;
+}
+fieldset.leaf legend{
+	color:blue;
+}

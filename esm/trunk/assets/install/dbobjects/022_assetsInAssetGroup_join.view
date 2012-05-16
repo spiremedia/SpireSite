@@ -1,0 +1,7 @@
+
+CREATE VIEW [dbo].[assetsInAssetGroup_join]
+AS
+SELECT     a.id AS assetid, a.name AS assetname, a.filename, a.description, a.previewfilename, a.changeddate, a.changedby, a.active, a.startdate, a.enddate, 
+                      a.fullname, ag.name AS assetgroupname, ag.id AS assetgroupid
+FROM         dbo.assets_view AS a INNER JOIN
+                      dbo.assetGroups_view AS ag ON a.assetgroupid = ag.id

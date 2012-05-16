@@ -1,0 +1,1 @@
+Welcome to the Video Galleries area.

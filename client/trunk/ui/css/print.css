@@ -1,0 +1,37 @@
+/* global */
+#container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 600px;
+	background: none;
+}
+
+.topbanner,
+.utilitynav,
+.nav,
+.c1,
+.rightItem,
+#videos,
+#footer
+{
+	display: none !important;
+}
+div.c2Container .middleItem { width: 689px; }
+.print {
+	background:none; !important;
+}
+.print h1 {
+	margin:20px 0 20px 0; !important;	
+}
+
+.cartprint {
+	margin-left:5px;
+	width:8.0in;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+}
+.cartprint tr td{
+	border:1px #aaa solid;
+	padding:5px 5px 5px 5px;
+}

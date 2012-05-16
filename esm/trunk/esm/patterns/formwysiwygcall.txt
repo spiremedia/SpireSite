@@ -1,0 +1,1 @@
+<cfset lcl.form.addformitem('{varname}', '{label}', true, 'tiny-mce', lcl.{modelname}.get{varname}() )>

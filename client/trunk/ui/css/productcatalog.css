@@ -1,0 +1,254 @@
+div.productcatalogList {
+	
+}
+	
+div.productcatalogList .productListRow{
+	padding-bottom:20px;
+}
+
+div.productcatalogList .productListItem h5 {
+	font-size: 12px; 
+	color:#0e3e64;
+	min-height:33px;
+	*height:33px;
+	margin-bottom:2px;
+}
+
+div.productcatalogList .productListItem {
+	float:left;
+	width:217px;
+	margin-bottom:20px;
+	margin-right:2px;
+}
+
+div.productcatalogList .productListItem label{
+	font-size:11px;
+	color:#4f4823;
+	font-weight:bold;
+	margin-bottom:20px;
+	margin-top:0;
+}
+
+div.productcatalogList .price {
+	color:#c9c5ba;
+	margin-top:6px;
+}
+
+div.productcatalogList .priceMember {
+	color:#0F871D;
+}
+
+div.productcatalogList .listPriceForm {
+	margin-top:7px;
+}
+
+div.productcatalogList .productRow .productColumn{
+	float:left;
+	width: 152px;
+	padding-right: 13px;
+	padding-bottom: 32px;
+}
+div.productcatalogList .productRow .productColumnlast{
+	padding-right: 0px;
+}
+div.productcatalogList .productcatalogthumb {
+	float:left;
+	margin-right:10px;
+	margin-bottom:12px;
+	border:1px solid #dad9d1;
+}
+div.productcatalogDetail .productcatalogmain {
+	border-width:1px 2px 2px 1px;
+ 	border-style:solid ;
+	border-color:#d5d3ca;
+	/*margin:0px 21px 5px 0;*/
+}
+
+div.productcatalogDetail dt { 
+	font-weight:bold;
+}
+div.productcatalogDetail dd { 
+	margin-bottom:-2px;	
+	*margin-bottom:13px;
+}
+div.productcatalogDetail dd.morebotpadding { 
+	margin-bottom:9px;
+	*margin-bottom:20px;
+}
+div.productcatalogDetail dt.morebotpadding { 
+	margin-bottom:8px;
+}
+div.productcatalogDetail .pictureColumn {
+	padding:0;	
+	padding-right:10px;
+}
+div.productcatalogList #productsortfield{
+	width:141px;
+}
+
+
+div.innerDetail {
+	padding:10px 38px 0 52px;
+}
+
+div.innerDetail .reviewpic {
+	text-align:right;
+	width:30%;
+	padding-right:2px;
+}
+
+div.innerDetail .itemnumber {
+	text-align:left;
+	position:relative;top:-10px;
+	color:#4f4823;
+	width:70%;
+	padding-left:2px;
+	font-size:12px;
+	font-weight:bold;
+}
+div.textDetail .salePrice {
+	font-weight:bold; 
+	color:#940a06;
+	font-size:12px;	
+	padding:0;
+}
+
+div.textDetail .salePriceSmall {
+	font-weight:bold; 
+	color:#940a06;
+	font-size:11px;	
+	padding:0 0px 7px 0px;;
+}
+
+div.textDetail .regularPrice {
+	font-weight:bold; 
+	color:#878269;
+	font-size:12px;	
+	padding:0 0px 14px 0px;
+}
+
+div.textDetail .regularPriceSmall {
+	font-weight:bold; 
+	color:#878269;
+	font-size:11px;	
+	padding:0 0px 7px 0px;
+}
+
+div.textDetail .cardPrice {
+	font-weight:bold;
+	color:#0f871b;
+	font-size:12px;
+	padding:0 0px 0px 0px;
+}
+
+div.textDetail .cardPriceSmall {
+	font-weight:bold;
+	color:#0f871b;
+	font-size:11px;
+	padding:0 0px 7px 0px;
+}
+
+div.textDetail .prodInfo span {
+	color:#940a06; 
+}
+
+.spacer {
+	padding:0 0px 8px 0px;	
+}
+
+div.textDetail .prodInfo div {
+	color:#4f4823;
+	font-size:11px;
+	padding:0 0px 8px 0px;
+}
+
+div.textDetail .catalogDottedHR {
+	border: 1px dotted #d5d3ca; border-style: none none dotted;	
+	width:350px;
+	margin:10px 0px 10px 0px;
+}
+
+.textDetail {
+	display:block;	
+}
+
+.country label {
+	color:#4f4823; 
+}
+
+div.textDetail .prodInfoSmall span {
+	color:#940a06;
+}
+
+div.textDetail .prodInfoSmall div { 
+	color:#4f4823;
+	font-size:11px;
+	padding:0 0px 4px 0px;;
+}
+.po_wtitle productratings productratings_ratingsforproductview middleitem_3_content h4 {
+	color#f00;	
+}
+div.pocntnt div.rating {
+	padding-left:0px; !important;
+	/*position:relative;
+	left:-13px;*/
+}
+
+.productreviews div.rating {
+	position:relative;
+	right:13px; !important;
+}
+
+.ratingicon {
+	padding:0 0 0 5px;
+	border:none;
+}
+.lowerrating {
+	color:#4f4823; 
+}
+/*see main handler in form.css as well for product button base class */
+
+input.submit-img-addpack  {
+	background:url(/ui/images/buttons/addPackBtn.png) top left no-repeat;
+	width:73px;
+	height:20px;
+	padding-top:5px;
+	border:none;
+}
+
+input.submit-img-addtocart {
+	background:url(/ui/images/cart/addToCartBtn.png) top left no-repeat;
+	width:91px;
+	height:20px;
+	padding-top:5px;
+}
+input.submit-img-addcase {
+	background:url(/ui/images/cart/addCaseBtn.png) top left no-repeat;
+	width:73px;
+	height:20px;
+	padding-top:5px;
+}
+input.submit-img-checkout {
+	background:url(/ui/images/cart/checkoutBtn.png) top left no-repeat;
+	width:79px;
+	height:20px;
+	padding-top:5px;
+}
+
+#subsaleprice,  #subcardprice{
+	font-size:9px;
+	padding:0 0 14px 0;
+}
+
+.quantityinput {
+	text-align:center;
+	width:32px;	
+	margin-bottom:10px;
+}
+
+.quantitytext {
+	font-weight:bold;
+	color:##4f4823;
+	font-size:12px;
+	padding-bottom:5px;
+}

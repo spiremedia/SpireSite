@@ -1,0 +1,11 @@
+
+	<cffunction name="Browse">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userObj" required="true">
+		
+		<cfset var mdl = get{modelname}model(requestObject, userObj)>
+		
+		<cfset displayObject.setData('browse', mdl.getAll())>
+		<cfset displayObject.showHTML( displayObject.renderTemplateItem("browse") )>
+	</cffunction>

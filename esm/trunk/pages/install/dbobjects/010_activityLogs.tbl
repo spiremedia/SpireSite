@@ -1,0 +1,15 @@
+CREATE TABLE [dbo].[activityLogs](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[changedby] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[itemid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[description] [nvarchar](500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[tablename] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[modulename] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[type] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[created] [datetime] NULL,
+ CONSTRAINT [PK_activityLogs] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]

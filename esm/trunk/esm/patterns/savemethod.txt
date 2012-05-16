@@ -1,0 +1,35 @@
+
+	<cffunction name="Save{modelname}">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userobj" required="true">
+		<cfargument name="dispatcher" required="true">
+		
+		<cfset var lcl = structnew()>
+		<cfset var mdl = get{modelname}model(requestObject, userobj)>
+		<cfset var requestvars = requestobject.getallformurlvars()>
+
+		<cfset mdl.setValues(requestVars)>
+			
+		<cfif mdl.save()>
+			<cfset lcl.id = mdl.getId()>
+			<cfset lcl.msg = structnew()>
+            
+			<cfif requestObject.isformurlvarset('id') AND requestObject.getformurlvar('id') NEQ "">
+				<cfset lcl.msg.message = "Updated {modelname} Item">
+            <cfelse>
+            	<cfset lcl.msg.message = "Saved {modelname} Item">
+                <cfset lcl.msg.switchtoedit = lcl.id>
+			</cfif>
+            
+			<cfset lcl.msg.ajaxupdater = structnew()>
+            <cfset lcl.msg.ajaxupdater.url = "/{foldername}/Browse/?id=#lcl.id#">
+            <cfset lcl.msg.ajaxupdater.id = 'browse_content'>
+			
+			<cfset displayObject.sendJson( lcl.msg )>
+		<cfelse>
+			<cfset lcl.msg = structnew()>
+			<cfset lcl.msg.validation = mdl.getValidator().getErrors()>
+			<cfset displayObject.sendJson( lcl.msg )>
+		</cfif>
+	</cffunction>

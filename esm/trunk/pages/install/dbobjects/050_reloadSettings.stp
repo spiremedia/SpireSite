@@ -1,0 +1,33 @@
+
+
+
+-- =============================================
+-- Author:		DRE
+-- =============================================
+CREATE PROCEDURE [dbo].[reloadSettings] 	
+AS
+BEGIN
+	DECLARE @id varchar(35)
+	DECLARE @siteid varchar(100)
+	DECLARE tlitems CURSOR FOR 
+					SELECT id, siteid FROM dbo.sitepages
+					WHERE parentid = ''
+
+	BEGIN
+		OPEN tlitems
+
+		FETCH NEXT FROM tlitems INTO @id, @siteid
+
+		WHILE @@FETCH_STATUS = 0
+		BEGIN
+
+			EXEC dbo.updateSettings @id, @siteid, 1
+			
+			FETCH NEXT FROM tlitems INTO @id, @siteid
+
+		END
+		CLOSE tlitems
+        DEALLOCATE tlitems
+	END
+END
+

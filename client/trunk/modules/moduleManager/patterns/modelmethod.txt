@@ -1,0 +1,6 @@
+
+	<cffunction name="{methodname}">
+		<cfset var l = structnew()>
+		
+		<cfreturn l.item>
+	</cffunction>

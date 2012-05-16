@@ -1,0 +1,12 @@
+
+	<cffunction name="startPage">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userobj" required="true">
+		<cfargument name="dispatcher" required="true">
+		
+		<cfset var mdl = get{modelname}model(requestObject, userObj)>
+				
+		<cfset displayObject.setData('browse', mdl.getAll())>
+	</cffunction>
+	

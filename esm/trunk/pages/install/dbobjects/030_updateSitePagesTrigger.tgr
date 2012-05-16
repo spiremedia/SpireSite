@@ -1,0 +1,44 @@
+
+-- =============================================
+-- Author:		DRE
+-- =============================================
+CREATE TRIGGER [dbo].[updateSitePagesTrigger] 
+   ON  [dbo].[sitepages]
+   FOR UPDATE
+AS 
+	DECLARE @id varchar(35),
+			@siteid varchar(100),
+			@dorun int,
+			@tmp int			
+	DECLARE itms CURSOR READ_ONLY LOCAL FOR SELECT id, siteid FROM inserted
+BEGIN
+	SET NOCOUNT ON;
+	
+	SELECT @dorun = COUNT(*) 
+		FROM inserted i
+		INNER JOIN deleted d 
+			ON ((i.id = d.id AND i.siteid = d.siteid) 
+				AND 
+				(i.pageurl <> d.pageurl 
+					OR i.pagename <> d.pagename 
+						OR i.parentid <> d.parentid
+							OR i.subsite <> d.subsite))
+
+	IF @dorun <> 0
+	BEGIN
+		OPEN itms
+
+		FETCH NEXT FROM itms INTO @id, @siteid
+
+		WHILE @@FETCH_STATUS = 0
+		BEGIN
+			
+			EXEC dbo.updateSettings @id, @siteid, 1	
+			
+			FETCH NEXT FROM itms INTO @id, @siteid
+		END 
+
+		CLOSE itms
+		DEALLOCATE itms
+	END
+END

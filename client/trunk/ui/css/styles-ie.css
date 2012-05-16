@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* IE8 - CSS Document */
+
+#nav ul.topnav li a { behavior: url(/ui/js/PIE.htc);}
+.si-message input[type="text"] {behavior: url(/ui/js/PIE.htc);}
+.si-message textarea {behavior: url(/ui/js/PIE.htc);}
+#main_wh #wh-left .list {behavior: url(/ui/js/PIE.htc);}
+#spirewire input[type="text"] {behavior: url(/ui/js/PIE.htc);}
+.dk_container {behavior: url(/ui/js/PIE.htc);}
+.dk_toggle {behavior: url(/ui/js/PIE.htc);}
+.dk_open .dk_toggle {behavior: url(/ui/js/PIE.htc);}
+.dk_options {behavior: url(/ui/js/PIE.htc);}
+.dk_options_inner {behavior: url(/ui/js/PIE.htc);}
+
+.footRight { width:490px;}
+

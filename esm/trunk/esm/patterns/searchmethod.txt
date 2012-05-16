@@ -1,0 +1,13 @@
+
+	<cffunction name="Search">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userObj" required="true">
+
+		<cfset var mdl = get{modelname}model(requestObject, userObj)>
+		<cfset var srch = structnew()>
+		<cfset displayObject.setData('browse', mdl.getAll())>
+		
+		<cfset srch.name = arguments.requestObject.getFormUrlVar('searchkeyword')>
+		<cfset displayObject.setData('searchResults', mdl.like(srch))>
+	</cffunction>

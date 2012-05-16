@@ -1,0 +1,7 @@
+<cfset lcl.options = structnew()>
+<cfset lcl.options.options = {varname}>
+<cfset lcl.options.labelskey = 'name'>
+<cfset lcl.options.valueskey = 'id'>
+<cfset lcl.options.addblank = 1>
+<cfset lcl.options.blanktext = "Choose">
+<cfset lcl.form.addformitem('{varname}', 'Choose a {label}', false, 'select', lcl.{modelname}.get{varname}(), lcl.options)>

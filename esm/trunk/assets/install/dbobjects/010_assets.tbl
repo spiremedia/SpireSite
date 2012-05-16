@@ -1,0 +1,22 @@
+
+CREATE TABLE [dbo].[assets](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[filename] [varchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[previewfilename] [varchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[changeddate] [datetime] NOT NULL CONSTRAINT [DF_assets_changeddate]  DEFAULT (getdate()),
+	[changedby] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[assetgroupid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[active] [bit] NOT NULL CONSTRAINT [DF_assets_active]  DEFAULT ((1)),
+	[deleted] [bit] NOT NULL CONSTRAINT [DF_assets_deleted]  DEFAULT ((0)),
+	[filesize] [int] NULL,
+	[startdate] [datetime] NULL,
+	[enddate] [datetime] NULL,
+	[description] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[modified] [datetime] NULL,
+	[created] [datetime] NULL,
+ CONSTRAINT [PK_assets] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]

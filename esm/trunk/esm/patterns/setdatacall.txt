@@ -1,0 +1,1 @@
+		<cfset displayObject.setData('{modelname}mdl', {modelname}mdl)>

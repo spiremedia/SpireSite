@@ -1,0 +1,8 @@
+
+CREATE VIEW [dbo].[events_view]
+AS
+SELECT     id, name, title, startdate, enddate, starttime, endtime, imageassetid, agendaassetid, location, shortdescription, description, active, maplink, modified, changedby, 
+                      siteid, searchdescription, onhomepage, showmaterialsform, showaddtlattendees, locationname
+FROM         dbo.events
+WHERE     (deleted = 0)
+

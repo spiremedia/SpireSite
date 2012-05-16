@@ -1,0 +1,38 @@
+
+-- =============================================
+-- Author:		DRE
+-- =============================================
+CREATE PROCEDURE [dbo].[updateSettings] 
+	-- Add the parameters for the stored procedure here
+	@id varchar(35),
+	@siteid varchar(100),
+	@wchildren bit
+AS
+BEGIN
+	DECLARE @pathStr varchar(255)
+	DECLARE kids CURSOR  local FOR 
+					SELECT id FROM dbo.sitepages
+					WHERE parentid = @id AND siteid = @siteid
+	DECLARE @kidid varchar(35)
+
+	EXEC dbo.updateSetting @id, @siteid
+	
+	IF @wchildren = 1
+	BEGIN
+		OPEN kids
+
+		FETCH NEXT FROM kids INTO @kidid
+
+		WHILE @@FETCH_STATUS = 0
+		BEGIN
+
+			EXEC dbo.updateSettings @kidid, @siteid, 1
+			
+			FETCH NEXT FROM kids INTO @kidid
+
+		END
+
+		 CLOSE kids
+         DEALLOCATE kids
+	END
+END

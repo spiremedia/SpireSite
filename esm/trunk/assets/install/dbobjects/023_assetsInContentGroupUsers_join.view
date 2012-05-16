@@ -1,0 +1,9 @@
+
+CREATE VIEW [dbo].[assetsInContentGroupUsers_join]
+AS
+SELECT     aag.assetid, aag.assetname, aag.fullname, aag.filename, aag.description, aag.previewfilename, aag.changeddate, aag.changedby, aag.active, 
+                      aag.startdate, aag.enddate, aag.assetgroupid, aag.assetgroupname, cgu.userid
+FROM         dbo.assetsInAssetGroup_join AS aag INNER JOIN
+                      dbo.contentGroupAssetGroups_view AS cgag ON aag.assetgroupid = cgag.assetGroupId INNER JOIN
+                      dbo.contentGroupUsers_view AS cgu ON cgag.contentGroupId = cgu.contentGroupId
+

@@ -1,0 +1,16 @@
+
+CREATE TABLE [dbo].[workflow](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[initiatedby] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[pageid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[siteid] [varchar](90) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[comment] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[status] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[datetime] [datetime] NOT NULL CONSTRAINT [DF_workflow_datetime]  DEFAULT (getdate()),
+	[targetedto] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[workflowgroupid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+ CONSTRAINT [PK_workflow] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]

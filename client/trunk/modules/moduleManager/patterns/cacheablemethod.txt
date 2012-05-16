@@ -1,0 +1,3 @@
+	<cffunction name="cacheable">
+		<cfreturn 20>
+	</cffunction>

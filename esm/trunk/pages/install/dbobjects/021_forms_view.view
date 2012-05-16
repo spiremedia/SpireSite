@@ -1,0 +1,8 @@
+
+CREATE VIEW [dbo].[forms_view]
+AS
+SELECT     dbo.forms.id, dbo.forms.name, dbo.forms.modified, dbo.forms.created, dbo.forms.active, dbo.forms.siteid, dbo.forms.changedby, dbo.forms.deleted, 
+                      dbo.forms.reply, dbo.forms.recipient, dbo.forms.definition, dbo.users.lname + ' ' + dbo.users.fname AS fullname
+FROM         dbo.forms INNER JOIN
+                      dbo.users ON dbo.users.id = dbo.forms.changedby
+WHERE     (dbo.forms.deleted = 0)

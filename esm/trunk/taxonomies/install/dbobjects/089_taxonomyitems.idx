@@ -1,0 +1,13 @@
+
+
+/****** Object:  Index [taxonomyid_idx]    Script Date: 05/21/2010 14:02:59 ******/
+CREATE CLUSTERED INDEX [taxonomyid_idx] ON [dbo].[taxonomyItems] 
+(
+	[taxonomyid] ASC,
+	[id] ASC,
+	[deleted] ASC,
+	[sortkey] ASC,
+	[safename] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+
+

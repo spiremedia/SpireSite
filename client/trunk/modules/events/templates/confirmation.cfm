@@ -1,0 +1,1 @@
+<p><b>Thanks for registering!</b></p>

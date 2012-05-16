@@ -1,0 +1,44 @@
+/* home  */		
+div.imagerotator_default .pocntntwrap{
+	border:1px solid red;
+	overflow:none;
+	padding:0!important;
+	line-height:0;
+}								
+
+div.imagerotator_default div.imageHolder img {
+	height: 210;
+	width: 606px;
+	padding:0;
+	margin:0;
+}			
+div.imagerotator_default div.pocntntwrap {
+	position:relative;
+}
+
+div.imagerotator_default div.pocntntwrap div#controls {
+	position:absolute;
+	bottom:0;
+	left:0;
+}
+div.imagerotator_default div.pocntntwrap div#controls ul {
+	list-style:none;
+	width:500px;
+}
+div.imagerotator_default div.pocntntwrap div#controls li {
+	display:inline;
+	margin-left:10px;
+}
+
+div.imagerotator_default div.pocntntwrap div#rotatorbg {
+	position:absolute;
+	background:#5A6E29;
+	width:607px;
+	height:29px;
+	bottom:0px;
+	left:1px;
+	filter: alpha(opacity=50); /* internet explorer */
+	-khtml-opacity: 0.5;      /* khtml, old safari */
+	-moz-opacity: 0.5;       /* mozilla, netscape */
+	opacity: 0.5;           /* fx, safari, opera */
+}

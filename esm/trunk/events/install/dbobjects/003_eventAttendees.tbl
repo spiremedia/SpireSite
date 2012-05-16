@@ -1,0 +1,25 @@
+CREATE TABLE [dbo].[eventAttendees](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[eventid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[fname] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[lname] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[title] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[phone] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[companyName] [nvarchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[add1] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[add2] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[city] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[state] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[zip] [nvarchar](12) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[wantsmaterials] [bit] NOT NULL,
+	[addtlattendeescount] [int] NOT NULL,
+	[addtlattendeesinfo] [nchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,	
+	[comment] [nvarchar](500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[email] [nvarchar](250) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[signupdatetime] [datetime] NOT NULL CONSTRAINT [DF_eventAttendees_signupdatetime]  DEFAULT (getdate()),
+ CONSTRAINT [PK_eventAttendees] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]

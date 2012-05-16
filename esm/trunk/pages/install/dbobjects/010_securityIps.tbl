@@ -1,0 +1,7 @@
+
+CREATE TABLE [dbo].[securityIPs](
+	[ip] [nvarchar](15) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[accessDate] [datetime] NOT NULL CONSTRAINT [DF_safeIPs_requestDate]  DEFAULT (getdate()),
+	[userid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[usertype] [nvarchar](20) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]

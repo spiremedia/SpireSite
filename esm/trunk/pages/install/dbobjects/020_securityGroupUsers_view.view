@@ -1,0 +1,6 @@
+
+CREATE VIEW [dbo].[securityGroupUsers_view]
+AS
+SELECT     id, userid, securitygroupid, modified, siteid
+FROM         dbo.securityGroupUsers
+

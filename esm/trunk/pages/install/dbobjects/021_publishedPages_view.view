@@ -1,0 +1,6 @@
+CREATE VIEW [dbo].[publishedpages]
+AS
+SELECT     id, pagename, pageurl, title, parentid, description, keywords, ownerid, status, sort, siteid, modifiedby, modifieddate, summary, template, urlpath, 
+                      innavigation, relocate, subsite, breadcrumbs, expired, membertypes, searchindexable, displayurlpath
+FROM         dbo.sitepages_view
+WHERE     (siteid LIKE '%published')

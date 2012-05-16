@@ -1,0 +1,22 @@
+
+-- =============================================
+-- Author:		DRE
+-- =============================================
+CREATE PROCEDURE [dbo].[updateBreadcrumbStr] 
+	-- Add the parameters for the stored procedure here
+	@id varchar(35),
+	@siteid varchar(100)
+	
+AS
+BEGIN
+	DECLARE @breadcrumb nvarchar(1000)
+
+	SELECT @breadcrumb = dbo.getBreadCrumbs(@id, @siteid);
+	
+	UPDATE dbo.sitePages 
+	SET breadcrumbs = @breadcrumb
+	WHERE id = @id AND siteid = @siteid;
+END
+
+
+

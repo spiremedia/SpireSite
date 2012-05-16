@@ -1,0 +1,8 @@
+
+	<cffunction name="edit{modelname}">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userObj" required="true">
+		<cfargument name="dispatcher" required="true">
+		<cfreturn add{modelname}(displayObject,requestObject,userObj,dispatcher)>
+	</cffunction>

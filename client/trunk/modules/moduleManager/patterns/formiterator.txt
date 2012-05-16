@@ -1,0 +1,4 @@
+	<p>
+		<label for="{varname}">{varname}</label>
+		<input type="text" name="{varname}" id="{varname}">
+	</p>

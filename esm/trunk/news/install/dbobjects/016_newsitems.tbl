@@ -1,0 +1,25 @@
+
+CREATE TABLE [dbo].[newsItems](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[title] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[description] [nvarchar](500) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[htmlText] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[modified] [datetime] NOT NULL CONSTRAINT [DF_news_modified]  DEFAULT (getdate()),
+	[created] [datetime] NULL,
+	[changedby] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[active] [bit] NOT NULL CONSTRAINT [DF_news_active]  DEFAULT ((1)),
+	[deleted] [bit] NOT NULL CONSTRAINT [DF_news_deleted]  DEFAULT ((0)),
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[itemdate] [datetime] NOT NULL,
+	[startdate] [datetime] NULL,
+	[enddate] [datetime] NULL,
+	[onhomepage] [bit] NOT NULL CONSTRAINT [DF_news_onfront]  DEFAULT ((0)),
+	[author] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[assetid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[linkpageid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+ CONSTRAINT [PK_newsItem] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]

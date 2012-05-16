@@ -1,0 +1,17 @@
+
+
+	<cffunction name="deleteClientModule">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userobj" required="true">
+		<cfargument name="dispatcher" required="true">
+		
+		<cfset var lcl = structnew()>
+		
+		<cfset var model = createObject('component', '{foldername}.models.widgetmodel').init(requestObject, userobj)>
+				
+		<cfset model.deleteItem(requestObject.getFormUrlVar('id'))>
+		
+		<cfset lcl.reloadBase = 1>
+		<cfset displayObject.sendJson( lcl )>
+	</cffunction>

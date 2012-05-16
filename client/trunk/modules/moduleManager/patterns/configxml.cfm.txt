@@ -1,0 +1,8 @@
+<cfsavecontent variable="modulexml">
+<moduleInfo embedeable="false">
+	
+</moduleInfo>
+</cfsavecontent>
+
+<cfset modulexml = xmlparse(modulexml)>
+

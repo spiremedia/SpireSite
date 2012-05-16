@@ -1,0 +1,14 @@
+
+CREATE TABLE [dbo].[events_log](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[userid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[eventid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[description] [varchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[actiondate] [datetime] NOT NULL CONSTRAINT [DF_events_log_actiondate]  DEFAULT (getdate()),
+ CONSTRAINT [PK_events_log] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]
+

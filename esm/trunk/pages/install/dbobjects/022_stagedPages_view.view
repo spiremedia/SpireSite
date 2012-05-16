@@ -1,0 +1,6 @@
+CREATE VIEW [dbo].[stagedpages]
+AS
+SELECT     id, pagename, pageurl, title, parentid, description, keywords, ownerid, status, sort, siteid, modifiedby, modifieddate, summary, template, urlpath, 
+                      breadcrumbs, innavigation, relocate, subsite, showdate, hidedate, expired, membertypes, searchindexable, displayurlpath
+FROM         dbo.sitepages_view
+WHERE     (siteid LIKE '%staged')

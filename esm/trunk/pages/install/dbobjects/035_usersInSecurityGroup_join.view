@@ -1,0 +1,9 @@
+
+CREATE VIEW [dbo].[usersInSecurityGroup_join]
+AS
+SELECT     dbo.securityGroupUsers_view.securitygroupid, dbo.securityGroups_view.name, dbo.securityGroupUsers_view.userid, 
+                      dbo.securityGroupUsers_view.id AS sguid, dbo.users_view.fname, dbo.users_view.id AS uid, dbo.users_view.lname, dbo.users_view.username, 
+                      dbo.securityGroups_view.id AS sgid, dbo.securityGroupUsers_view.siteid AS sgusiteid, dbo.securityGroups_view.siteid AS sgsiteid
+FROM         dbo.users_view INNER JOIN
+                      dbo.securityGroupUsers_view ON dbo.users_view.id = dbo.securityGroupUsers_view.userid INNER JOIN
+                      dbo.securityGroups_view ON dbo.securityGroupUsers_view.securitygroupid = dbo.securityGroups_view.id

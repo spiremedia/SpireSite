@@ -1,0 +1,9 @@
+
+CREATE TABLE [dbo].[contentGroupUsers](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[contentGroupId] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[userid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[modified] [datetime] NOT NULL CONSTRAINT [DF_contentGroupUsers_modified]  DEFAULT (getdate()),
+	[deleted] [bit] NULL CONSTRAINT [DF_contentGroupUsers_deleted]  DEFAULT ((0)),
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]

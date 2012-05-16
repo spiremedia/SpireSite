@@ -1,0 +1,9 @@
+
+CREATE VIEW [dbo].[contentGroupLocations_view]
+AS
+SELECT     cgl.id, cgl.contentGroupId, cgl.pageId, cgl.siteid, pp.urlpath
+FROM         dbo.contentGroupLocations AS cgl INNER JOIN
+                      dbo.publishedpages AS pp ON pp.id = cgl.pageId
+WHERE     (cgl.deleted = 0)
+
+

@@ -1,0 +1,11 @@
+CREATE TABLE [dbo].[permissionLevelItems](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[permissionLevelid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[itemName] [varchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[modulename] [varchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+ CONSTRAINT [PK_permissionLevelItems] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]

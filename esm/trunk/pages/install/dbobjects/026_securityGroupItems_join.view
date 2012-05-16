@@ -1,0 +1,10 @@
+
+CREATE VIEW [dbo].[securityGroupItems_join]
+AS
+SELECT     TOP (100) PERCENT dbo.securityGroups_view.id AS sgid, dbo.securityGroups_view.name, dbo.securityGroupItems.itemName, 
+                      dbo.securityGroupItems.id AS sgiid, dbo.securityGroupItems.modulename, dbo.securityGroups_view.description, 
+                      dbo.securityGroupItems.siteid AS sgisiteid, dbo.securityGroups_view.siteid AS sgvsiteid
+FROM         dbo.securityGroups_view INNER JOIN
+                      dbo.securityGroupItems ON dbo.securityGroups_view.id = dbo.securityGroupItems.securitygroupid
+ORDER BY dbo.securityGroups_view.name, dbo.securityGroupItems.modulename, dbo.securityGroupItems.itemName
+

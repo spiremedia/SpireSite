@@ -1,0 +1,39 @@
+CREATE TABLE [dbo].[events](
+	[id] [varchar](35) NOT NULL,
+	[name] [nvarchar](50) NOT NULL,
+	[title] [nvarchar](255) NOT NULL,
+	[startdate] [datetime] NOT NULL,
+	[enddate] [datetime] NOT NULL,
+	[starttime] [nvarchar](50) NULL,
+	[imageassetid] [nvarchar](50) NULL,
+	[endtime] [nvarchar](50) NULL,
+	[agendaassetid] [varchar](35) NULL,
+	[locationname] [nvarchar](75) NULL,
+	[location] [nvarchar](255) NULL,
+	[searchdescription] [nvarchar](255) NULL,
+	[shortdescription] [nvarchar](600) NULL,
+	[description] [ntext] NULL,
+	[active] [bit] NOT NULL,
+	[maplink] [nvarchar](255) NULL,
+	[deleted] [bit] NOT NULL,
+	[created] [datetime] NOT NULL,
+	[modified] [datetime] NULL,
+	[changedby] [varchar](35) NOT NULL,
+	[siteid] [varchar](35) NOT NULL,
+	[onhomepage] [bit] NULL,
+	[showmaterialsform] [bit] NULL,
+	[showaddtlattendees] [bit] NULL,
+	[archivedate] [datetime] NULL,
+ CONSTRAINT [PK_events] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+ALTER TABLE [dbo].[events] ADD  CONSTRAINT [DF_events_active]  DEFAULT ((1)) FOR [active]
+
+ALTER TABLE [dbo].[events] ADD  CONSTRAINT [DF_events_deleted]  DEFAULT ((0)) FOR [deleted]
+
+ALTER TABLE [dbo].[events] ADD  CONSTRAINT [DF_events_created]  DEFAULT (getdate()) FOR [created]
+
+

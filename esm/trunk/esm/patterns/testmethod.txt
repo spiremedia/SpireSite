@@ -1,0 +1,6 @@
+
+	<cffunction name="test{name}">
+	
+		<cfset assertfalse(condition=,message="")>
+		<cfset asserttrue(condition=,message="")>
+	</cffunction>

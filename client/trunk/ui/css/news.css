@@ -1,0 +1,31 @@
+
+div.content .newsList p{
+	margin-bottom:8px;
+}
+div.content .newsList p.newsFeed { margin-bottom: 20px; }
+div.content .newsList p.newsTitle { margin-bottom: 4px; }
+
+.newsList a.rssiconlink {
+	background:url(/ui/images/rss.png) left top no-repeat;
+	padding:2px 4px 4px 24px;
+	
+}
+	
+div.content .newsList li {
+	list-style:none;
+	/*background:url(/ui/images/listicon.gif) 0px 5px no-repeat;*/
+	padding:10px 0 0 0;
+}
+
+div.content .newsList ul {
+	margin-bottom:4px;
+}
+
+div.eventitem {
+	color:#4f4823;
+}
+.newsevent_subtitle {
+	color:#940A06;
+	font-size:11px;
+	padding:0;
+}

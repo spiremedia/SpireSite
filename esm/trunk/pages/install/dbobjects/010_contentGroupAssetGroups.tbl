@@ -1,0 +1,13 @@
+
+CREATE TABLE [dbo].[contentGroupAssetGroups](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[contentGroupId] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[assetGroupId] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[modified] [datetime] NOT NULL CONSTRAINT [DF_contentGroupAssetGroups_modified]  DEFAULT (getdate()),
+	[deleted] [bit] NOT NULL CONSTRAINT [DF_contentGroupAssetGroups_deleted]  DEFAULT ((0)),
+ CONSTRAINT [PK_contentGroupAssetGroups] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+

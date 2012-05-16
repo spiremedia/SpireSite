@@ -1,0 +1,32 @@
+
+	<cffunction name="add{modelname}">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userobj" required="true">
+		<cfargument name="dispatcher" required="true">
+	
+		<cfset var mdl = get{tablename}model(requestObject, userObj)>
+		<cfset var temp = structnew()>	
+				
+		<cfset displayObject.setData('browse', mdl.getAll())>
+			
+		<cfif requestObject.isformurlvarset('id')>
+			<cfset mdl.load(requestObject.getformurlvar('id'))>
+			<cfset displayObject.setData('history', queryNew("hi"))>
+			<cfset displayObject.setData('{modelname}', mdl)>
+		<cfelse>
+			<cfset mdl.Load(0)>
+			<cfset displayObject.setData('{modelname}', mdl)>
+		</cfif>
+
+		<cfif requestObject.isformurlvarset('sortdir')>
+			<cfset displayObject.setWidgetOpen('mainContent','2')>
+		</cfif>
+			
+		<cfif requestObject.isformurlvarset('search')>
+			<cfset displayObject.setData('search', 
+				model.search(
+					requestObject.getformurlvar('search')))>
+		</cfif>
+	
+	</cffunction>

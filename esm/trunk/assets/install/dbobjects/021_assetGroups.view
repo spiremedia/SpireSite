@@ -1,0 +1,6 @@
+
+CREATE VIEW [dbo].[assetGroups_view]
+AS
+SELECT     id, name, modified, description
+FROM         dbo.assetGroups
+WHERE     (deleted = 0)

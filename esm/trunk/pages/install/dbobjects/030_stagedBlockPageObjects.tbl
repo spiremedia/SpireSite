@@ -1,0 +1,31 @@
+
+CREATE TABLE [dbo].[stagedBlockPageObjects](
+	[id] [varchar](35) NOT NULL,
+	[blockname] [varchar](50) NULL,
+	[name] [varchar](30) NOT NULL,
+	[title] [varchar](100) NULL,
+	[module] [varchar](30) NOT NULL,
+	[sortorder] [int] NOT NULL,
+	[data] [ntext] NULL,
+	[location] [varchar](200) NOT NULL,
+	[behavior] [varchar](35) NOT NULL,
+	[siteid] [varchar](35) NOT NULL,
+	[deleted] [bit] NOT NULL,
+	[memberType] [nvarchar](50) NOT NULL,
+	[active] [int] NOT NULL,
+	[created] [datetime] NOT NULL,
+	[modified] [datetime] NOT NULL,
+	[changedby] [varchar](35) NOT NULL,
+ CONSTRAINT [PK_stagedBlockPageObjects] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+
+ALTER TABLE [dbo].[stagedBlockPageObjects] ADD  CONSTRAINT [DF_blockPageObjects_deleted]  DEFAULT ((0)) FOR [deleted]
+
+
+ALTER TABLE [dbo].[stagedBlockPageObjects] ADD  CONSTRAINT [DF_blockPageObjects_imisgroup]  DEFAULT ('default') FOR [memberType]
+
+

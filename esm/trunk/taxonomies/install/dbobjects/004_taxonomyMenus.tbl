@@ -1,0 +1,14 @@
+
+
+CREATE TABLE [dbo].[taxonomyMenus](
+	[id] [varchar](35) NOT NULL,
+	[name] [varchar](50) NOT NULL,
+	[created] [datetime] NOT NULL,
+	[modified] [datetime] NOT NULL,
+	[changedby] [varchar](35) NOT NULL,
+	[baseTaxonomyItemId] [varchar](35) NULL,
+ CONSTRAINT [PK_taxonomymenus] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]

@@ -1,0 +1,7 @@
+
+	<cffunction name="init">
+		<cfargument name="requestObject" required="true">
+		<cfset variables.requestObject = arguments.requestObject>
+		<cfset startorm("{tablename}")>
+		<cfreturn this>
+	</cffunction>

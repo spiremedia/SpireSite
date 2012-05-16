@@ -1,0 +1,13 @@
+
+CREATE TABLE [dbo].[formSubmission](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[formid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[submissiondate] [datetime] NOT NULL,
+	[name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[type] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL CONSTRAINT [DF_formSubmission_type]  DEFAULT ('forms'),
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+ CONSTRAINT [PK_formsubmission] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]

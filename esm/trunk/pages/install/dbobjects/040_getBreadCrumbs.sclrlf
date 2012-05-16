@@ -1,0 +1,59 @@
+
+CREATE FUNCTION [dbo].[getBreadCrumbs] 
+(
+	-- Add the parameters for the function here
+	@id varchar(35),
+	@siteid varchar(50)
+)
+RETURNS nvarchar(1000)
+AS
+BEGIN
+	-- Declare the return variable here
+	DECLARE @parentid varchar(35)
+	DECLARE @pagename nvarchar(100)
+	DECLARE @path nvarchar(1000) 
+	DECLARE @count int
+	DECLARE @localpath varchar(200)
+	DECLARE @fdlmtr int
+	DECLARE @pageid varchar(35)
+	DECLARE @subsite int
+
+	SET @path = ''
+
+	SET @count = 0
+
+	SELECT 
+		@parentid = parentid, 
+		@pagename = pagename, 
+		@subsite = subSite, 
+		@pageid = id 
+	FROM sitepages 
+	WHERE id = @id AND siteid = @siteid
+
+	WHILE @parentid IS NOT NULL AND @parentid <> '' AND @count < 20
+	BEGIN
+		IF @count = 0
+			BEGIN
+				--SET @localpath = dbo.getPath(@id, @siteid)
+				SELECT @localpath = displayurlpath FROM sitepages_view WHERE id = @id and siteid = @siteid
+				SET @path = @pagename + '~' + @pageid + '~' + @localpath + '|' + @path	
+				SET @count = @count + 1
+			END
+
+		ELSE IF @subsite = 1
+			BEGIN
+				SET @parentid = ''	
+			END
+		ELSE 
+			BEGIN
+				--SET @localpath = dbo.getPath(@parentid, @siteid)
+				SELECT @localpath = displayurlpath FROM sitepages_view WHERE id = @parentid and siteid = @siteid
+				SELECT @pagename = pagename, @parentid = parentid, @subsite = subSite, @pageid = id FROM sitepages WHERE id = @parentid AND siteid = @siteid
+				
+				SET @path = @pagename + '~' + @pageid + '~' + @localpath + '|' + @path	
+				SET @count = @count + 1	
+			END
+	END
+
+	RETURN @path
+END

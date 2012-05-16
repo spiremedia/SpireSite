@@ -1,0 +1,16 @@
+	<cffunction name="{actionname}">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userobj" required="true">
+		<cfargument name="dispatcher" required="true">
+		
+		<cfset var l = structnew()>
+		<cfset var msg = structnew()>
+		
+{methodcalls}
+		
+		<cfset msg.message = "B smart!">
+		<cfset msg.relocate = "/{folderName}/module/">
+		
+		<cfset displayObject.sendJson(msg)>
+	</cffunction>

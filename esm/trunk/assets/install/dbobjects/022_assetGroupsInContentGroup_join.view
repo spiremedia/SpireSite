@@ -1,0 +1,8 @@
+
+CREATE VIEW [dbo].[assetGroupsInContentGroup_join]
+AS
+SELECT     TOP (100) PERCENT cgag.contentGroupId, cgag.assetGroupId, ag.name AS assetgroupname, cg.siteid AS cgsiteid, 
+                      ag.description AS assetgroupdescription, ag.modified AS assetgroupmodified
+FROM         dbo.contentGroups_view AS cg INNER JOIN
+                      dbo.contentGroupAssetGroups_view AS cgag ON cg.id = cgag.contentGroupId INNER JOIN
+                      dbo.assetGroups_view AS ag ON cgag.assetGroupId = ag.id

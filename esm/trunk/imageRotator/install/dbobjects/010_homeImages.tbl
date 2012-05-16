@@ -1,0 +1,15 @@
+CREATE TABLE [dbo].[homeImages](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[name] [varchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[relocate] [varchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[filename] [varchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[changedby] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[active] [bit] NULL,
+	[created] [datetime] NOT NULL,
+	[modified] [datetime] NULL,
+ CONSTRAINT [PK_homeImages] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY]

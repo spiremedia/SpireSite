@@ -1,0 +1,28 @@
+
+
+	<cffunction name="saveClientModule">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userObj" required="true">
+		<cfargument name="dispatcher" required="true">
+
+		<cfset var mdl = createObject('component', '{foldername}.models.widgetmodel').init(requestObject, userobj)>
+		
+		<cfset var lcl = structnew()>
+		<cfset var requestvars = requestobject.getallformurlvars()>
+
+		<cfset model.setValues(requestVars)>
+				
+		<cfset vdtr = model.validate()>
+		
+		<cfif vdtr.passvalidation()>
+			<cfset mdl.save()>
+			<cfset lcl.reloadBase = 1>
+			<cfset displayObject.sendJson( lcl )>
+		<cfelse>
+			<cfset lcl.msg = structnew()>
+			<cfset lcl.msg.validation = vdtr.getErrors()>
+			<cfset displayObject.sendJson( lcl.msg )>
+		</cfif>
+	</cffunction>
+	

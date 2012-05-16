@@ -1,0 +1,13 @@
+<cfsavecontent variable="modulexml">
+	<module name="{name}" label="{name}" menuorder="{menuorder}" topnav="false" securityitems="{securityitems}">
+	
+		<action name="Start Page" template="onecolumnwnavigation">
+			<template name="browseContent" title="Browse" file="browse.cfm"/>
+			<template name="title" title="label" file="starttitle.cfm"/>
+			<template name="mainContent" title="Start Page" file="startcontents.cfm"/>
+		</action>
+		
+	</module>
+</cfsavecontent>
+
+<cfset modulexml = xmlparse(modulexml)>

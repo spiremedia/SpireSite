@@ -1,0 +1,54 @@
+<cfcomponent name="model" output="false" extends="resources.abstractContentObjectEditorModel">
+
+	<cffunction name="init">
+		<cfargument name="requestObj" required="true">
+		<cfargument name="userObj" required="true">
+		<cfset variables.requestObj = arguments.requestObj>
+		<cfset variables.userObj = arguments.userObj>
+		
+		<cfset loadItem(variables.request.getFormUrlVar('id'))>
+		
+{params1}
+		<!---<cfparam name="variables.newstype" default="">--->
+
+		<cfreturn this>
+	</cffunction>
+	
+	<cffunction name="getinfo">
+		<cfset var r = structnew()>
+		<cfset r.id = variables.id>
+		
+{params2}
+		<!---<cfset r.newstype = variables.newstype>
+		<cfset r.pageing = variables.pageing>--->
+		<cfreturn r>
+	</cffunction>
+				
+	<cffunction name="setvalues">
+		<cfargument name="itemdata">
+		<cfset variables.id = arguments.itemdata.id>
+		
+{params3}
+		<!---<cfset variables.newstype = arguments.itemdata.newstype>--->
+	</cffunction>
+	
+	<cffunction name="validate">		
+		<cfset var lcl = structnew()>
+		
+		<cfset var vdtr = createObject('component','utilities.datavalidator').init()>
+		<cfset var mylocal = structnew()>
+			
+		<cfreturn vdtr/>
+	</cffunction>
+	
+	<cffunction name="save">
+		<cfset var l = structnew()>
+
+{params4}
+		<!---<cfset l.newstype = variables.newstype>--->
+		
+		<cfset saveData(l)>
+	</cffunction>
+
+</cfcomponent>
+	

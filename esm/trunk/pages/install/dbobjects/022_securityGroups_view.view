@@ -1,0 +1,7 @@
+
+CREATE VIEW [dbo].[securityGroups_view]
+AS
+SELECT     id, name, modified, description, siteid
+FROM         dbo.securityGroups
+WHERE     (deleted = 0)
+

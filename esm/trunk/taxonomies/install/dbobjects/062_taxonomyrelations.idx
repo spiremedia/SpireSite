@@ -1,0 +1,10 @@
+
+/****** Object:  Index [taxonomyRelations_idx]    Script Date: 04/14/2010 12:25:18 ******/
+CREATE NONCLUSTERED INDEX [taxonomyRelations_idx] ON [dbo].[taxonomyRelations] 
+(
+	[taxonomyItemId] ASC,
+	[relationType] ASC,
+	[relationId] ASC,
+	[siteid] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, DROP_EXISTING = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+

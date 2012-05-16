@@ -1,0 +1,12 @@
+<cfcomponent name="{modelname} Model" output="false" extends="resources.abstractmodel">
+
+	<cffunction name="init">
+		<cfargument name="requestObj" required="true">
+		<cfargument name="userObj" required="true">
+		<cfset variables.requestObj = arguments.requestObj>
+		<cfset variables.userObj = arguments.userObj>
+		{tablemetadata}
+		<cfreturn this>
+	</cffunction>
+	
+</cfcomponent>

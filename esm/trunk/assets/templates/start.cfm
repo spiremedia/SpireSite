@@ -1,0 +1,1 @@
+Welcome the the Assets start page!

@@ -1,0 +1,13 @@
+
+CREATE TABLE [dbo].[siteSearches](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[criteria] [nvarchar](100) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[recordsfound] [int] NOT NULL,
+	[datetime] [datetime] NOT NULL CONSTRAINT [DF_siteSearches_datetime]  DEFAULT (getdate()),
+	[siteid] [varchar](80) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+ CONSTRAINT [PK_siteSearches] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+

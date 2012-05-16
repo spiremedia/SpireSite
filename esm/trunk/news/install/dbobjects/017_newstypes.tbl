@@ -1,0 +1,17 @@
+
+CREATE TABLE [dbo].[newsTypes](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[name] [nvarchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[title] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[modified] [datetime] NOT NULL CONSTRAINT [DF_newsTypes_modified]  DEFAULT (getdate()),
+	[deleted] [bit] NOT NULL CONSTRAINT [DF_newsTypes_deleted]  DEFAULT ((0)),
+	[description] [nvarchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[created] [datetime] NULL,
+	[changedby] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[hasrssfeed] [bit] NULL CONSTRAINT [DF_newsTypes_hasrssfeed]  DEFAULT ((0)),
+ CONSTRAINT [PK_newsTypes] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]

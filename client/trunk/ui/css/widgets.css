@@ -1,0 +1,362 @@
+/* accordion  */
+																
+.ui-accordion ul { margin: 0 0 17px 0; padding: 0; list-style-type: none; }
+.ui-accordion li { margin: 0 !important; margin-bottom: 0px; padding: 0; list-style-type: none; }
+.ui-accordion li a.ui-state-active {	
+	background:url(/ui/images/srcol_bg2.png) top left no-repeat;
+}
+.ui-accordion li .ui-accordion-header-last  {
+	
+}
+.ui-accordion li .ui-accordion-header {
+	background:url(/ui/images/srcol_bg2.png) top left no-repeat;
+	display: block;
+	padding-left: 15px;
+	padding-top:10px;
+	padding-bottom:10px;
+	margin-right: 0px;
+	
+	
+	color:#ffffff;
+	position: relative;
+	font-size:14px;
+	
+	text-decoration: none;
+	font-weight:normal;
+	
+}
+.ui-accordion li .ui-accordion-right {
+	display: block;
+	/*background-image: url(i/accordion-right.png);*/
+}
+.ui-accordion li .ui-accordion-left {
+	display: block;
+	/*background-image: url(i/accordion-left.png);
+	background-repeat: no-repeat;
+	position: absolute;*/
+	height: 0px;
+	width: 3px;
+}
+.ui-accordion li div.ui-accordion-content {
+	padding-left:10px;
+	padding-right:10px;
+	padding-top:14px;
+	/*background:url(/ui/images/tabs/accordioncontentbg.gif) top repeat-x;*/
+	_overflow: hidden !important;
+	
+	font-family: din_regular, Helvetica, sans-serif; color:white;
+	font-size:12px;
+}
+																/* tabs  */
+															
+
+
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin *//* Caution! Ensure accessibility in print and other media types... */
+@media projection, screen { /* Use class for showing/hiding tab content, so that visibility can be better controlled in different media types... */
+    .ui-tabs-hide {
+        display: none;
+    }
+}
+
+/* Hide useless elements in print layouts... */
+@media print {
+    .ui-tabs-nav {
+        display: none;
+    }
+}
+
+/* Skin */
+.ui-tabs-nav, .ui-tabs-panel {
+    
+}
+.ui-tabs {
+	/*padding-bottom:4px;
+	margin-bottom:15px;*/
+	background:url(/ui/images/tabs/tabfoot.gif) bottom right no-repeat;	
+}
+.ui-tabs .tabfoot{
+	height:8px;
+	/*border:1px solid red;*/
+	background:url(/ui/images/tabs/tabfoot_bl_corner.gif) bottom left no-repeat;	
+}
+
+body.interior3col .ui-tabs {
+	background:url(/ui/images/tabs/tabfoot3col.gif) bottom left no-repeat;    
+}
+
+ul.ui-tabs-nav {
+    list-style: none;
+    margin: 0 !important;
+    padding: 0;   
+}
+
+.ui-tabs-nav:after { /* clearing without presentational markup, IE gets extra treatment */
+    display: block;
+    clear: both;
+    content: " ";
+}
+.ui-tabs-nav li {
+    float: left;
+    margin: 0 1px 0 0px !important;
+    min-width: 60px; /* be nice to Opera */
+}
+.ui-tabs-nav a, .ui-tabs-nav a span {
+    display: block;
+    padding: 0 15px;
+    background:transparent url(/ui/images/tabs/tabs.gif) no-repeat scroll 0 0;
+    /*background: url(tab.png) no-repeat;*/
+}
+.ui-tabs-nav a {
+    margin: 1px 0 0; /* position: relative makes opacity fail for disabled tab in IE */
+    padding-left: 0;
+    color: #4f4823;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap; /* required in IE 6 */    
+    outline: 0; /* prevent dotted border in Firefox */
+	_display: inline-block;
+}
+.ui-tabs-nav .ui-tabs-selected a {
+    position: relative;
+    top: 1px;
+    z-index: 2;
+    margin-top: 0;
+    color: #000;
+}
+.ui-tabs-nav a span {
+    width: 54px; /* IE 6 treats width as min-width */
+    min-width: 54px;
+    height: 25px; /* IE 6 treats height as min-height */
+    min-height: 25px;
+    padding-top: 11px;
+    padding-right: 0;
+}
+.ui-tabs-nav a.ret span {
+	height: 31px; /* IE 6 treats height as min-height */
+    min-height: 31px;
+    padding-top: 5px;
+}
+*>.ui-tabs-nav a span { /* hide from IE 6 */
+    width: auto;
+    height: auto;
+}
+.ui-tabs-nav .ui-tabs-selected a span {
+    padding-bottom: 1px;
+}
+.ui-tabs-nav .ui-tabs-selected a, .ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active {
+    background-position: 100% -150px;
+}
+.ui-tabs-nav a, .ui-tabs-nav .ui-tabs-disabled a:hover, .ui-tabs-nav .ui-tabs-disabled a:focus, .ui-tabs-nav .ui-tabs-disabled a:active {
+    background-position: 100% -100px;
+}
+.ui-tabs-nav .ui-tabs-selected a span, .ui-tabs-nav a:hover span, .ui-tabs-nav a:focus span, .ui-tabs-nav a:active span {
+    background-position: 0 -50px;
+	color:#940a06;
+}
+.ui-tabs-nav a span, .ui-tabs-nav .ui-tabs-disabled a:hover span, .ui-tabs-nav .ui-tabs-disabled a:focus span, .ui-tabs-nav .ui-tabs-disabled a:active span {
+    background-position: 0 0;
+}
+.ui-tabs-nav .ui-tabs-selected a:link, .ui-tabs-nav .ui-tabs-selected a:visited, .ui-tabs-nav .ui-tabs-disabled a:link, .ui-tabs-nav .ui-tabs-disabled a:visited { /* @ Opera, use pseudo classes otherwise it confuses cursor... */
+    /*cursor: text;*/
+}
+.ui-tabs-nav a:hover, .ui-tabs-nav a:focus, .ui-tabs-nav a:active,
+.ui-tabs-nav .ui-tabs-deselectable a:hover, .ui-tabs-nav .ui-tabs-deselectable a:focus, .ui-tabs-nav .ui-tabs-deselectable a:active { /* @ Opera, we need to be explicit again here now... */
+    cursor: pointer;
+}
+.ui-tabs-disabled {
+    opacity: .4;
+    filter: alpha(opacity=40);
+}
+.ui-tabs-panel {
+    
+    border-left: 1px solid #b2a79d;
+    /*border-top: 1px solid #b2a79d;border-right: 1px solid #b2a79d;*/
+    
+    padding: 15px 17px 1px 17px;
+    background: #fff url(/ui/images/tabs/accordionpanelbg.gif) top right repeat-y; /* declare background color for container to avoid distorted fonts in IE while fading */
+}
+.ui-tabs-panel-top { height: 3px; overflow: hidden; background: url(/ui/images/tabs/accordionpaneltopbg.gif) right top no-repeat; border-left: solid 1px #b2a79d; }
+body.interior3col .ui-tabs-panel-top {
+	background: url(/ui/images/tabs/accordionpaneltopbg3col.gif) right top no-repeat;
+}
+.ui-tabs-loading em {
+    padding: 0 0 0 20px;
+    background: url(loading.gif) no-repeat 0 50%;
+}
+
+/* Additional IE specific bug fixes... */
+* html .ui-tabs-nav { /* auto clear, @ IE 6 & IE 7 Quirks Mode */
+    display: inline-block;
+}
+*:first-child+html .ui-tabs-nav  { /* @ IE 7 Standards Mode - do not group selectors, otherwise IE 6 will ignore complete rule (because of the unknown + combinator)... */
+    display: inline-block;
+}
+
+
+.ui-tabs-nav a.ret br {
+	margin-bottom:0px;	
+}
+.fancytable {  /* container for the whole table */
+	margin:15px 0 15px 0;
+	font-size:11px;
+	width:100%;
+}
+.fancytable th.twolines{
+	padding:1px 20px 5px 20px;
+}
+.fancytable th.first {
+	background-image:url(/ui/images/ft_background.gif);
+	background-position:left top;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	padding:10px 20px 0px 20px;
+
+
+}
+.fancytable th.last {
+	background-image:url(/ui/images/ft_background.gif);
+	background-position:right top;
+	background-repeat:no-repeat;
+	background-color:#fff;
+	padding:10px 20px 0px 20px;
+
+}
+.fancytable th {
+	background-image:url(/ui/images/ft_background.gif);
+	background-repeat:repeat-x;
+	background-position:top center;
+	border-bottom:1px solid #c9c7bb;
+	background-color:#fff;
+	color:#940a06;
+	padding:10px 0px 5px 0px;
+}
+.fancytable td {
+	color:#4f4823;
+	border-left:1px solid #c9c7bb;
+	border-right:1px solid #c9c7bb;
+	padding:10px 20px 10px 20px;
+}
+.fancytable tr.last td.first {
+	background-image:url(/ui/images/ft_background.gif);
+	background-position:left bottom;
+	background-repeat:no-repeat;
+	border-bottom:0px;
+	border-right:1px solid #c9c7bb;
+}
+
+.fancytable td.first {
+	/*background:url(/ui/images/ft_background.gif) center left no-repeat;*/
+	background-image:url(/ui/images/ft_background_first.gif);
+	background-repeat:repeat-y;
+	background-position:left;
+	/*border:hidden;*/
+	border-left:0px;
+	border-right:1px solid #c9c7bb;
+}
+
+.fancytable td.last {
+	/*background:url(/ui/images/ft_background.gif) center right no-repeat;*/
+	background-image:url(/ui/images/ft_background_first.gif);
+	background-repeat:repeat-y;
+	background-position:right;
+	border:0px;
+	border-left:1px solid #c9c7bb;
+}
+
+.fancytable tr.last td.last {
+	background-image:url(/ui/images/ft_background.gif);
+	background-position:right bottom;
+	background-repeat:no-repeat;
+	border-bottom:0px;
+	border-left:1px solid #c9c7bb;
+}
+.fancytable tr.last td {
+	padding:10px 20px 20px 20px;
+	border-bottom:0px solid #c9c7bb;
+	background-image:url(/ui/images/ft_background.gif);
+	background-position:center bottom;
+	background-repeat:no-repeat;
+}
+.fancytable tr.alt {
+	background-color:#f7f6f1;
+}
+.fancytable tr.first {
+	background-image:url(/ui/images/FT_td_first.png);
+	background-repeat:repeat-x;
+	border-top:1px solid #c9c7bb;
+}
+.fancytable tr.last {
+	/*border-bottom: 1px solid #c9c7bb;*/
+
+}
+.cart_cartprogressindicator {
+	height:36px;
+	padding:20px 0;
+	
+}
+.cart_cartprogressindicator li{
+	margin:0 0 0 0;
+	padding:11px 28px 21px 40px;
+	background-image:url(/ui/images/cart/currentbefore.png);	
+	list-style:none;
+	display:inline;
+	vertical-align:middle;
+	background-repeat:no-repeat;
+	
+}
+.cart_cartprogressindicator li span,
+.cart_cartprogressindicator li a{
+	padding-bottom:21px;
+}
+
+.cart_cartprogressindicator .firstcurrent {
+	padding:11px 28px 11px 51px;
+	background-image:url(/ui/images/cart/firstcurrent.png);	
+	color:#fff;
+	
+}
+.cart_cartprogressindicator .firstbefore {
+	padding:11px 15px 11px 48px;
+	background-image:url(/ui/images/cart/first.png);	
+	height:36px;
+}
+.cart_cartprogressindicator .first {
+	padding:11px 39px 11px 38px;
+	background-image:url(/ui/images/cart/first.png);	
+	height:36px;
+}
+.cart_cartprogressindicator .lastcurrent {
+	padding:11px 86px 11px 86px;
+	font-weight:bold;
+	background-image:url(/ui/images/cart/lastcurrent.png);	
+	color:#fff;
+	
+}
+.cart_cartprogressindicator .last{
+	padding:11px 97px 11px 86px;
+	background-image:url(/ui/images/cart/last.png);
+	height:36px;
+}
+.cart_cartprogressindicator .current{
+	padding:11px 22px 11px 48px;
+	background-image:url(/ui/images/cart/current.png);	
+	color:#fff;
+}
+.cart_cartprogressindicator .before {
+	padding:11px 33px 11px 35px;
+	background-image:url(/ui/images/cart/currentafter.png);
+}

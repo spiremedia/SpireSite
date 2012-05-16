@@ -1,0 +1,12 @@
+
+CREATE TABLE [dbo].[formSubmissionEntry](
+	[formsubmissionid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[formfield] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[answer] [nvarchar](max) COLLATE SQL_Latin1_General_CP1_CI_AS NULL
+) ON [PRIMARY];
+
+ALTER TABLE [dbo].[formSubmissionEntry]  WITH CHECK ADD  CONSTRAINT [FK__formsubmissionentry__formsubmissionid__5E8A0973] FOREIGN KEY([formsubmissionid])
+REFERENCES [dbo].[formSubmission] ([id])
+ON DELETE CASCADE;
+
+ALTER TABLE [dbo].[formSubmissionEntry] CHECK CONSTRAINT [FK__formsubmissionentry__formsubmissionid__5E8A0973];

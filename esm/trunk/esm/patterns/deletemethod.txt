@@ -1,0 +1,38 @@
+
+	<cffunction name="Delete{modelname}">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userObj" required="true">
+		
+		<cfset var lcl = structnew()>
+		<cfset var mdl = get{modelname}model(requestObject, userObj)>
+		
+		<!---<cfset mdl.load(requestObject.getformurlvar('id'))>--->
+				
+		<cfif NOT requestObject.isformurlvarset('id')>
+			<cfthrow message="id not provided to delete news">
+		</cfif>
+
+		<cfif mdl.delete(requestObject.getformurlvar('id'))>
+			<!---<cfset lcl.fs = createObject('component','utilities.filesystem').init()>
+			<cfif lcl.filename NEQ "">
+				<cfset lcl.fs = createObject('component','utilities.filesystem').init()>
+				<cfset lcl.siteinfo = application.sites.getSite(arguments.userObj.getCurrentSiteId())>
+				<cfset fs.delete(lcl.siteinfo.machineRoot & 'docs/news/' & lcl.filename)>
+			</cfif>--->
+			<cfset lcl.msg = structnew()>
+			<cfset lcl.msg.message = "The {modelname} Item has been deleted">
+			<cfset lcl.msg.ajaxupdater = structnew()>
+			<cfset lcl.msg.ajaxupdater.url = "/{foldername}/Browse/">
+			<cfset lcl.msg.ajaxupdater.id = 'browse_content'>
+			<cfset lcl.msg.htmlupdater = structnew()>
+			<cfset lcl.msg.htmlupdater.id = "rightContent">
+			<cfset lcl.msg.htmlupdater.HTML = "<div id='msg'>{modelname} Item Deleted</div>">
+			<cfset displayObject.sendJson( lcl.msg )>
+		<cfelse>
+			<cfset lcl.msg = structnew()>
+			<cfset lcl.msg.validation = mdl.getValidator().getErrors()>
+			<cfset displayObject.sendJson( lcl.msg )>
+		</cfif>
+
+	</cffunction>

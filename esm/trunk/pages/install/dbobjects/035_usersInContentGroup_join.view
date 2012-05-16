@@ -1,0 +1,10 @@
+
+CREATE VIEW [dbo].[usersInContentGroup_join]
+AS
+SELECT     TOP (100) PERCENT dbo.users_view.lname, dbo.users_view.username, dbo.users_view.fname, dbo.users_view.id, 
+                      dbo.contentGroups_view.id AS contentgroupid, dbo.contentGroups_view.name, dbo.contentGroupUsers_view.userid, 
+                      dbo.contentGroupUsers_view.siteid AS cgusiteid, dbo.contentGroups_view.siteid AS cgsiteid
+FROM         dbo.contentGroups_view INNER JOIN
+                      dbo.contentGroupUsers_view ON dbo.contentGroups_view.id = dbo.contentGroupUsers_view.contentGroupId INNER JOIN
+                      dbo.users_view ON dbo.contentGroupUsers_view.userid = dbo.users_view.id
+ORDER BY dbo.contentGroups_view.name, dbo.users_view.lname, dbo.users_view.fname

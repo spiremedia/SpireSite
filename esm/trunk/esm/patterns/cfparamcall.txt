@@ -1,0 +1,1 @@
+		<cfparam name="variables.{varname}" default="{vardefault}">

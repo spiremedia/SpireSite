@@ -1,0 +1,1 @@
+		<cfset variables.{varname} = arguments.itemdata.{varname}>

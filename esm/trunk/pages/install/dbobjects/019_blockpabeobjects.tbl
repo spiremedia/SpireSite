@@ -1,0 +1,24 @@
+
+
+CREATE TABLE [dbo].[publishedBlockPageObjects](
+	[id] [varchar](35) NOT NULL,
+	[blockname] [varchar](50) NULL,
+	[name] [varchar](30) NOT NULL,
+	[module] [varchar](30) NOT NULL,
+	[title] [nvarchar](100) NULL,
+	[data] [ntext] NULL,
+	[location] [varchar](200) NOT NULL,
+	[behavior] [varchar](35) NOT NULL,
+	[siteid] [varchar](35) NOT NULL,
+	[memberType] [nvarchar](50) NOT NULL,
+	[active] [int] NOT NULL,
+	[created] [datetime] NOT NULL,
+	[modified] [datetime] NOT NULL,
+	[changedby] [varchar](35) NOT NULL,
+	[sortorder] [int] NOT NULL,
+ CONSTRAINT [PK_publishedBlockPageObjects] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+

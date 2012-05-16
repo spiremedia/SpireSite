@@ -1,0 +1,14 @@
+
+-- =============================================
+-- Author:		DRE
+-- =============================================
+CREATE PROCEDURE [dbo].[updateSetting] 
+	-- Add the parameters for the stored procedure here
+	@id varchar(35),
+	@siteid varchar(100)
+	
+AS
+BEGIN
+	EXEC dbo.updateURLPathStr @id, @siteid
+	EXEC dbo.updateBreadcrumbStr @id, @siteid
+END

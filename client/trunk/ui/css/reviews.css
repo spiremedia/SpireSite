@@ -1,0 +1,16 @@
+
+div.reviews {
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+div.reviews img.reviewstars {
+	padding-right:15px;
+	padding-left:10px;
+	vertical-align:bottom;
+}
+
+div.reviews div.reviewcomments {
+	margin-left:15px;
+	margin-right:20px;
+}

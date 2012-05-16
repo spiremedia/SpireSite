@@ -1,0 +1,9 @@
+
+		<action name="Edit {modelname}" isform="1" template="twocolumnwnavigation" formsubmit="save{modelname}">
+			<template name="browseContent" id="browse" title="Browse" file="browse.cfm"/>
+			<template name="browseContent" title="Search" file="search.cfm"/>
+			<template name="title" title="label" file="title{modelname}.cfm"/>
+			<template name="title" title="buttons" file="buttons{modelname}.cfm"/>
+			<template name="mainContent" title="Properties" file="form{modelname}.cfm"/>
+			<template name="mainContent" title="History" file="history.cfm"/>
+		</action>

@@ -1,0 +1,10 @@
+
+CREATE VIEW [dbo].[assets_view]
+AS
+SELECT     dbo.assets.id, dbo.assets.name, dbo.assets.filename, dbo.assets.previewfilename, dbo.assets.changeddate, dbo.assets.assetgroupid, 
+                      dbo.assets.active, dbo.assets.deleted, dbo.users.lname + ' ' + dbo.users.fname AS fullname, dbo.assets.filesize, dbo.assets.changedby, 
+                      dbo.assets.startdate, dbo.assets.enddate, dbo.assets.description
+FROM         dbo.assets INNER JOIN
+                      dbo.users ON dbo.users.id = dbo.assets.changedby
+WHERE     (dbo.assets.deleted = 0)
+

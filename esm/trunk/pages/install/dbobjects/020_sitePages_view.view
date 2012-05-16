@@ -1,0 +1,8 @@
+
+CREATE VIEW [dbo].[sitepages_view]
+AS
+SELECT     id, pagename, pageurl, title, parentid, description, keywords, ownerid, status, sort, siteid, modifiedby, modifieddate, summary, template, innavigation, 
+                      relocate, subsite, breadcrumbs, urlpath, showdate, hidedate, CASE WHEN ((showdate IS NOT NULL AND showdate > getDate()) OR
+                      (hidedate IS NOT NULL AND hidedate < getDate())) THEN 1 ELSE 0 END AS expired, membertypes, searchindexable, CASE WHEN (relocate IS NULL OR
+                      relocate = '') THEN '/' + urlpath ELSE relocate END AS displayurlpath
+FROM         dbo.sitepages

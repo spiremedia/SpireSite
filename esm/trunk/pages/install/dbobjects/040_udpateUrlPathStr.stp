@@ -1,0 +1,20 @@
+
+-- =============================================
+-- Author:		DRE
+-- =============================================
+CREATE PROCEDURE [dbo].[updateUrlPathStr] 
+	-- Add the parameters for the stored procedure here
+	@id varchar(35),
+	@siteid varchar(100)
+	
+AS
+BEGIN
+	DECLARE @pathStr varchar(255)
+
+	SELECT @pathStr = dbo.getPath(@id, @siteid);
+	
+	UPDATE dbo.sitePages 
+	SET urlpath = @pathStr
+	WHERE id = @id AND siteid = @siteid;
+
+END

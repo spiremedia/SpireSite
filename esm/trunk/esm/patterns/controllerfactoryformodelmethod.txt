@@ -1,0 +1,7 @@
+
+	<cffunction name="get{modelname}Model">
+		<cfargument name="requestObj" required="true">
+		<cfargument name="userObj" required="true">
+		<cfset var m = createObject("component", "{foldername}.models.{modelname}").init(arguments.requestObj, arguments.userObj)>
+		<cfreturn m>
+	</cffunction>

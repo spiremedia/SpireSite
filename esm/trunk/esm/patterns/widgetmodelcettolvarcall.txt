@@ -1,0 +1,1 @@
+		<cfset l.{varname} = variables.{varname}>

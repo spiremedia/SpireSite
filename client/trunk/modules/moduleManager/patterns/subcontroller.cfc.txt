@@ -1,0 +1,9 @@
+<cfcomponent name="{foldername} {name} subcontroller" extends="resources.abstractSubController">
+
+	<!---<cffunction name="init">
+		<cfset super.init(argumentcollection = arguments)>
+		<!--- add something here or delete init method --->
+		<cfreturn this>
+	</cffunction>--->
+	
+</cfcomponent>

@@ -1,0 +1,1 @@
+		<cfset var {modelname}mdl = get{modelname}Model(arguments.requestObject, arguments.userObj)>

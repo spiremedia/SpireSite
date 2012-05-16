@@ -1,0 +1,15 @@
+
+CREATE TABLE [dbo].[taxonomyMenuFavorites](
+	[id] [varchar](35) NOT NULL,
+	[taxonomyMenuItemId] [varchar](35) NOT NULL,
+	[taxonomyItemId] [varchar](35) NOT NULL,
+	[created] [datetime] NOT NULL,
+	[modified] [datetime] NOT NULL,
+	[changedby] [varchar](35) NOT NULL,
+ CONSTRAINT [PK_taxonomyMenuFavorites] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+

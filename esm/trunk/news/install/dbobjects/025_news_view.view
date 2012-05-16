@@ -1,0 +1,11 @@
+CREATE VIEW [dbo].[news_view]
+AS
+SELECT     newsItems.name, newsItems.title, newsItems.description, newsItems.modified, newsItems.changedby, newsItems.htmlText, 
+                      newsItems.active, newsItems.siteid, newsItems.startdate, newsItems.enddate, users.fname + ' ' + users.lname AS fullname, 
+                      newsItems.onhomepage, newsItems.author, newsItems.itemdate, newsTypes.id AS newstypesid, 
+                      newsTypes.name AS newstypesname, newsItemsToNewstypes.newsTypeid, newsItems.id, newsItems.assetid, newsItems.linkpageid
+FROM         newsItems INNER JOIN
+                      users ON newsItems.changedby = users.id INNER JOIN
+                      newsItemsToNewstypes ON newsItems.id = newsItemsToNewstypes.newsItemid INNER JOIN
+                      newsTypes ON newsItemsToNewstypes.newsTypeid = newsTypes.id
+WHERE     (newsItems.deleted = 0) AND (newsTypes.deleted = 0)

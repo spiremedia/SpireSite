@@ -1,0 +1,12 @@
+<cfcomponent displayname="{name} Unit Test" extends="mxunit.framework.TestCase">
+	
+	<cffunction name="setup">
+		<cfset variables.requestObj = request.requestObject>
+		<cfset variables.userObj = createObject('component','resources.defaultuser').init()>
+	</cffunction>
+	
+	<cffunction name="teardown">
+	
+	</cffunction>
+	
+</cfcomponent>

@@ -1,0 +1,7 @@
+
+CREATE VIEW [dbo].[users_view]
+AS
+SELECT     fname, id, lname, username, password, active, homephone, mobilephone, fax, line1, line2, city, state, country, postalcode, company, modified, 
+                      issuper
+FROM         dbo.users
+WHERE     (deleted = 0)

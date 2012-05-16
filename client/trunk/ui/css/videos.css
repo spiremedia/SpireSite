@@ -1,0 +1,102 @@
+div#videos {
+	width:613px;
+	margin-left:6px;
+	padding:0 0 0 0;
+	_margin-right:-5px;
+}
+/*#videos .videoplayertop { background:url(/ui/images/videos/videoplayertopbg.png) top left no-repeat; height: 3px; overflow: hidden; width:613px; }*/
+#videos .videoplayerbot { 
+	background:url(/ui/images/videos/videoplayerbotbg.png) bottom left no-repeat; 
+	height: 4px; 
+	width:613px;
+	*overflow:visible ;
+	*margin-left:7px;
+	*position:relative;
+	*margin-top:0;
+	*margin-bottom:-15px;
+	*padding-top:0;
+	*top:-9px;
+}
+#videos .videoplayercontent { 
+	background: url(/ui/images/videos/videoplayercontentbg.gif) left center repeat-y; 
+	padding-bottom:0px;
+	width:613px;
+	_margin-left:7px;	
+}
+
+div#videos div#videoplayer {
+	margin:0;
+	padding:10px 5px 8px 12px;
+	/*background:url(/ui/images/videos/videodivider.gif) 58px bottom no-repeat;
+	_padding-right:52px;*/
+}
+
+div#videos div#vidcontrols{
+	padding: 0 10px 10px 0; background: none !important; margin: 0 !important; height: auto !important;
+	text-align:right;
+}
+div#videos div#vidcontrols .videobutton{
+	padding-right:10px;
+	background-image:url(/ui/images/buttons/VideoBtn_bg.png);
+	height:22px;
+	width:121px;
+	color:#fff;
+	cursor:pointer;
+	display:inline-block;
+	font-size:9.5px;
+	font-weight:normal;
+	line-size:20px;
+	background-attachment:scroll;
+	background-color:transparent;
+	background-image:url('/ui/images/buttons/videoBtn_bg.png');
+	background-position:10px 0;
+	background-repeat:no-repeat;
+	padding-top:4px;
+}
+
+div#videos div#videolistwrap{
+	padding:10px 0 0 10px;	
+}
+
+#videolist dl{
+	padding-bottom:28px;
+}
+
+#videolist { 
+	float: left; 
+	height: 350px; 
+	width: 255px; 
+	font-size: 11px; 
+	overflow: auto;
+}
+#videolist h4{ 
+	font-size: 12px; 
+}
+
+
+#videolist dt { width: 90px; clear: left; }
+#videolist dd { width: 210px; padding: 0 15px; }
+#videolist h4 { padding: 0; margin:0; }
+#videolist p { padding: 0; margin:0; }
+#videolist p.videodescription { padding: 6px 5px 7px 0; color:#4f4823; }
+
+div#videos div#currenttitle {
+	font-weight:bold;
+	padding-top:16px;
+	padding-bottom:11px;
+	margin:0;
+	color:#940a06;
+}
+
+#videolist .video img {
+	cursor:pointer;
+}
+
+#videolist td {
+
+}
+
+div.vid_titlearea {
+	/*padding-left:10px;	*/
+	color:#940a06;
+}

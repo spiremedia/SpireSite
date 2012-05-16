@@ -1,0 +1,24 @@
+.fancytable {
+	margin-bottom:10px;
+	border-collapse:collapse;
+	width:100%;
+	border-top:1px solid #c7c8ba;
+	border-left:1px solid #c7c8ba;
+	margin:2px;
+}
+
+.fancytable th {
+	font-weight:bold;
+	font-size:9px;
+	padding:5px;
+	border-bottom:1px solid #c7c8ba;
+	background:#f7f6f1;
+}
+.fancytable td {
+	border-bottom:1px solid #c7c8ba;
+	border-right:1px solid #c7c8ba;
+	padding:5px;
+	vertical-align:top;
+	font-size:9px;
+}
+}

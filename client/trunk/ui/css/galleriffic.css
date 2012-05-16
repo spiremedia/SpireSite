@@ -1,0 +1,184 @@
+div.galleries {
+	background:url(/ui/images/galbg.gif) top left no-repeat;
+	height:414px;
+	position:relative;
+	color:white;
+	line-height:14px;
+	margin-bottom:25px;
+}
+div.galcontent {
+	/* The display of content is enabled by a javascript generated style on the page.
+	   This is so that the slideshow content won't display unless javascript is enabled. */
+	float:left;
+	width:526px; 
+	height:358px;
+
+	padding:11px 10px 10px 11px;
+	_padding-bottom:13px;
+
+}
+div.navigation{
+	width:150px;
+	float: left;
+}
+div.galcontent a, div.navigation a {
+	text-decoration: none;
+	color: white;
+	text-decoration:underline;
+	
+	
+}
+div.galcontent  a:focus, div.content  a:hover, div.content  a:active {
+	text-decoration: underline;
+}
+div.controls {
+	margin-top: 4px;
+	_margin-top:0;
+	margin-left:7px;
+}
+div.controls a {
+	padding: 5px;
+}
+div.ss-controls {
+	float: left;
+}
+div.nav-controls {
+	/*float: right;*/
+}
+div.loader {
+	background-image: url('/ui/images/loader.gif');
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 550px;
+	height: 350px
+}
+div.slideshow {
+	clear: both;
+}
+div.slideshow span.image-wrapper {
+	
+}
+div.slideshow a.advance-link {
+	/*padding: 2px;*/
+	display: block;
+	/*border: 1px solid #b2a79d;*/
+	text-align:center;
+}
+div#slideshow-adv {
+	text-align:center;	
+}
+div.slideshow img {
+	border: none;
+	/*display: block;*/	
+	/*width:525px;
+	height:350px;*/
+	
+}
+div.download {
+	float: right;
+}
+div.embox {
+	clear: both;
+	background-color: #715d4a;
+	filter:alpha(opacity=70);
+	opacity:.85;
+	padding: 5px 12px;
+	position:absolute;
+	top:301px;
+	left:11px;
+	height:50px;
+	width:501px;
+}
+div.image-title {
+	font-weight: bold;
+	font-size: 11px;
+	padding-top:3px;
+}
+div.image-desc {
+	font-size:10px;
+	padding-top: 4px;
+}
+div.navigation {
+	/* The navigation style is set by a javascript generated style on the page.
+	   This is so that the javascript specific styles won't be applied unless javascript is enabled. */
+	padding:10px 0 0 0px;
+}
+ul.thumbs {
+	clear: both;
+	margin: 0 !important;
+	padding: 0;
+}
+div#thumbs-adv ul.thumbs li {
+	float: left;
+	padding: 0;
+	margin: 0px 5px 5px 0;
+	_margin:0px 5px 5px 0;
+	list-style: none;
+}
+a.thumb {
+	/*padding: 2px;*/
+	display: block;
+}
+ul.thumbs li.selected a.thumb {
+	background: #000;
+}
+a.thumb:focus {
+	outline: none;
+}
+ul.thumbs img {
+	border: none;
+	display: block;
+	border:1px solid #715d4a;
+	width:67px;
+	height:44px;
+}
+ul.thumbs li.selected img {
+	border:1px solid #f37421;
+}
+div.pagination {
+	clear: both;
+}
+div.navigation div.top {
+	margin-bottom: 12px;
+	height: 11px;
+}
+div.navigation div.bottom {
+	position:absolute;
+	top:381px;
+	left:547px;
+	width:159px;
+}
+div.pagination a, 
+div.pagination span.current {
+	display: block;
+	float: left;
+	background:url(/ui/images/buttons/recgallerybtnbg.gif) 0 1px no-repeat;	
+	margin-right: 2px;
+	padding: 4px 7px 5px 7px;
+	_padding-top:3px;
+	color:#0075ef;
+	text-decoration:none;
+}
+
+@-moz-document url-prefix(){/*firefox hack - fear the gods*/
+	div.pagination a, 
+	div.pagination span.current {
+		padding-top:3px;
+	}
+}
+
+
+/*div.pagination a:hover {
+	background-color: #eee;
+	text-decoration: none;
+}*/
+div.pagination span.current {
+	/*font-weight: bold;
+	background-color: #000;
+	border-color: #000;*/
+	color:#f37421
+}
+div.pagination a.pageingPrevNext {
+	background:none;
+	padding:1px 1px;
+}

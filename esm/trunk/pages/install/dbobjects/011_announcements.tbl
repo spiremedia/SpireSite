@@ -1,0 +1,16 @@
+
+CREATE TABLE [dbo].[announcements](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[changedby] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[created] [datetime] NOT NULL CONSTRAINT [DF_announcments_created]  DEFAULT (getdate()),
+	[modified] [datetime] NULL,
+	[name] [nvarchar](200) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[htmlText] [ntext] COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[itemdate] [datetime] NOT NULL,
+	[active] [bit] NULL CONSTRAINT [DF_announcements_active]  DEFAULT ((1)),
+ CONSTRAINT [PK_announcements] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (IGNORE_DUP_KEY = OFF) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]

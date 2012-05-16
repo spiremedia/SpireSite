@@ -1,0 +1,7 @@
+
+
+CREATE VIEW [dbo].[pageObjects_view]
+AS
+SELECT     id, name, module, data, pageid, siteid, status, deleted, memberType, title
+FROM         dbo.pageObjects
+WHERE     (deleted = 0)

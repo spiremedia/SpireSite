@@ -1,0 +1,43 @@
+
+-- =============================================
+-- Author:		Dre:Head Janitor
+-- Create date: 20070928
+-- Description:	Function used to maintain pathing info for site
+-- =============================================
+
+
+
+CREATE FUNCTION [dbo].[getPath] 
+(
+	-- Add the parameters for the function here
+	@id varchar(35),
+	@siteid varchar(50)
+)
+RETURNS varchar(200)
+AS
+BEGIN
+	-- Declare the return variable here
+	DECLARE @parentid varchar(35)
+	DECLARE @pageurl varchar(50)
+	DECLARE @path varchar(200)
+	DECLARE @count int
+	DECLARE @fdlmtr int
+
+	SET @path = ''
+	SET @count = 0
+
+	SELECT @parentid = parentid, @pageurl = pageurl FROM sitepages WHERE id = @id AND siteid = @siteid
+	
+	WHILE @parentid IS NOT NULL AND @parentid <> '' AND @count < 20
+	BEGIN
+		SET @path = @pageurl + '/' + @path
+		SET @count = @count + 1
+		SELECT @pageurl = pageurl, @parentid = parentid FROM sitepages WHERE id = @parentid AND siteid = @siteid
+	END
+
+	-- Return the result of the function
+	SET @path = @pageurl + '/' + @path 
+	SET	@fdlmtr = CHARINDEX('/', @path)
+	SET @path = RIGHT(@path, LEN(@path) - @fdlmtr)
+	RETURN @path
+END

@@ -1,0 +1,9 @@
+
+CREATE TABLE [dbo].[publishedPagesArchive](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[publisheddatetime] [datetime] NOT NULL CONSTRAINT [DF_publishedPagesArchive_publisheddatetime]  DEFAULT (getdate()),
+	[userid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[siteid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[pageid] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL
+) ON [PRIMARY]
+

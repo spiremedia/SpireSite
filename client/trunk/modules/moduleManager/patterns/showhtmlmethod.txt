@@ -1,0 +1,6 @@
+	<cffunction name="showHTML" output="false">
+		<cfset var html = "">
+		<cfsavecontent variable="html">
+		</cfsavecontent>
+		<cfreturn html>
+	</cffunction>

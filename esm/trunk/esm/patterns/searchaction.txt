@@ -1,0 +1,7 @@
+		
+		<action name="Search"  onMenu="0" isSecurityItem="1" template="twocolumnwnavigation">
+			<template name="browseContent" title="Browse" file="browse.cfm"/>
+			<template name="browseContent" title="Search" file="search.cfm"/>
+			<template name="title" title="Search Results" file="searchtitle.cfm"/>
+			<template name="mainContent" title="Search Results" file="searchresults.cfm"/>
+		</action>

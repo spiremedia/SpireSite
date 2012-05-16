@@ -1,0 +1,11 @@
+
+	<cffunction name="{methodname}test">
+		<cfset var lcl = structnew()>
+		<cfset var html = "">
+
+		<cfset controller.init(data, requestObject, pageRef, "templatespotname")>
+		<cfset controller.{methodname}("{foldername}", "{methodname}")>
+		<cfset html = controller.showHTML("{foldername}", "{methodname}")>
+		
+		<cfset asserttrue(condition = (test something useful),message="say something useful")>
+	</cffunction>

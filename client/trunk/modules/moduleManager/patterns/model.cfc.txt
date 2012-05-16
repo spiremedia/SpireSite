@@ -1,0 +1,2 @@
+<cfcomponent name="{modelname} Model" output="false" extends="resources.abstractmodel">
+</cfcomponent>

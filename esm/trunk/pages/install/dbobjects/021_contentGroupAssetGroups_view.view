@@ -1,0 +1,7 @@
+
+CREATE VIEW [dbo].[contentGroupAssetGroups_view]
+AS
+SELECT     id, contentGroupId, assetGroupId, modified
+FROM         dbo.contentGroupAssetGroups
+WHERE     (deleted = 0)
+

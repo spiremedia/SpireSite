@@ -1,0 +1,11 @@
+<cfset lcl.{modelname} = getDataItem('{modelname}')>
+
+<cfif (NOT requestObj.isFormUrlVarSet('id') AND securityObj.isallowed('{foldername}', 'Add {modelname}')) OR 
+		(requestObj.isFormUrlVarSet('id') AND securityObj.isallowed('{foldername}', 'Edit {modelname}'))>
+	<input type="submit" value="Save">
+</cfif>	
+<cfif securityObj.isallowed('{foldername}', 'delete {modelname}')>
+	<cfoutput>
+    <input type="button" id="deleteBtn" #iif(NOT requestObj.isFormUrlVarSet('id'),DE('style="display:none;'),DE(''))#" value="Delete" onClick="verify('Are you sure you wish to delete this item?','/{foldername}/delete{modelname}/?id=' + document.myForm.id.value)">
+    </cfoutput>
+</cfif>

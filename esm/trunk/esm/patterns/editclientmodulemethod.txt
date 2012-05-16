@@ -1,0 +1,13 @@
+
+	<cffunction name="editClientModule">
+		<cfargument name="displayObject" required="true">
+		<cfargument name="requestObject" required="true">
+		<cfargument name="userObj" required="true">
+		<cfargument name="dispatcher" required="true">
+
+		<cfset var widgetsmodel = createObject('component','{foldername}.models.widgetModel').init(arguments.requestObject, arguments.userObj)>
+		<cfset var mdl = get{modelname}Model(arguments.requestObject, arguments.userObj)>
+	
+		<cfset displayObject.setData('widgetsmodel', widgetsmodel)>
+		<cfset displayObject.setData('mdl', mdl)>
+	</cffunction>

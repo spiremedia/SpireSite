@@ -1,0 +1,15 @@
+
+CREATE TABLE [dbo].[videogroups](
+	[id] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[name] [nchar](50) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[title] [varchar](255) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[description] [varchar](500) COLLATE SQL_Latin1_General_CP1_CI_AS NULL,
+	[changedby] [varchar](35) COLLATE SQL_Latin1_General_CP1_CI_AS NOT NULL,
+	[deleted] [bit] NOT NULL,
+	[created] [datetime] NOT NULL,
+	[modified] [datetime] NULL,
+ CONSTRAINT [PK_videogroups] PRIMARY KEY CLUSTERED 
+(
+	[id] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]

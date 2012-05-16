@@ -1,0 +1,7 @@
+
+CREATE VIEW [dbo].[contentGroupUsers_view]
+AS
+SELECT     id, contentGroupId, userid, modified, siteid
+FROM         dbo.contentGroupUsers
+WHERE     (deleted = 0)
+
