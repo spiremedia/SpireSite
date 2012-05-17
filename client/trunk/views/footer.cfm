@@ -4,16 +4,16 @@
         <div class="footRight">
         	<div class="fr-box">
             	<div class="title-fg"><a href="">What We Do</a></div>
-            	<p><a href="">UX Design</a></p>
-                <p><a href="">Visual Design</a></p>
-                <p><a href="">Web Development</a></p>
-                <p><a href="">Mobile Development</a></p>
+            	<p><a href="/what-we-do/#ux-design">UX Design</a></p>
+                <p><a href="/what-we-do/#visual-design">Visual Design</a></p>
+                <p><a href="/what-we-do/#web-development">Web Development</a></p>
+                <p><a href="/what-we-do/#mobile-development">Mobile Development</a></p>
             </div>
             <div class="fr-box2">
             	<div class="title-fg"><a href="">Our Work</a></div>
-                <p><a href="">Web</a></p>
-                <p><a href="">Mobile</a></p>
-                <p><a href="">Client List</a></p>
+                <p><a href="/our-work/#web">Web</a></p>
+                <p><a href="/our-work/#mobile">Mobile</a></p>
+                <p><a href="/our-work/#client-list">Client List</a></p>
             </div>
             <div class="fr-box3">
             	<div class="title-fg"><a href="">Who We Are</a></div>
