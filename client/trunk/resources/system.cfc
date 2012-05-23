@@ -111,7 +111,7 @@
 		</cfoutput></cfsavecontent>
  
 		<!--- You can replace this cfoutput tag with application-specific error-handling code. --->
-		<cfif left(cgi.remote_addr, 6) EQ "10.1.1" OR cgi.remote_addr EQ "173.164.45.33" OR cgi.remote_addr EQ "216.87.69.98" or cgi.remote_addr EQ '127.0.0.1'>
+		<cfif left(cgi.remote_addr, 6) EQ "10.1.1" OR cgi.remote_addr EQ "173.164.45.33" OR cgi.remote_addr EQ "216.87.69.98" or cgi.remote_addr EQ '127.0.0.1' or cgi.remote_addr EQ "10.1.1.51" or cgi.remote_addr EQ "192.168.1.9">
 			<cfoutput>#errorContent#</cfoutput>
 		<cfelse>
 			<cfcontent reset="yes">

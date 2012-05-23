@@ -101,6 +101,13 @@ function resizeMain()
 	$('.default').dropkick();
     return false;
   	});
+  	
+	// below was added for the footer contact link
+  	$('.contactFooter').click(function() {
+    $('#sliderTop').slideToggle('slow');
+	$('.default').dropkick();
+    return false;
+  	});
 	
 	$('.closeSlider').click(function() {
     $('#sliderTop').slideUp('slow');

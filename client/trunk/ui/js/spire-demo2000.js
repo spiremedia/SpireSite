@@ -52,7 +52,7 @@ $.doTimeout( 'scroll', 250, function(){
 
 //click start
    $(".btn-start").click(function() {
-	//$.scrollTo('0px', 600, { axis:'x' });
+	$.scrollTo('0px', 600, { axis:'x' });
 	$('.btn-ow').trigger('click');
 	});
 	
@@ -219,6 +219,12 @@ var mainWidth = $('#mw2').width();
     return false;
   	});
 	
+	$('.contactFooter').click(function() {
+    $('#sliderTop').slideToggle('slow');
+	$('.default').dropkick();
+    return false;
+  	});
+  	
 	$('.closeSlider').click(function() {
     $('#sliderTop').slideUp('slow');
     return false;

@@ -19,6 +19,12 @@ jQuery(document).ready(function(){
 	$('.default').dropkick();
     return false;
   	});
+  	
+  	$('.contactFooter').click(function() {
+    $('#sliderTop').slideToggle('slow');
+	$('.default').dropkick();
+    return false;
+  	});
 	
 	$('.closeSlider').click(function() {
     $('#sliderTop').slideUp('slow');

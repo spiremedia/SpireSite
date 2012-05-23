@@ -295,6 +295,12 @@ $('#firstboxes li').hover(function(){
     $('#sliderTop').slideUp('slow');
     return false;
   	});
+  	
+  	$('.contactFooter').click(function() {
+    $('#sliderTop').slideToggle('slow');
+	$('.default').dropkick();
+    return false;
+  	});
 
 	//showcontact
 	$('#contactSlide').hide().css({visibility: "visible"}).fadeIn(2000);

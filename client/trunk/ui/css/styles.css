@@ -137,7 +137,7 @@ box-shadow: 0 0 5px 5px #000;}
 
 #map { background:url(/ui/images/bg_simapndir.png) top left no-repeat; color:#FFFFFF; line-height:1.2; font-family: din_medium, Helvetica, sans-serif; font-size:14px; padding-left:140px; margin-bottom:40px;}
 #map .simBox { float:left; border-left: 4px solid #a23217; padding-left:10px; margin:0 20px 0 0; position:relative;}
-.maplink { position:absolute; left:830px; bottom:50px; width:155px; height:63px; background:url(/ui/images/spiremap.png);}
+.maplink { position:absolute; left:830px; bottom:50px; width:155px; height:63px; background:url(/ui/images/bg_getmap.png);}
 .maplink a { display:block; width:155px; height:63px;}
 
 #social { position:absolute; left:20px; bottom:7px; width:184px; height:24px; background:url(/ui/images/bg_sisocial.png) no-repeat;}
@@ -271,7 +271,7 @@ opacity: .2;
 ul.leftline { margin:-36px 0 0 0; padding:0; list-style:none;}
 ul.leftline li { border-left: 4px solid #a23217; padding-left:10px; margin:36px 0; font-size:14px;}
 
-.subrightcol { position:absolute; top:25px; right:20px;}
+.subrightcol { position:absolute; top:25px; left:660px;}
 .srbox1 { width:277px; height:47px; padding:0 10px; color:#fff; font-size:24px; line-height:47px; background:url(/ui/images/srcol_bg1.png); margin-bottom:8px;}
 ul.srbox2 { margin:0 0 8px 0; padding:0; list-style:none;  font-family: din_regular, Helvetica, sans-serif;}
 ul.srbox2 li { width:277px; height:32px; margin:8px 0; padding:0 10px; font-size:14px; line-height:32px; background:url(/ui/images/srcol_bg2.png);}

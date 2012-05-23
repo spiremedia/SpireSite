@@ -56,6 +56,12 @@ $('.btn-closeic').click(function() {
     return false;
   	});
 	
+	$('.contactFooter').click(function() {
+    $('#sliderTop').slideToggle('slow');
+	$('.default').dropkick();
+    return false;
+  	});
+  	
 	$('.closeSlider').click(function() {
     $('#sliderTop').slideUp('slow');
     return false;

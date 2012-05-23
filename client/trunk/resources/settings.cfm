@@ -1,6 +1,6 @@
 dsn=spireESM4
-systememailfrom=tina@spiremedia.com
-systememailto=tina@spiremedia.com
+systememailfrom=timholt@spiremedia.com
+systememailto=timholt@spiremedia.com
 systememailalertflag=1
 mailsmtp=mail.spiremedia.com
 siteid=AD1724FF-E347-83EA-18FD424840AD5849

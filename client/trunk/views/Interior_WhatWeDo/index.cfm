@@ -53,7 +53,6 @@
 										</ul>
 									</div>
 									<div class="subrightcol">
-										<!--- <script type="text/javascript">jQuery.noConflict();</script>	 --->
 										<link rel="stylesheet" href="/ui/css/typo.css" type="text/css" />
 										<link rel="stylesheet" href="/ui/css/widgets.css" type="text/css"/>
 										<script type="text/javascript" src="/ui/js/jquery-ui-1.7.1.min.js"></script>
@@ -83,7 +82,6 @@
 												</li>
 											</ul>
 											<script type="text/javascript">
-												//jQuery.noConflict();
 												$(function(){
 													$("##middleItem_1_Content_Accordion").accordion({
 														autoHeight: false, 
@@ -91,14 +89,9 @@
 													});
 												});
 											</script>
-										</div>
-									</div>
+										</div><!--- end bclear --->
+									</div><!--- subrightcol --->
 								</div><!--- <<<< end .wwd-subbox --->
-								<div class="wwd-control">
-									<div class="btn-prev btn-wwd"><a href=""></a></div>
-									<div class="btn-main btn-wwd"><a href=""></a></div>
-									<div class="btn-next btn-vd"><a href="##visual-design"></a></div>
-								</div><!--- <<<< end .wwd-control --->
 							</div>
 						</div>
 					  </li>
@@ -139,7 +132,6 @@
 												</li>
 											</ul>
 											<script type="text/javascript">
-												//jQuery.noConflict();
 												$(function(){
 													$("##middleItem_4_Content_Accordion").accordion({
 														autoHeight: false, 
@@ -147,14 +139,9 @@
 													});
 												});
 											</script>
-										</div>
-									</div>
-								</div><!--- <<<< end .wwd-subbox --->
-								<div class="wwd-control">
-									<div class="btn-prev btn-uxd"><a href="##ux-design"></a></div>
-									<div class="btn-main btn-wwd"><a href=""></a></div>
-									<div class="btn-next btn-wd"><a href="##web-development"></a></div>
-								</div><!--- <<<< end .wwd-control --->
+										</div><!--- end bclear --->
+									</div><!--- subrightcol --->
+								</div><!---  end .wwd-subbox --->
 							</div>
 						</div>
 					  </li>
@@ -201,7 +188,6 @@
 												</li>
 											</ul>
 											<script type="text/javascript">
-												//jQuery.noConflict();
 												$(function(){
 													$("##middleItem_2_Content_Accordion").accordion({
 														autoHeight: false, 
@@ -209,14 +195,9 @@
 													});
 												});
 											</script>
-										</div>
-									</div>
-								</div><!--- <<<< end .wwd-subbox --->
-								<div class="wwd-control">
-									<div class="btn-prev btn-vd"><a href="##visual-design"></a></div>
-									<div class="btn-main btn-wwd"><a href=""></a></div>
-									<div class="btn-next btn-md"><a href="##mobile-development"></a></div>
-								</div><!--- <<<< end .wwd-control --->
+										</div><!--- bclear --->
+									</div><!--- subrightcol --->
+								</div><!---  end wwd-subbox --->
 							</div>
 						</div>
 					  </li>
@@ -235,7 +216,7 @@
 									<div class="subrightcol">
 										<div class="srbox1">Service Offerings</div>
 										<div class="bclear">
-											<ul id="middleItem_3_Content_Accordion"  style="cursor:pointer;">
+											<ul id="middleItem_5_Content_Accordion"  style="cursor:pointer;">
 												<li><a>iPhone and iPad</a>
 														<div class="bclear">
 															<p>Combining our deep experience of iPhone SDK along with our knowledge of Objective-C, Spire's developers bring to life complex mobile applications for the enterprise optimized for with the iPhone, iPad, or both.</p>
@@ -253,22 +234,16 @@
 												</li>
 											</ul>
 											<script type="text/javascript">
-												//jQuery.noConflict();
 												$(function(){
-													$("##middleItem_3_Content_Accordion").accordion({
+													$("##middleItem_5_Content_Accordion").accordion({
 														autoHeight: false, 
 														active:false
 													});
 												});
 											</script>
-										</div>
-									</div>
-								</div><!--- <<<< end .wwd-subbox --->
-								<div class="wwd-control">
-									<div class="btn-prev btn-wd"><a href="##web-development"></a></div>
-									<div class="btn-main btn-wwd"><a href=""></a></div>
-									<div class="btn-next btn-wwd"><a href=""></a></div>
-								</div><!--- <<<< end .wwd-control --->
+										</div><!--- bclear --->
+									</div><!--- subrightcol --->
+								</div><!---  end .wwd-subbox --->
 							</div>
 						</div>
 					  </li>
@@ -282,6 +257,21 @@
 					</ul>
 					<div class="clearfloat"></div>
 				</div>
+				
+				<div id="slideReturn">
+	                <div class="sl-return">
+	                    <div class="slr-btn-off"><a href="##" class="btn-wwd3"></a></div>
+	                </div>
+            	</div><!---- end #slideReturn --->
+	            <div id="slideArrows">
+	                <div class="sl-arrows">
+	                	<div class="sla-up-off"></div>
+	                    <div class="sla-down-off"></div>
+	                    <div class="sla-left-off"><a href="##" class="btn-wwd2"></a><a href="##ux-design" class="btn-uxd2"></a><a href="##visual-design" class="btn-vd2"></a><a href="##web-development" class="btn-wd2"></a></div>
+	                    <div class="sla-right-off"><a href="##ux-design" class="btn-uxd2"></a><a href="##visual-design" class="btn-vd2"></a><a href="##web-development" class="btn-wd2"></a><a href="##mobile-development" class="btn-md2"></a></div>
+	                </div>
+	            </div><!---- end slideArrows --->
+	            
 			</div><!---  end WWD --->
 		</div><!--- end main --->
 	</div><!---  end mainWhat --->

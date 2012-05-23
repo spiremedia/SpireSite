@@ -62,6 +62,7 @@
 <div id="loading-image">
 	<img src="/ui/images/loading2.gif" />
 </div>
+<div id="hContainer">
 <div id="header">
 	<div id="head">
     	<div id="logo"><a href="/"></a></div>
@@ -120,5 +121,6 @@
         </div>        
     </div><!--- >>>> end #head --->
 </div><!--- >>>>>> end #header --->
+</div><!--- end hContainer --->
 </cfoutput>
 
