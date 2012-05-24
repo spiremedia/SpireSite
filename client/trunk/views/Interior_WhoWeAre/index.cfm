@@ -146,7 +146,7 @@
 			</div><!-- end mwwa2-slide2 -->
 
 			<div class="mwwa2-slide3"> 
-				<!--- <div id="main_his">
+				<div id="main_his">
         			<div id="scrollhis">
 						<img src="/ui/images/history.png" width="2182" height="512" />
 						<div class="pgtitle">History</div>
@@ -176,11 +176,11 @@
 							</div>
 							<div id="crane"></div>
         			</div><!--  end scrollhis -->
-				</div><!-- end main_his --> --->
+				</div><!-- end main_his -->
 			</div><!-- end mwwa2-slide3 -->
 
 			<div class="mwwa2-slide4">
-				<!--- <div id="main_car">
+				<div id="main_car">
 					<div id="CAR">
 				    	<div class="careers">
 				            <div class="subtitle">Careers</div>
@@ -191,8 +191,8 @@
 				                	<li><span class="sz16">THE OPPORTUNITY</span><br />
 				    					We offer talented individuals the opportunity to break out of traditional "agency" models of Web strategy, design, and development and embrace a new level of specialization in Internet new product development, rich Internet application development, and high quality Web management consulting.<br /><br />We are currently ranked by the Denver Business Journal as one of Denver's Best Places to Work and Top Web Firms.</li>
 				            	</ul>
-				            </div>
-				            <!--- <div class="subrightcol">
+				           </div>
+				           <div class="subrightcol">
 				            	<link rel="stylesheet" href="/ui/css/typo.css" type="text/css" />
 								<link rel="stylesheet" href="/ui/css/widgets.css" type="text/css"/>
 								<script type="text/javascript" src="/ui/js/jquery-ui-1.7.1.min.js"></script>
@@ -215,8 +215,8 @@
 													<p>No positions currently open.</p>
 												</div>
 										</li>
-										<li  style="z-index:200001; width:1000px;"><a>Quality Assurance Analyst</a>
-											<div class="bclear">
+										<li  style="z-index:200001;"><a>Quality Assurance Analyst</a>
+											<div class="bclear" style="height:250px; overflow-x:hidden; overflow-y:scroll; width:295px;">
 												<p>As Quality Assurance Analyst with Spiremedia, you will
 													work with the Vice President of Technology to develop, maintain and execute
 													Quality assurance testing procedures.  The primary responsible is to evaluate and test mobile and web
@@ -279,14 +279,11 @@
 											});
 										});
 									</script>
-									<div class="srlink" id="submitResume"><a class="fancybox" href="##resume">Submit Resume</a></div>
-								</div> --->				                
+									
+								</div>
+							<div class="srlink" id="submitResume"><a class="fancybox" href="##resume">Submit Resume</a></div>                
 				            <div class="clearfloat"></div>
-				           <!---  <div id="navigator">
-								<div class="btn-prev"><a href="##history" class="btn-history"></a></div>
-								<div class="btn-main"><a href="##" class="active btn-wwa"></a></div>
-								<div class="btn-next"><a href="##" class="active btn-wwa"></a></div>
-							</div --->><!---  end ##navigator --->
+				           
 				        </div><!---  end .careers --->
 					</div><!--  end CAR -->
 				</div><!-- end main_car -->  --->               
@@ -320,7 +317,7 @@
 	#showContentObject('middleItem_2_Content', 'Forms', 'moduleaction=contactform')#
 
 
-<div id="person1" class="popup">
+<div id="person1" class="popup" >
 	<div class="pu-left"><img src="/ui/images/bio_mike.jpg" /></div>
     <div class="pu-right">
     	<div class="name">Michael Gellman</div>
@@ -339,8 +336,8 @@
 			Gellman is a sought out speaker and has given lectures at The University of Denver Daniels College of Business, The University of Colorado Leeds School of Business, and South by Southwest among others. He is also a published author, an avid world traveler, and a self-professed "entrepreneurial nerd". 
         </div>	
     </div>
-    <div class="pu-btns">
-    	<div class="pub1"></div>
+    <div class="pu-btns-lt">
+    	<div class="pub1">&nbsp;</div>
         <div class="pub2"><a href="http://www.linkedin.com/in/mgellman" target="_blank"></a></div>
         <div class="pub3"><a href="http://twitter.com/mgellman" target="_blank"></a></div>
     </div>
@@ -360,7 +357,7 @@
 			Committed to giving back to the community, Hasemeyer has devoted his time to Volunteers of America and Toys for Tots in addition to numerous other organizations. He is a Miami University alumnus and enjoys golfing, snowboarding, fishing, and music. Hasemeyer has a passion for bringing people together to deliver great results for his clients and volunteer organizations.
         </div>
     </div>
-    <div class="pu-btns">
+    <div class="pu-btns-lt">
     	<div class="pub1"></div>
         <div class="pub2"><a href="http://www.linkedin.com/in/adamhasemeyer" target="_blank"></a></div>
         <div class="pub3"><a href="http://twitter.com/Hasemeyer" target="_blank"></a></div>
@@ -381,7 +378,7 @@
         	Orsi received a bachelor's degree with High Honors in English from Colgate University, and a Masters of Public Administration from Columbia University. In his free time Orsi enjoys backcountry skiing and ski mountaineering in Colorado’s San Juan and Elk ranges, and hiking or rock climbing those same mountains once the snow melts. 
         </div>
     </div>
-    <div class="pu-btns">
+    <div class="pu-btns-lt">
     	<div class="pub1"></div>
         <div class="pub2"><a href="http://www.linkedin.com/in/jimorsi" target="_blank"></a></div>
         <div class="pub3"><a href="http://twitter.com/SpireUX" target="_blank"></a></div>
@@ -402,7 +399,7 @@
         	Kendra also enjoys giving back to the communities in which she lives and works.  She has spent over 5 years leading community service efforts in which her teams help the less fortunate.  
 		 </div>	
     </div>
-    <div class="pu-btns">
+    <div class="pu-btns-l">
     	<!--- <div class="pub1"></div> --->
         <div class="pub2"><a href="http://www.linkedin.com/pub/kendra-smith/23/400/278" target="_blank"></a></div>
         <!--- <div class="pub3"><a href="http://twitter.com/" target="_blank"></a></div> --->
@@ -425,7 +422,7 @@
 			Batt earned a B.A. degree in Literature and Education from the University of Colorado at Boulder during the Orange Bowl Years. He enjoys spending time with his wife, Sarah, his children, Griffin and Genevieve, and his dogs, which are often at work.
         </div>
     </div>
-    <div class="pu-btns">
+    <div class="pu-btns-l">
     	<!--- <div class="pub1"></div> --->
         <div class="pub2"><a href="http://www.linkedin.com/in/thaddeusbatt" target="_blank"></a></div>
         <!--- <div class="pub3"><a href="http://twitter.com/SpireUX" target="_blank"></a></div> --->
@@ -468,7 +465,7 @@
 			When not engaged with Spire's clients or his team of designers, Fuller is often found behind the screen of his MacBook Pro, creating, creating, and creating more. He also may be playing tennis or roaming the Front Range with his Newfoundland-Border Collie, Eastwood.
 		</div>	
     </div>
-    <div class="pu-btns">
+    <div class="pu-btns-l">
     	<!--- <div class="pub1"></div> --->
         <div class="pub2"><a href="http://www.linkedin.com/in/treblered" target="_blank"></a></div>
         <!--- <div class="pub3"><a href="http://twitter.com/SpireUX" target="_blank"></a></div> --->
@@ -485,29 +482,26 @@
         	Gregg Larson oversees the software development process at SpireMedia. Gregg brings years of technical leadership to the Spire team, helping Fortune 500 clients plan, develop and implement e-commerce systems generating over $200 million dollars in annual revenue. Prior to joining Spire, Gregg earned a Masters Degree in Engineering Management, focusing on statistical methods for software development. He was also a Lead Architect at Cable Television Laboratories where he developed B2B platforms for the Cable Industry and national retailers including Best Buy, Wal-Mart, and Sprint.
 		</div>
     </div>
-    <div class="pu-btns">
+    <div class="pu-btns-l">
     	<div class="pub2"><a href="http://www.linkedin.com/in/gregglarson" target="_blank"></a></div>
    </div>
     <div class="clearfloat"></div>
 </div><!---- end .popup --->
 
 
+<div id="resume" class="popup">
+	<div class="pu-left" style="overlap:hidden;"><img src="/ui/images/history-crane.png" /></div>
+    <div class="pu-right">
+    	<div class="name">Submit Resume</div>
+        <div class="title">FILL FORM BELOW</div>
+        <div class="desc">
+        	#showContentObject('middleItem_3_Content', 'Forms', 'moduleaction=resumeUploadForm')#
+		</div>	
+    </div>
+    <div class="pu-close"></div>
+    <div class="clearfloat"></div>
+</div><!---- end .popup --->
 
- 
-<div class="pop-bgg submitResume">
-	<div class="popup">
-		<div class="pu-left" style="overlap:hidden;"><img src="/ui/images/history-crane.png" /></div>
-	    <div class="pu-right">
-	    	<div class="name">Submit Resume</div>
-	        <div class="title">FILL FORM BELOW</div>
-	        <div class="desc">
-		        #showContentObject('middleItem_3_Content', 'Forms', 'moduleaction=resumeUploadForm')#
-			</div>	
-	    </div>
-	    <div class="pu-close"></div>	    
-	    <div class="clearfloat"></div>
-	</div><!-- end popup -->
-</div><!-- end pop-bgg submitResume  -->
 
 
 </body>

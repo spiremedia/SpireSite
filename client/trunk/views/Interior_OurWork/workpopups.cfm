@@ -1,6 +1,6 @@
 <cfoutput>
 <div id="50cent" class="popupWeb">
-	<img src="/ui/images/work_sms50.png" />
+	<img src="/ui/images/work_sms50.jpg" />
             <div class="ww_text">
                 <div class="title-ww">SMS Audio <span class="sz12dm">Consumer eCommerce Site</span></div>
                 <div class="desc-ww">A first-class audio headphone and accessories brand, SMS Audio, LLC is dedicated to improving the way people experience music. After artist 50 Cent engaged them to build his new line of signature performance headphones, SMS used Spire's design and development services to extend the brand into a full eCommerce site infused with 50's inimitable style.</div>
@@ -59,7 +59,7 @@
 				<div class="soc-de"><a href="#shareonDelicious#" class="socialpopup" target="_blank"></a></div>
 			</div><!---  end .ww_social --->
 </div><!---- end .popupWeb --->
-<div id="delta" class="popupWeb">
+<div id="carepilot" class="popupWeb">
 	<img src="/ui/images/work_carepilot.jpg" />
             <div class="ww_text">
                 <div class="title-ww">Carepilot <span class="sz12dm">Web Application</span></div>
@@ -131,6 +131,18 @@
 				<div class="soc-de"><a href="#shareonDelicious#" class="socialpopup" target="_blank"></a></div>
 			</div><!---  end .ww_social --->
 </div><!---- end .popupWeb --->
+<div id="pueblo" class="popupWeb">
+	<img src="/ui/images/work_pueblo.jpg" />
+            <div class="ww_text">
+                <div class="title-ww">Pueblo <span class="sz12dm">Public Site</span></div>
+                <div class="desc-ww">Spire built a CMS-driven dynamic web portal for the town of Pueblo. We provided branding, messaging, and complete site strategy to replace two disparate sites with a single elegant, intuitive web portal. Our developers worked with Pueblo's technology team to guide their implementation of a state-of-the-art Drupal CMS.</div>
+            </div><!---  end .ww_text --->
+            <div class="ww-social">
+				<div class="soc-fb"><a href="#shareOnFacebook#" class="socialpopup" target="_blank"></a></div>
+				<div class="soc-tw"><a href="#shareOnTwitter#" target="_blank" id="twitter" class="socialpopup"></a></div>
+				<div class="soc-de"><a href="#shareonDelicious#" class="socialpopup" target="_blank"></a></div>
+			</div><!--- end .ww_social --->
+</div><!---- end .popupWeb --->
 <div id="wayin" class="popupWeb">
 	<img src="/ui/images/work_wayin.jpg" />
             <div class="ww_text">
@@ -143,5 +155,16 @@
 				<div class="soc-de"><a href="#shareonDelicious#" class="socialpopup" target="_blank"></a></div>
 			</div><!--- end .ww_social --->
 </div><!---- end .popupWeb --->
-
+<div id="mobileday" class="popupWeb">
+	<img src="/ui/images/work_mobileday.jpg" />
+            <div class="ww_text">
+                <div class="title-ww">Mobileday  <span class="sz12dm">Mobile Productivity Application</span></div>
+                <div class="desc-ww">Spire built a highly rated one-touch conference calling and productivity iPhone and Android app targeting the mobile business market.</div>
+            </div><!---  end .ww_text --->
+            <div class="ww-social">
+				<div class="soc-fb"><a href="#shareOnFacebook#" class="socialpopup" target="_blank"></a></div>
+				<div class="soc-tw"><a href="#shareOnTwitter#" target="_blank" id="twitter" class="socialpopup"></a></div>
+				<div class="soc-de"><a href="#shareonDelicious#" class="socialpopup" target="_blank"></a></div>
+			</div><!--- end .ww_social --->
+</div><!---- end .popupWeb --->
 </cfoutput>

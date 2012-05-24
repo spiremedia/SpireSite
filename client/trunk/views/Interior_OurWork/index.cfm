@@ -10,36 +10,7 @@
 	<script type="text/javascript" src="/ui/js/jquery.fancybox.js?v=2.0.6"></script>
 	<link rel="stylesheet" type="text/css" href="/ui/js/jquery.fancybox.css?v=2.0.6" media="screen" />
 	<script type="text/javascript" src="/ui/js/spire-demo2000.js"></script>
-	<!--- <script type="text/javascript">
-		var myScroll;
-		function loaded() {
-			myScroll = new iScroll('wrapper2', {
-				snap: false, bounce: false,
-				momentum: true, hideScrollbar: false,
-				hScrollbar: true, scrollbarClass: 'myScrollbar', fadeScrollbar: true
-			 }, 200);
-			 
-			 if(window.location.hash === "##web"){
-			  setTimeout(function() { //alert('hello');
-			$('.btn-web').trigger('click');
-			  },1000);}
-			  if(window.location.hash === "##mobile"){
-			  setTimeout(function() { 
-			$('.btn-mobile').trigger('click');
-			  },1000); }
-			  if(window.location.hash === "##client-list"){
-			  setTimeout(function() { 
-			$('.btn-client').trigger('click');
-			  },1000);}
-			  if(window.location.hash === "##industry-list"){
-			  setTimeout(function() { 
-			$('.btn-industry').trigger('click');
-			  },1000); }	 
-			 
-		}
-		//document.addEventListener('DOMContentLoaded', loaded, false);
-	</script> 
-	<script type="text/javascript" src="/ui/js/spire-demo200.js"></script>--->
+	
 	<style type="text/css">
 		##WWD { margin:0 auto; position:relative; overflow:hidden;}
 	</style>
@@ -69,26 +40,25 @@
 			                <div class="nomobile"></div>
 			                </li>
 			                <li><img src="/ui/images/web_denwater.jpg" /><div class="weblink"><a class="fancybox" href="##denwater" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DENVER WATER</span><br />WEB, MOBILE</div></a></div>
-			                
 			                </li>
-			                <li><img src="/ui/images/web_western.jpg" /><div class="weblink"><a class="fancybox" href="##western" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">WESTERN UNION</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_firstdata.jpg" /><div class="weblink"><a class="fancybox" href="##firstdata" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">FIRST DATA</span><br />WEB, MOBILE</div></a></div>
 			                <div class="nomobile"></div>
 			                </li>
 			                <li><img src="/ui/images/web_50.jpg" /><div class="weblink"><a class="fancybox" href="##50cent" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">50 CENT</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
+			                </li>			                
+			                <li><img src="/ui/images/web_pueblo.jpg" /><div class="weblink"><a class="fancybox" href="##pueblo" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">PUEBLO</span><br />WEB</div></a></div>
 			                </li>
-			                <li><img src="/ui/images/web_corn.jpg" /><div class="weblink"><a class="fancybox" href="##corn" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">CORN</span><br />WEB, MOBILE</div></a></div>
-			                <div class="nomobile"></div>
-			                </li>
-			                <li><img src="/ui/images/web_denwater.jpg" /><div class="weblink"><a class="fancybox" href="##denwater" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DENVER WATER</span><br />WEB, MOBILE</div></a></div>
-			                </li>                        
+			                <li><img src="/ui/images/web_wayin.jpg" /><div class="weblink"><a class="fancybox" href="##wayin" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">WAY IN</span><br />WEB, MOBILE</div></a></div>
+			                <div class="noweb"></div>
+			                </li>		                                    
 			            </ul>
 			            <div class="clearfloat"></div>
 						<ul>
 			            	<li><img src="/ui/images/web_dish.jpg" /><div class="weblink"><a class="fancybox" href="##dish" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DISH NETWORK</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
 			                </li>
-			                <li><img src="/ui/images/web_delta.jpg" /><div class="weblink"><a class="fancybox" href="##delta" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DELTA AIRLINES</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_carepilot.jpg" /><div class="weblink"><a class="fancybox" href="##carepilot" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">CARE PILOT</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
 			                </li>
 			                <li><img src="/ui/images/web_core.jpg" /><div class="weblink"><a class="fancybox" href="##core" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">COREPOWER YOGA</span><br />WEB, MOBILE</div></a></div>
@@ -97,12 +67,12 @@
 			                <li><img src="/ui/images/web_swiss.jpg" /><div class="weblink"><a class="fancybox" href="##swiss" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">SWISSLOG</span><br />WEB, MOBILE</div></a></div>
 			                <div class="nomobile"></div>
 			                </li>
-			                <li><img src="/ui/images/web_dish.jpg" /><div class="weblink"><a class="fancybox" href="##dish" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DISH NETWORK</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_intermountain.jpg" /><div class="weblink"><a class="fancybox" href="##intermountain" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">INTERMOUNTAIN HEALTHCARE</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
 			                </li>
-			                <li><img src="/ui/images/web_delta.jpg" /><div class="weblink"><a class="fancybox" href="##delta" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DELTA AIRLINES</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_mobileday.jpg" /><div class="weblink"><a class="fancybox" href="##mobileday" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">MOBILE DAY</span><br />MOBILE</div></a></div>
 			                <div class="noweb"></div>
-			                </li>
+			                </li>			                
 			            </ul>
 			        </div>
 				</div>

@@ -428,6 +428,11 @@ margin-right:88px;
 
 .popup .pu-close { position:absolute; right:20px; top:20px; width:29px; height:24px; background:url(/ui/images/popup_close.png)  no-repeat; cursor:pointer;}
 .popup .pu-btns { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns.png)  no-repeat;}
+
+.popup .pu-btns-l { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns_linked-in.png)  no-repeat;}
+.popup .pu-btns-lt { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns_linked-in_twitter.png)  no-repeat;}
+.popup .pu-btns-t { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns_twitter.png)  no-repeat;}
+
 .popup .pu-btns .pub1 { position:absolute; left:0; top:0; width:29px; height:24px;}
 .popup .pu-btns .pub2 { position:absolute; left:35px; top:0; width:29px; height:24px;}
 .popup .pu-btns .pub3 { position:absolute; left:70px; top:0; width:29px; height:24px;}
