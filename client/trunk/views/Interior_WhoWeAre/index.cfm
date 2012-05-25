@@ -13,6 +13,30 @@
 		
 </cfsavecontent>
 <cfhtmlhead text="#pageHead#">
+
+<cfif isdefined("form.field_7")> 
+<!--- <cfdump var="#form#"> --->
+      <cfscript>  
+            fileDetails = FileUpload("#expandpath('./uploads/')#","field_7","","MakeUnique"); 
+      </cfscript>
+	<cfif fileDetails.FILEWASSAVED eq "yes">
+		<cfquery name="getRecipientEmail" datasource="#variables.requestObject.getVar('dsn')#">
+			select recipient from dbo.forms where id = '#form.formid#'
+		</cfquery>
+		<cfmail 
+		 		from="timholt@spiremedia.com" 
+		 		to="#getRecipientEmail.recipient#"
+		 		subject="Spiresite Resume Upload from #form.field_1# #form.field_2#"
+		 		mimeattach="#expandpath('./uploads/')##fileDetails.SERVERFILE#">
+				A resume submission was received from #form.field_1# #form.field_2#.  Attached is the corresponding resume uploaded.
+		</cfmail>
+	<cfelse>
+		alert:  Your resume was not uploaded.  please try again.
+	</cfif>
+	
+      <!--- <cfdump var="#fileDetails#">  --->
+</cfif>
+
 <body>
 	<div id="loading-image">
 		<img src="/ui/images/loading2.gif" />
@@ -94,13 +118,13 @@
 						            </a>
 						        </div>
 						    </li>
-						    <li><img src="/ui/images/people1.jpg" />
+						    <!--- <li><img src="/ui/images/people1.jpg" />
 						    	<div class="darken">
 						        	<a class="fancybox" href="##person9">
 						        	<div class="dar-name" id="bio_1">MIKE JORDAN 9<br /><span class="sz14">CEO, PARTNER</span></div>
 						            </a>
 						        </div>
-						    </li>
+						    </li> --->
 						</ul>
 						<div class="clearfloat"></div>
 						<ul>
@@ -133,13 +157,13 @@
 						            </a>
 						        </div>
 						    </li>
-						    <li><img src="/ui/images/people5.jpg" />
+						    <!--- <li><img src="/ui/images/people5.jpg" />
 						    	<div class="darken">
 						        	<a class="fancybox" href="##person10">
 						        	<div class="dar-name" id="bio_5">MIKE JORDAN5 10<br /><span class="sz14">CEO, PARTNER</span></div>
 						            </a>
 						        </div>
-						    </li>
+						    </li> --->
 						</ul>
         			</div><!-- end people -->
 				</div><!-- end main_le -->
@@ -322,7 +346,7 @@
     <div class="pu-right">
     	<div class="name">Michael Gellman</div>
         <div class="title">CEO</div>
-        <div class="desc">
+        <div class="desc" style="font-size:13px;">
         	Michael Gellman is the founder and CEO of SpireMedia, where he is responsible for ensuring the success of every client and every employee.
 			<br /><br  />
 			He also directs Spire's management, vision, and strategy. Under his leadership, SpireMedia has grown to be a multi-million dollar company that has been profitable from day one without funding. Over the years, he has employed more than 300 people and prides himself on nurturing his staff and producing future leaders.

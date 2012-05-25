@@ -45,6 +45,7 @@
 
 .fancybox-type-iframe .fancybox-inner {
 	-webkit-overflow-scrolling: touch;
+	overflow-x:hidden; overflow-y:scroll;
 }
 
 .fancybox-error {

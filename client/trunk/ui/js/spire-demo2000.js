@@ -72,7 +72,7 @@ $.doTimeout( 'scroll', 250, function(){
 	var nextPos = endOne;
 	$('.btn-client').trigger('click');
   	}
-	//$.scrollTo( nextPos+'px', 600, { axis:'x' });
+	$.scrollTo( nextPos+'px', 600, { axis:'x' });//keep.  scrolls backwards
 	});	
 	
    $(".btn-fwdarw").click(function() {  
@@ -89,10 +89,10 @@ $.doTimeout( 'scroll', 250, function(){
   	}
 	//if between endOne and endTwo next is three
 	if ( endOne <= curPos && curPos < endTwo){
-	var nextPos = endTwo;
-	$('.btn-industry').trigger('click');
+		var nextPos = endTwo;
+		$('.btn-industry').trigger('click');
   	} 
-	//$.scrollTo( nextPos+'px', 600, { axis:'x' });
+	$.scrollTo( nextPos+'px', 600, { axis:'x' });
 	});
 
 

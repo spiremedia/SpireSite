@@ -65,6 +65,8 @@
 	
 	<cffunction name="processFormSubmission" returntype="struct">		
 		<cfargument name="formname" required="no" type="string" default="Form">		
+		
+
 		<cfscript> 
 			var info = variables.requestObject.getAllFormUrlVars();
 			var arrKey = '';
@@ -97,6 +99,10 @@
 				arrayAppend(formsubmission.formfield, XmlFormat(info["field_label_#i#"]));
 				if (structkeyexists(info, "field_#i#")) {
 					arrayAppend(formsubmission.answer, XmlFormat(info["field_#i#"]));
+					//if(structkeyexists(info, "field_type_#i#") && info["field_type_#i#"] == "file"){
+					//	fileDetails = FileUpload("#expandpath('./uploads/')#","info["field_#i#"]","","unique");
+					//	dump(fileDetails);
+					//}
 				} else {
 					arrayAppend(formsubmission.answer, '');
 				}				

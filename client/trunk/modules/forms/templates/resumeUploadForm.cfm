@@ -1,6 +1,5 @@
        		<div class="si-message">           
-				<cfoutput>#createUUID()#</cfoutput>
-				<cfform name="myUpload"  action="" method="post" accept-charset="utf-8" class="example_form" enctype="multipart/form-data"> 
+				<cfform name="myUpload"  action="/who-we-are/##careers" method="post" accept-charset="utf-8" class="example_form" enctype="multipart/form-data"> 
                 <!--- <form> --->
                 	<cfinput type="hidden" name="formid" value="9505301D-F464-7712-F32AB0AD9A0A2A84"/>
 					
@@ -33,19 +32,15 @@
 		                    
 		                    <label for="field_7">Upload your resume:  (Supported formats: .doc, .docx, .pdf, .txt, .rtf)</label>
 							<cfinput type="hidden" name="field_label_7" value="Resume"/>
-		                    <cfinput name="field_7" type="text" id="field_7" tabindex="7"/>
-		                    <cfinput type="file" name="fileData">
-		                   <!---  <cfif isdefined("form.fileData")> 
-							      <cfscript>  
-							            hello = FileUpload("<path>","<mime type>","unique"); 
-							      </cfscript> 
-							      <cfdump var="#hello#"> 
-							<cfelse> 
-							      <cfform name="myUpload" enctype="multipart/form-data"> 
-							            <cfinput type="file" name="fileData"><br> 
-							            <cfinput type="submit" name="submit"> 
-							      </cfform> 
-							</cfif> --->
+		                    <cfinput type="file" name="field_7" tabindex="7" id="field_7">
+		                    <cfinput type="hidden" name="field_type_7" value="file">
+		                   
+							<!--- <script type="text/javascript"> 
+							    var foo = function(result) 
+							    { 
+							        alert(ColdFusion.JSON.encode(result)); 
+							    } 
+							</script>
 							<cffileupload  
 							    url="uploadFiles.cfm" 
 							    progressbar="true" 
@@ -53,14 +48,14 @@
 							    addButtonLabel = "Add File" 
 							    clearButtonlabel = "Clear it" 
 							    hideUploadButton = "true" 
-							    width=600 
-							    height=400 
-							    title = "File Upload" 
+							    width=450 
+							    height=200 
+							    title = "Upload Your Resume" 
 							    maxuploadsize="30" 
 							    extensionfilter="*.jpg, *.png, *.flv, *.txt, *.doc, *.docx" 
 							    BGCOLOR="##FFFFFF" 
-							    MAXFILESELECT=10 
-							    UPLOADBUTTONLABEL="Upload now"/><!---  --->
+							    MAXFILESELECT=2 
+							    UPLOADBUTTONLABEL="Upload Now"/> --->
 		                    
 		               	</div>
 		               	<div class="simRight">

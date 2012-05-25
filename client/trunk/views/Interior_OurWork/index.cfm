@@ -10,10 +10,6 @@
 	<script type="text/javascript" src="/ui/js/jquery.fancybox.js?v=2.0.6"></script>
 	<link rel="stylesheet" type="text/css" href="/ui/js/jquery.fancybox.css?v=2.0.6" media="screen" />
 	<script type="text/javascript" src="/ui/js/spire-demo2000.js"></script>
-	
-	<style type="text/css">
-		##WWD { margin:0 auto; position:relative; overflow:hidden;}
-	</style>
 </cfsavecontent>
 <cfhtmlhead text="#pageHead#">
 <body>

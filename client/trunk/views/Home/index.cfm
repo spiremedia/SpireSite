@@ -9,13 +9,13 @@
 <cfhtmlhead text="#pageHead#">
 <body>
 	<div id="header2">
-		<!--- <cfinclude template="../header.cfm"> --->
+		
 		
 		<div id="head2">
 	    	<div id="logo"><a href="/"></a></div>
 			#showContentObject('dhtmlNav', 'Navigation', 'moduleaction=topnav')#
-		</div><!-- end ##head2 -->
-	</div><!-- end ##header2 -->
+		</div><!-- end head2 -->
+	</div><!-- end header2 -->
 			
 	<div id="mainIndex">
 		<div id="main2">
@@ -98,13 +98,13 @@
 	                        <div class="btn-c3" id="nextClient"></div>
 	                        <div class="clearfloat"></div>
 	                    </div>
-                	</div><!--- <<<< end .boxClients --->
-           		</div><!--- <<<<<< end .mimRight --->
+                	</div><!-- end .boxClients -->
+           		</div><!-- end .mimRight -->
             
             	<div class="clearfloat"></div>
-        	</div><!---  end ##miMain --->
-    	</div><!---  end ##main --->
-	</div><!--- end ##mainIndex --->
+        	</div><!--  end miMain -->
+    	</div><!--  end main -->
+	</div><!-- end mainIndex -->
 	<cfinclude template="../footer.cfm">
 	#showContentObject('middleItem_3_Content', 'Forms', 'moduleaction=contactform')#
 </body>
