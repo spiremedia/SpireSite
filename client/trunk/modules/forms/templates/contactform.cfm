@@ -12,7 +12,7 @@
                 General<br /><a href="mailto:info@spiremedia.com">info@spiremedia.com</a>
                 </div>
                 <div class="sihBox">
-                New Business<br /><a href="mailto:spire4hire@spiremedia.com">spire4hire@spiremedia.com</a>
+                New Business<br /><a href="mailto:sales@spiremedia.com">sales@spiremedia.com</a>
                 </div>
                 <div class="sihBox">
                 Media &amp; Press<br /><a href="mailto:media@spiremedia.com">media@spiremedia.com</a>

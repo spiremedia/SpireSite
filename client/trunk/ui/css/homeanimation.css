@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+img#plax-dot-1 {position: absolute; z-index:1; top: 254px; left: 28px;}
+img#plax-dot-2 {position: absolute; z-index:2; top: 390px; left: 143px;}
+img#plax-dot-3 {position: absolute; z-index:3; top: 378px; left: 156px;}
+img#plax-dot-4 {position: absolute; z-index:4; top: 276px; left: 376px;}
+img#plax-dot-5 {position: absolute; z-index:5; top: 204px; left: 419px;}
+img#plax-dot-6 {position: absolute; z-index:6; top: 426px; left: 488px;}
+img#plax-dot-7 {position: absolute; z-index:7; top: 410px; left: 630px;}
+img#plax-dot-8 {position: absolute; z-index:8; top: 151px; left: 673px;}
+img#plax-dot-9 {position: absolute; z-index:9; top: 395px; left: 698px;}
+img#plax-dot-10 {position: absolute; z-index:10; top: 335px; left: 714px;}
+img#plax-dot-11 {position: absolute; z-index:11; top: 287px; left: 837px;}
+img#plax-dot-12 {position: absolute; z-index:12; top: 273px; left: 850px;}
+img#plax-dot-13 {position: absolute; z-index:13; top: 203px; left: 893px;}
+img#plax-dot-14 {position: absolute; z-index:14; top: 424px; left: 963px;}
+img#plax-dot-15 {position: absolute; z-index:15; top: 411px; left: 1158px;}
+img#plax-dot-16 {position: absolute; z-index:16; top: 395px; left: 1170px;}
+img#plax-dot-17 {position: absolute; z-index:17; top: 150px; left: 1202px;}
+img#plax-dot-18 {position: absolute; z-index:18; top: 337px; left: 1241px;}
+img#plax-dot-19 {position: absolute; z-index:19; top: 405px; left: 1296px;}
+img#plax-step-1 {position: absolute; z-index:20; top: 239px; left: 171px;}
+img#plax-step-2 {position: absolute; z-index:21; top: 273px; left: 228px;}
+img#plax-step-3 {position: absolute; z-index:22; top: 327px; left: 214px;}
+img#plax-step-4 {position: absolute; z-index:23; top: 164px; left: 258px;}
+img#plax-step-5 {position: absolute; z-index:24; top: 237px; left: 318px;}
+img#plax-step-6 {position: absolute; z-index:25; top: 94px; left: 510px;}
+img#plax-step-7 {position: absolute; z-index:26; top: 61px; left: 407px;}
+img#plax-step-8 {position: absolute; z-index:27; top: 345px; left: 472px;}
+img#plax-step-9 {position: absolute; z-index:28; top: 262px; left: 323px;}
+img#plax-step-10 {position: absolute; z-index:29; top: 48px; left: 595px;}
+img#plax-step-11 {position: absolute; z-index:30; top: 140px; left: 528px;}
+img#plax-step-12 {position: absolute; z-index:31; top: 210px; left: 669px;}
+img#plax-step-13 {position: absolute; z-index:32; top: 19px; left: 672px;}
+img#plax-crane {position: absolute; z-index:33; top: 48px; left: 600px;}
+#head2 { width:1006px; height:119px; margin:auto; margin-top:-450px; padding:0 88px; position:relative; z-index:300;} /* totalwidth = width:1398px;*/
+#splash {margin:0;font-family: 'lubalingraphstd-demi', Helvetica, sans-serif; font-size:50px; color:#ffffff; line-height:100%; position:absolute; z-index:301; top:143px; left: 236px;}
+#splashContent {width:470px; font-family: 'din_medium', Helvetica, sans-serif; font-size:16px; line-height:110%; background: rgba(0,0,0,.4); padding:10px; margin-top:-30px;}
+#splash img {position:absolute; z-index:302; top: 238px; left:470px;}
+#header2 { width:100%; height:450px; background:url(/ui/images/bg_graphic.jpg) repeat-x top center; position:relative;}
+#shell {display: block; position: relative; padding:0; margin:auto; width: 1398px; height: 450px; clear:both; background:url(/ui/images/bg_light.png) top center;}

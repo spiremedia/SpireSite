@@ -5,11 +5,54 @@
 <cfsavecontent variable="pageHead">
 	<script type="text/javascript" src="/ui/js/plax.js"></script>
 	<script type="text/javascript" src="/ui/js/spire-index.js"></script>
+	<script type="text/javascript" src="/ui/js/header-wave.js"></script>
+	<link rel="stylesheet" href="/ui/css/homeanimation.css" type="text/css" media="screen" />
 </cfsavecontent>
 <cfhtmlhead text="#pageHead#">
 <body>
 	<div id="header2">
-		
+		<div id="shell">
+			<img src="/ui/images/plaximg/dot1.png" width="22" height="14" id="plax-dot-1" class="header-dot" />
+          <img src="/ui/images/plaximg/dot2.png" width="23" height="14" id="plax-dot-2" class="header-dot" />
+          <img src="/ui/images/plaximg/dot3.png" width="25" height="12" id="plax-dot-3" class="header-dot" />
+          <img src="/ui/images/plaximg/dot4.png" width="19" height="8" id="plax-dot-4" class="header-dot" />
+          <img src="/ui/images/plaximg/dot5.png" width="23" height="14" id="plax-dot-5" class="header-dot" />
+          <img src="/ui/images/plaximg/dot6.png" width="23" height="14" id="plax-dot-6" class="header-dot" />
+          <img src="/ui/images/plaximg/dot7.png" width="19" height="8" id="plax-dot-7" class="header-dot" />
+          <img src="/ui/images/plaximg/dot8.png" width="23" height="14" id="plax-dot-8" class="header-dot" />
+          <img src="/ui/images/plaximg/dot9.png" width="23" height="14" id="plax-dot-9" class="header-dot" />
+          <img src="/ui/images/plaximg/dot10.png" width="19" height="8" id="plax-dot-10" class="header-dot" />
+          <img src="/ui/images/plaximg/dot11.png" width="23" height="14" id="plax-dot-11" class="header-dot" />
+          <img src="/ui/images/plaximg/dot12.png" width="19" height="8" id="plax-dot-12" class="header-dot" />
+          <img src="/ui/images/plaximg/dot13.png" width="23" height="14" id="plax-dot-13" class="header-dot" />
+          <img src="/ui/images/plaximg/dot14.png" width="23" height="14" id="plax-dot-14" class="header-dot" />
+          <img src="/ui/images/plaximg/dot15.png" width="23" height="13" id="plax-dot-15" class="header-dot" />
+          <img src="/ui/images/plaximg/dot16.png" width="23" height="14" id="plax-dot-16" class="header-dot" />
+          <img src="/ui/images/plaximg/dot17.png" width="23" height="14" id="plax-dot-17" class="header-dot" />
+          <img src="/ui/images/plaximg/dot18.png" width="19" height="8" id="plax-dot-18" class="header-dot" />
+          <img src="/ui/images/plaximg/dot19.png" width="23" height="14" id="plax-dot-19" class="header-dot" />
+          <img src="/ui/images/plaximg/step1.png" width="111" height="83" id="plax-step-1" class="header-wave" />
+          <img src="/ui/images/plaximg/step2.png" width="110" height="80" id="plax-step-2" class="header-wave" />
+          <img src="/ui/images/plaximg/step3.png" width="116" height="74" id="plax-step-3" class="header-wave" />
+          <img src="/ui/images/plaximg/step4.png" width="149" height="110" id="plax-step-4" class="header-wave-extra" />
+          <img src="/ui/images/plaximg/step5.png" width="133" height="125" id="plax-step-5" class="header-wave" />
+          <img src="/ui/images/plaximg/step6.png" width="210" height="149" id="plax-step-6" class="header-wave" />
+          <img src="/ui/images/plaximg/step7.png" width="193" height="170" id="plax-step-7" class="header-wave" />
+          <img src="/ui/images/plaximg/step8.png" width="281" height="86" id="plax-step-8" class="header-wave" />
+          <img src="/ui/images/plaximg/step9.png" width="179" height="155" id="plax-step-9" class="header-wave" />
+          <img src="/ui/images/plaximg/step10.png" width="266" height="275" id="plax-step-10" class="header-wave" />
+          <img src="/ui/images/plaximg/step11.png" width="242" height="214" id="plax-step-11" class="header-wave-extra" />
+          <img src="/ui/images/plaximg/step12.png" width="250" height="217" id="plax-step-12" class="header-wave" />
+          <img src="/ui/images/plaximg/step13.png" width="282" height="176" id="plax-step-13" class="header-wave-extra" />
+          <img src="/ui/images/plaximg/crane.png" width="789" height="402" id="plax-crane" />
+			<div id="splash">
+				<p>Strategy.<br />Technology.<br />Design.</p>
+				<div id="splashContent">
+					Founded in 1998, SpireMedia is a consulting firm that architects, designs, and develops web and mobile solutions for the world's top companies. Our mission is simple: to make technology more meaningful, more useful, and more successful.
+				</div> <!--  end splashContent -->
+			   <a href="##"><img src="/ui/images/btn_red.png" width="31" height="31" id="redbutton" /></a>
+			</div><!-- end splash -->
+		</div><!--end shell -->
 		
 		<div id="head2">
 	    	<div id="logo"><a href="/"></a></div>
@@ -101,7 +144,7 @@
                 	</div><!-- end .boxClients -->
            		</div><!-- end .mimRight -->
             
-            	<div class="clearfloat"></div>
+            	<div class="clearfloat page-bottom"></div>
         	</div><!--  end miMain -->
     	</div><!--  end main -->
 	</div><!-- end mainIndex -->

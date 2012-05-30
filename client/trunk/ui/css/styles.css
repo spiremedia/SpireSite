@@ -95,7 +95,7 @@ a:hover, a:active, a:focus { text-decoration: none;}
 #nav ul.subnav li a.active { color:#fff;}
 
 /* ~~ HEADER 2 (Index) ~~ */
-#header2 { width:100%; height:450px; background:url(/ui/images/bg_header2.jpg) repeat-x top center;}
+#header2 { width:100%; height:450px;}
 #head2 { width:1006px; height:119px; margin:0 auto; padding:0 88px; position:relative;} /* totalwidth = width:1398px;*/
 
 
@@ -429,9 +429,9 @@ margin-right:88px;
 .popup .pu-close { position:absolute; right:20px; top:20px; width:29px; height:24px; background:url(/ui/images/popup_close.png)  no-repeat; cursor:pointer;}
 .popup .pu-btns { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns.png)  no-repeat;}
 
-.popup .pu-btns-l { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns_linked-in.png)  no-repeat;}
-.popup .pu-btns-lt { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns_linked-in_twitter.png)  no-repeat;}
-.popup .pu-btns-t { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns_twitter.png)  no-repeat;}
+.popup .pu-btns-l  { position:absolute; bottom:0px; width:99px; height:24px; background:url(/ui/images/popup_btns_linked-in.png)  no-repeat; width:100%; background-color:#1d1d1d; height:30px;left:0px;}
+.popup .pu-btns-lt { position:absolute; bottom:0px; width:99px; height:24px; background:url(/ui/images/popup_btns_linked-in_twitter.png)  no-repeat;width:100%; background-color:#1d1d1d; height:30px;left:0px;}
+.popup .pu-btns-t  { position:absolute; bottom:0px; width:99px; height:24px; background:url(/ui/images/popup_btns_twitter.png)  no-repeat;width:100%; background-color:#1d1d1d; height:30px;left:0px;}
 
 .popup  .pub1 { position:absolute; left:0; top:0; width:29px; height:24px;}
 .popup  .pub2 { position:absolute; left:35px; top:0; width:29px; height:24px;}
@@ -858,3 +858,14 @@ line-height: 32px; text-decoration:none; cursor:pointer;}
 
 #mainWhat2 #main, #mainWho2 #main { padding:119px 0;}
 #mainWhat2 #controlBox, #mainWho2 #controlBox { position:fixed; top:119px; width:100%;}
+
+.page-bottom{height:100px;}
+.ui-state-default span.arrow{background: url(/ui/images/bg-accordion.png) no-repeat top right; height:32px; width:32px; display:inline-block; margin-left:5px; margin-top:-10px; float:right;}
+.ui-state-active span.arrow{background: url(/ui/images/bg-accordion.png) no-repeat bottom right; height:32px; width:32px; display:inline-block; margin-left:5px; margin-top:-10px; float:right;}
+
+.ui-accordion li div.ui-accordion-content {   
+    padding-left: 0;
+    padding-right: 20px;    
+}
+
+.accordion-width{width:297px;}

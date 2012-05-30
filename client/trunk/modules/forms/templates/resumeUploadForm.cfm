@@ -59,17 +59,18 @@
 		                    
 		               	</div>
 		               	<div class="simRight">
-		               		<label for="field_9">What type of work do you do?</label>
+			               	<br>
+		               		<label for="field_8">What type of work do you do?</label>
+							<cfinput type="hidden" name="field_label_8" value="Resume"/>
+		                    <cftextarea name="field_8" type="textarea" id="field_8" tabindex="8"></cftextarea>
+		                    
+		                    <label for="field_9">How can you add value to our team?</label>
 							<cfinput type="hidden" name="field_label_9" value="Resume"/>
 		                    <cftextarea name="field_9" type="textarea" id="field_9" tabindex="9"></cftextarea>
-		                    
-		                    <label for="field_10">How can you add value to our team?</label>
-							<cfinput type="hidden" name="field_label_10" value="Resume"/>
-		                    <cftextarea name="field_10" type="textarea" id="field_10" tabindex="10"></cftextarea>
 		               	</div>
 		               	 <div class="clearfloat"></div>
 		            </div>
 		             <div class="clearfloat"></div>
-		                    <div class="submit0"><input type="image" value="submit" src="/ui/images/btn_sisubmit.png" tabindex="2"/></div>                   
+		                    <div class="submit0"><input type="image" value="submit" src="/ui/images/btn_sisubmit.png" tabindex="10"/></div>                   
                 </cfform>                   
             </div>

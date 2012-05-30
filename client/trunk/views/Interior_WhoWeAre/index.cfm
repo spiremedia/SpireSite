@@ -14,29 +14,6 @@
 </cfsavecontent>
 <cfhtmlhead text="#pageHead#">
 
-<cfif isdefined("form.field_7")> 
-<!--- <cfdump var="#form#"> --->
-      <cfscript>  
-            fileDetails = FileUpload("#expandpath('./uploads/')#","field_7","","MakeUnique"); 
-      </cfscript>
-	<cfif fileDetails.FILEWASSAVED eq "yes">
-		<cfquery name="getRecipientEmail" datasource="#variables.requestObject.getVar('dsn')#">
-			select recipient from dbo.forms where id = '#form.formid#'
-		</cfquery>
-		<cfmail 
-		 		from="timholt@spiremedia.com" 
-		 		to="#getRecipientEmail.recipient#"
-		 		subject="Spiresite Resume Upload from #form.field_1# #form.field_2#"
-		 		mimeattach="#expandpath('./uploads/')##fileDetails.SERVERFILE#">
-				A resume submission was received from #form.field_1# #form.field_2#.  Attached is the corresponding resume uploaded.
-		</cfmail>
-	<cfelse>
-		alert:  Your resume was not uploaded.  please try again.
-	</cfif>
-	
-      <!--- <cfdump var="#fileDetails#">  --->
-</cfif>
-
 <body>
 	<div id="loading-image">
 		<img src="/ui/images/loading2.gif" />
@@ -206,7 +183,10 @@
 			<div class="mwwa2-slide4">
 				<div id="main_car">
 					<div id="CAR">
-				    	<div class="careers">
+				    	<cfif isDefined("form.formid") and trim(form.formid) eq "9505301D-F464-7712-F32AB0AD9A0A2A84">
+							<div style="width:960px; border:2px solid ##b43b16; padding:5px; color:white; background-color:##1b1b1b;margin-bottom:10px;text-align:center;">Thank you for submitting your resume.</div>
+						</cfif>
+				    	<div class="careers">				    	
 				            <div class="subtitle">Careers</div>
 				            <div class="subcontent">
 				            	<ul class="leftline">
@@ -343,10 +323,10 @@
 
 <div id="person1" class="popup" >
 	<div class="pu-left"><img src="/ui/images/bio_mike.jpg" /></div>
-    <div class="pu-right">
-    	<div class="name">Michael Gellman</div>
-        <div class="title">CEO</div>
+    <div class="pu-right">    	
         <div class="desc" style="font-size:13px;">
+			<div class="name">Michael Gellman</div>
+        	<div class="title">CEO</div>
         	Michael Gellman is the founder and CEO of SpireMedia, where he is responsible for ensuring the success of every client and every employee.
 			<br /><br  />
 			He also directs Spire's management, vision, and strategy. Under his leadership, SpireMedia has grown to be a multi-million dollar company that has been profitable from day one without funding. Over the years, he has employed more than 300 people and prides himself on nurturing his staff and producing future leaders.
@@ -360,12 +340,14 @@
 			Gellman is a sought out speaker and has given lectures at The University of Denver Daniels College of Business, The University of Colorado Leeds School of Business, and South by Southwest among others. He is also a published author, an avid world traveler, and a self-professed "entrepreneurial nerd". 
         </div>	
     </div>
-    <div class="pu-btns-lt">
-    	<div class="pub1">&nbsp;</div>
-        <div class="pub2"><a href="http://www.linkedin.com/in/mgellman" target="_blank"></a></div>
-        <div class="pub3"><a href="http://twitter.com/mgellman" target="_blank"></a></div>
-    </div>
-    <div class="clearfloat"></div>
+	
+		<div class="pu-btns-lt">
+	    	<div class="pub1">&nbsp;</div>
+	        <div class="pub2"><a href="http://www.linkedin.com/in/mgellman" target="_blank"></a></div>
+	        <div class="pub3"><a href="http://twitter.com/mgellman" target="_blank"></a></div>
+	    </div>
+	    <div class="clearfloat"></div>
+	
 </div><!---- end .popup --->
 
 <div id="person2" class="popup">

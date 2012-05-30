@@ -111,6 +111,29 @@
 	</cffunction>
 	
 	<cffunction name="resumeUploadForm">
+		
+		<cfif isdefined("form.field_7")> 
+			<!--- <cfdump var="#form#"><cfabort> --->
+		     <cfscript>  
+		           fileDetails = FileUpload("#expandpath('./uploads/')#","field_7","","MakeUnique"); 
+		     </cfscript>
+		<cfif fileDetails.FILEWASSAVED eq "yes">
+			<cfquery name="getRecipientEmail" datasource="#variables.requestObject.getVar('dsn')#">
+				select recipient from dbo.forms where id = '#form.formid#'
+			</cfquery>
+			<cfmail 
+			 		from="timholt@spiremedia.com" 
+			 		to="#getRecipientEmail.recipient#"
+			 		subject="Spiresite Resume Upload from #form.field_1# #form.field_2#"
+			 		mimeattach="#expandpath('./uploads/')##fileDetails.SERVERFILE#">A resume submission was received from #form.field_1# #form.field_2#.  Attached is the corresponding resume that was uploaded.  A copy of these resumes can be found in the uploads directory of the Spiresite.
+			</cfmail>
+		<cfelse>
+			alert:  Your resume was not uploaded.  please try again.
+		</cfif>
+		
+		     <!--- <cfdump var="#fileDetails#">  --->
+		</cfif>
+		
 		<cfsavecontent variable="variables.definition">
 			<cfinclude template="templates/resumeUploadForm.cfm">
 		</cfsavecontent>
