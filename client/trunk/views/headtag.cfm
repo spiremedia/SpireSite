@@ -17,8 +17,5 @@
 		<link rel="stylesheet" type="text/css" href="/ui/css/styles-ie.css" />
 	<![endif]-->
 	<script type="application/javascript" src="/ui/js/tweetPop.js"></script>
-	<cfset shareOnFacebook = "http://www.facebook.com/sharer.php?u=#variables.requestobject.getvar('siteurl')##variables.pageinfo.urlpath#&t=#urlencodedformat(variables.pageinfo.title)#">
-	<cfset shareOnTwitter = "http://twitter.com/share?text=#variables.pageinfo.title#">
-	<cfset shareOnDelicious = "http://del.icio.us/post?url=#variables.requestobject.getvar('siteurl')##variables.pageinfo.urlpath#&title=#urlencodedformat(variables.pageinfo.title)#">
 	</cfoutput>
 </head>

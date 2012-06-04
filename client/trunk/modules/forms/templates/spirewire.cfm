@@ -6,4 +6,4 @@
 		<input type="text" name="field_1" id="field_1" />
 		<input type="image" value="submit" src="/ui/images/btn_submitwire.png" class="submit" />
 	</form>
-</div><!--- <<<< end #spirewire --->
+</div><!-- end spirewire -->

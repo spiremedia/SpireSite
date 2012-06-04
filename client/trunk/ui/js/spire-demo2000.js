@@ -72,7 +72,7 @@ $.doTimeout( 'scroll', 250, function(){
 	var nextPos = endOne;
 	$('.btn-client').trigger('click');
   	}
-	$.scrollTo( nextPos+'px', 600, { axis:'x' });//keep.  scrolls backwards
+	$.scrollTo( nextPos+'px', 300, { axis:'x' });//keep.  scrolls backwards
 	});	
 	
    $(".btn-fwdarw").click(function() {  
@@ -81,10 +81,10 @@ $.doTimeout( 'scroll', 250, function(){
 	if ( 0 <= curPos && curPos < endOne){
 	var nextPos = endOne;
 		if ( curPos >= 1125){
-		$('.btn-client').trigger('click');
+			$('.btn-client').trigger('click');
 		}
 		else{
-		$.scrollTo( '1125px', 600, { axis:'x' });
+			$.scrollTo( '1125px', 300, { axis:'x' });
 		}
   	}
 	//if between endOne and endTwo next is three
@@ -92,7 +92,7 @@ $.doTimeout( 'scroll', 250, function(){
 		var nextPos = endTwo;
 		$('.btn-industry').trigger('click');
   	} 
-	$.scrollTo( nextPos+'px', 600, { axis:'x' });
+	//$.scrollTo( nextPos+'px', 600, { axis:'x' });
 	});
 
 
@@ -236,20 +236,70 @@ var mainWidth = $('#mw2').width();
 //**** CHECK URL***///
 	 if(window.location.hash === "#web"){
 	  setTimeout(function() { //alert('hello');
-	$('.btn-web').trigger('click');
+		$('.btn-web').trigger('click');
 	  },1000);}
-	  if(window.location.hash === "#mobile"){
+	 if(window.location.hash === "#mobile"){
 	  setTimeout(function() { 
-	$('.btn-mobile').trigger('click');
+		$('.btn-mobile').trigger('click');
 	  },1000); }
-	  if(window.location.hash === "#client-list"){
+	 if(window.location.hash === "#client-list"){
 	  setTimeout(function() { 
-	$('.btn-client').trigger('click');
+		$('.btn-client').trigger('click');
 	  },1000);}
-	  if(window.location.hash === "#industry-list"){
+	 if(window.location.hash === "#industry-list"){
 	  setTimeout(function() { 
-	$('.btn-industry').trigger('click');
-	  },1000); }
+		$('.btn-industry').trigger('click');
+	  },1000);}
+	  
+	  if(window.location.hash === "#denver-water"){
+	  setTimeout(function() { 
+		$('.btn-denver-water').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#corn"){
+	  setTimeout(function() { 
+		$('.btn-corn').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#first-data"){
+	  setTimeout(function() { 
+		$('.btn-first-data').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#50-cent"){
+	  setTimeout(function() { 
+		$('.btn-50-cent').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#pueblo"){
+	  setTimeout(function() { //alert('hello');
+		$('.btn-pueblo').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#wayin"){
+	  setTimeout(function() { //alert('hello');
+		$('.btn-wayin').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#dish"){
+	  setTimeout(function() { //alert('hello');
+		$('.btn-dish').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#care-pilot"){
+	  setTimeout(function() { //alert('hello');
+		$('.btn-care-pilot').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#core"){
+	  setTimeout(function() { //alert('hello');
+		$('.btn-core').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#swiss"){
+	  setTimeout(function() { //alert('hello');
+		$('.btn-swiss').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#intermountain"){
+	  setTimeout(function() { //alert('hello');
+		$('.btn-intermountain').trigger('click');
+	  },1000);}
+	  if(window.location.hash === "#mobile-day"){
+	  setTimeout(function() { //alert('hello');
+		$('.btn-mobile-day').trigger('click');
+	  },1000);}
+	  
 
 });
 $(document).keydown(function(e){  

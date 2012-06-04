@@ -32,41 +32,41 @@
 				<div class="mw2-slide1">
 					<div id="scroller">
 			            <ul id="firstrow">
-			                <li><img src="/ui/images/web_corn.jpg" /><div class="weblink"><a class="fancybox" href="##corn" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">CORN</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_corn.jpg" /><div class="weblink"><a class="fancybox btn-corn" href="##corn" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">CORN</span><br />WEB, MOBILE</div></a></div>
 			                <div class="nomobile"></div>
 			                </li>
-			                <li><img src="/ui/images/web_denwater.jpg" /><div class="weblink"><a class="fancybox" href="##denwater" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DENVER WATER</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_denwater.jpg" /><div class="weblink"><a class="fancybox btn-denver-water" href="##denwater" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DENVER WATER</span><br />WEB, MOBILE</div></a></div>
 			                </li>
-			                <li><img src="/ui/images/web_firstdata.jpg" /><div class="weblink"><a class="fancybox" href="##firstdata" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">FIRST DATA</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_firstdata.jpg" /><div class="weblink"><a class="fancybox btn-first-data" href="##firstdata" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">FIRST DATA</span><br />WEB, MOBILE</div></a></div>
 			                <div class="nomobile"></div>
 			                </li>
-			                <li><img src="/ui/images/web_50.jpg" /><div class="weblink"><a class="fancybox" href="##50cent" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">50 CENT</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_50.jpg" /><div class="weblink"><a class="fancybox btn-50-cent" href="##50cent" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">50 CENT</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
 			                </li>			                
-			                <li><img src="/ui/images/web_pueblo.jpg" /><div class="weblink"><a class="fancybox" href="##pueblo" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">PUEBLO</span><br />WEB</div></a></div>
+			                <li><img src="/ui/images/web_pueblo.jpg" /><div class="weblink"><a class="fancybox btn-pueblo" href="##pueblo" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">PUEBLO</span><br />WEB</div></a></div>
 			                </li>
-			                <li><img src="/ui/images/web_wayin.jpg" /><div class="weblink"><a class="fancybox" href="##wayin" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">WAY IN</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_wayin.jpg" /><div class="weblink"><a class="fancybox btn-wayin" href="##wayin" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">WAY IN</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
 			                </li>		                                    
 			            </ul>
 			            <div class="clearfloat"></div>
 						<ul>
-			            	<li><img src="/ui/images/web_dish.jpg" /><div class="weblink"><a class="fancybox" href="##dish" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DISH NETWORK</span><br />WEB, MOBILE</div></a></div>
+			            	<li><img src="/ui/images/web_dish.jpg" /><div class="weblink"><a class="fancybox btn-dish" href="##dish" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DISH NETWORK</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
 			                </li>
-			                <li><img src="/ui/images/web_carepilot.jpg" /><div class="weblink"><a class="fancybox" href="##carepilot" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">CARE PILOT</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_carepilot.jpg" /><div class="weblink"><a class="fancybox btn-care-pilot" href="##carepilot" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">CARE PILOT</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
 			                </li>
-			                <li><img src="/ui/images/web_core.jpg" /><div class="weblink"><a class="fancybox" href="##core" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">COREPOWER YOGA</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_core.jpg" /><div class="weblink"><a class="fancybox btn-core" href="##core" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">COREPOWER YOGA</span><br />WEB, MOBILE</div></a></div>
 			                <div class="nomobile"></div>
 			                </li>
-			                <li><img src="/ui/images/web_swiss.jpg" /><div class="weblink"><a class="fancybox" href="##swiss" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">SWISSLOG</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_swiss.jpg" /><div class="weblink"><a class="fancybox btn-swiss" href="##swiss" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">SWISSLOG</span><br />WEB, MOBILE</div></a></div>
 			                <div class="nomobile"></div>
 			                </li>
-			                <li><img src="/ui/images/web_intermountain.jpg" /><div class="weblink"><a class="fancybox" href="##intermountain" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">INTERMOUNTAIN HEALTHCARE</span><br />WEB, MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_intermountain.jpg" /><div class="weblink"><a class="fancybox btn-intermountain" href="##intermountain" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">INTERMOUNTAIN HEALTHCARE</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
 			                </li>
-			                <li><img src="/ui/images/web_mobileday.jpg" /><div class="weblink"><a class="fancybox" href="##mobileday" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">MOBILE DAY</span><br />MOBILE</div></a></div>
+			                <li><img src="/ui/images/web_mobileday.jpg" /><div class="weblink"><a class="fancybox btn-mobile-day" href="##mobileday" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">MOBILE DAY</span><br />MOBILE</div></a></div>
 			                <div class="noweb"></div>
 			                </li>			                
 			            </ul>

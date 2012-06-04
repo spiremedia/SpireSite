@@ -202,25 +202,25 @@
 								<script type="text/javascript" src="/ui/js/jquery-ui-1.7.1.min.js"></script>
 								<script type="text/javascript" src="/ui/js/jquery.accordion.min.1.7.1.js"></script>
 				                <div class="srbox1">Current Openings</div>
-				                <div class="bclear">
+				                <div class="bclear accordion-width">
 									<ul id="middleItem_1_Content_Accordion"  style="cursor:pointer;">
-										<li><a>User Experience Designers</a>
+										<li><a>User Experience Designers<span class="arrow"></span></a>
 												<div class="bclear">
 													<p>No positions currently open.</p>
 												</div>
 										</li>
-										<li ><a>Drupal Developers</a>
+										<li ><a>Drupal Developers<span class="arrow"></span></a>
 												<div class="bclear">
 													<p>No positions currently open.</p>
 												</div>
 										</li>
-										<li ><a>Interface Designers</a>
+										<li ><a>Interface Designers<span class="arrow"></span></a>
 												<div class="bclear">
 													<p>No positions currently open.</p>
 												</div>
 										</li>
-										<li  style="z-index:200001;"><a>Quality Assurance Analyst</a>
-											<div class="bclear" style="height:250px; overflow-x:hidden; overflow-y:scroll; width:295px;">
+										<li  style="z-index:200001;"><a>Quality Assurance Analyst<span class="arrow"></span></a>
+											<div class="bclear" style=" overflow-y:scroll; font-size:10px;">
 												<p>As Quality Assurance Analyst with Spiremedia, you will
 													work with the Vice President of Technology to develop, maintain and execute
 													Quality assurance testing procedures.  The primary responsible is to evaluate and test mobile and web
@@ -310,8 +310,8 @@
 	                </div>
 	            </div><!-- end slideArrows -->      
 			</div><!-- end controlBox -->
-
-        </div><!-- end mwwa2 -->
+		
+		</div><!-- end mwwa2 -->
     </div><!-- end main -->
 </div><!-- end mainWho2 -->
 

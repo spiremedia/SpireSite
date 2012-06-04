@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><!--- spire news --->
 <cfinclude template="../headtag.cfm"/>
 <cfsavecontent variable="pageHead">
+	<script type="text/javascript" src="/ui/js/jquery.easing.1.3.js"></script>
 	<script type="text/javascript" src="/ui/js/spire-news.js"></script>
 	<script type="text/javascript" src="/ui/js/jquery.coda-slider-2.0.js"></script>
 	<script type="text/javascript">
@@ -35,8 +36,12 @@
 	
 	<div class="content">		
 		<div id="mainNews">
-			<div id="main">
+			<div class="newsbg">
+			
+			<div id="mainNewsBackground">
 				<div id="mnMain">
+				
+				
 				
 					<div id="MNWRAP">
 						<div class="mnNews">
@@ -49,16 +54,22 @@
 								</div>
 								<div class="btn-fb"><a href="https://www.facebook.com/pages/SpireMedia/124962880899722"></a></div>
 								<div class="btn-tw"><a href="http://twitter.com/SpireUX"></a></div>
-							</div><!--- <<<< end #tweetbox --->
+							</div><!---  end tweetbox --->
 							
 							#showContentObject('middleItem_2_Content', 'Forms', 'moduleaction=spirewire')#
 							
-						</div><!--- <<<<<< end .mnNews --->			
-					</div><!--- >> end #MNWRAP --->
-				</div><!--- >> end #mnMain --->
-			</div><!--- >>>> end #main --->
-		</div><!--- >>>>>> end #mainNews --->
+						</div><!--  end .mnNews -->			
+					</div><!---  end MNWRAP --->
+					
+					
+					
+				</div><!---  end mnMain --->
+			</div><!---  end main --->
+		</div><!--end newsbg -->
+		
+		</div><!---  end mainNews --->
 	</div>
+	<div class="page-bottom"></div>
 	<!--- footer --->
 	<cfinclude template="../footer.cfm">
 	<!--- /footer --->

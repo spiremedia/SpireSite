@@ -275,6 +275,7 @@
 			</div><!---  end WWD --->
 		</div><!--- end main --->
 	</div><!---  end mainWhat --->
+	<div class="page-bottom"></div>
 	<!--- footer --->
 	<cfinclude template="../footer.cfm">
 	<!--- /footer --->

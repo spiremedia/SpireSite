@@ -1,7 +1,6 @@
 <h2><cfoutput>#variables.newsItem.title#</cfoutput></h2>
 <div class="fixed">
-	<cfoutput query="variables.newslist" maxrows="#variables.data.pageing#">
-		<p>		
+	<cfoutput query="variables.newslist" maxrows="#variables.data.pageing#">		<p>		
 			<cfif variables.newslist.linkpageid NEQ "">
 				<cfset lcl.link = "{{link[#variables.requestObject.getVar("siteid")#][#variables.newslist.linkpageid#]}}">
 			<cfelse>
