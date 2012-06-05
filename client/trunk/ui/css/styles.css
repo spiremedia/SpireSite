@@ -225,7 +225,7 @@ box-shadow: 0 0 5px 5px #000;}
 /* ~~ MAIN (WHATWEDO) ~~ */
 #mainWhat{ width:100%; background: #0c0c0c;} /* background:url(/ui/images/bg_main-what.jpg) top center*/
 .bg0 { width:1398px; z-index:100;background:url(/ui/images/bg_main-what1.jpg) top center;}
-.bg1 {width:1398px; z-index:99;background:url(/ui/images/bg_main-what2.jpg) top center;}
+.bg1 {width:1398px; z-index:99;background:url(/ui/images/bg_uxdesign.jpg) top center;}
 .bg2 { width:1398px; z-index:99;background:url(/ui/images/bg_main-what3.jpg) top center;}
 .bg3 {  width:1398px; z-index:99;background:url(/ui/images/bg_main-what4.jpg) top center;}
 .bg4 {  width:1398px; z-index:99;background:url(/ui/images/bg_main_what5.jpg) top center;}
@@ -851,8 +851,9 @@ line-height: 32px; text-decoration:none; cursor:pointer;}
 .popupWeb .ww-social { bottom:7px;}
 
 /****MAIN WHO WE ARE 2***/
-#mainWho2{background:url(/ui/images/bg_whoweare.jpg) top;}
-#mwwa2 { position:relative; width:7444px; height:auto; background:url(/ui/images/bg_whoweare.jpg) top center;} /* demo 2000 container or list elements or floats*/
+#mainWho2{ background:url(/ui/images/bg_whoweare.jpg) top  #0c0c0c;}
+#mainwwa{background:url(/ui/images/bgg_main-grid.png) transparent;}
+#mwwa2 { position:relative; width:7444px; height:auto;} /* demo 2000 container or list elements or floats*/
 .mwwa2-slide1 { float:left; width:1328px; padding:20px 0 40px 70px;}/* 1398 original */
 .mwwa2-slide2 { float:left; width:1958px; padding:60px 0 40px 90px;}/* 2048 original */
 .mwwa2-slide3 { float:left; width:2500px; padding:60px 0 40px 100px;}
@@ -871,3 +872,17 @@ line-height: 32px; text-decoration:none; cursor:pointer;}
 }
 
 .accordion-width{width:297px;}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix {
+    height: 1%;
+}
+:first-child + html .clearfix {
+    min-height: 1%;
+}

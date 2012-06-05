@@ -31,8 +31,8 @@
 	</div><!-- end hContainer -->
 	
 	<div id="mainWho2">
-	<div id="main">
-    	<div id="mwwa2">
+	<div id="mainwwa">
+    	<div id="mwwa2" class="clearfix">
 	
 			<div class="mwwa2-slide1">				
 				<div id="main_wh">

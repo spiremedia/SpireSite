@@ -36,37 +36,27 @@
 	
 	<div class="content">		
 		<div id="mainNews">
-			<div class="newsbg">
-			
-			<div id="mainNewsBackground">
-				<div id="mnMain">
-				
-				
-				
-					<div id="MNWRAP">
-						<div class="mnNews">
-							<cfif contentObjectNotEmpty('middleItem_1_Content')>
-								#showContentObject('middleItem_1_Content', 'HTMLContent,Assets,dhtmlPager,Events,Forms,News,ProductCatalog,SiteMaps,TextContent,Videos,Forms,MultiSpot,AssetImages', 'editable')#
-							</cfif>				
-							<div id="tweetbox">
-								<div style="width:360px; height:55px; position:relative; left:110px; ">
-									<span id="twitter_update_list"></span>
-								</div>
-								<div class="btn-fb"><a href="https://www.facebook.com/pages/SpireMedia/124962880899722"></a></div>
-								<div class="btn-tw"><a href="http://twitter.com/SpireUX"></a></div>
-							</div><!---  end tweetbox --->
-							
-							#showContentObject('middleItem_2_Content', 'Forms', 'moduleaction=spirewire')#
-							
-						</div><!--  end .mnNews -->			
-					</div><!---  end MNWRAP --->
-					
-					
-					
-				</div><!---  end mnMain --->
-			</div><!---  end main --->
-		</div><!--end newsbg -->
-		
+			<div class="newsbg">			
+				<div id="mainNewsBackground">
+					<div id="mnMain">	
+						<div id="MNWRAP">
+							<div class="mnNews">						
+								<cfif contentObjectNotEmpty('middleItem_1_Content')>
+									#showContentObject('middleItem_1_Content', 'HTMLContent,Assets,dhtmlPager,Events,Forms,News,ProductCatalog,SiteMaps,TextContent,Videos,Forms,MultiSpot,AssetImages', 'editable')#
+								</cfif>				
+								<div id="tweetbox">
+									<div style="width:360px; height:55px; position:relative; left:110px; ">
+										<span id="twitter_update_list"></span>
+									</div>
+									<div class="btn-fb"><a href="https://www.facebook.com/pages/SpireMedia/124962880899722"></a></div>
+									<div class="btn-tw"><a href="http://twitter.com/SpireUX"></a></div>
+								</div><!---  end tweetbox --->							
+								#showContentObject('middleItem_2_Content', 'Forms', 'moduleaction=spirewire')#							
+							</div><!--  end .mnNews -->			
+						</div><!---  end MNWRAP --->
+					</div><!---  end mnMain --->
+				</div><!---  end main --->
+			</div><!--end newsbg -->		
 		</div><!---  end mainNews --->
 	</div>
 	<div class="page-bottom"></div>
