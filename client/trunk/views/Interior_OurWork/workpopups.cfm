@@ -39,7 +39,7 @@
 	<img src="/ui/images/work_dishtv.jpg" />
             <div class="ww_text">
                 <div class="title-ww">Dish Network <span class="sz12dm">Web Development and User Experience</span></div>
-                <div class="desc-ww">For the past eight years Spire has been providing the highest-quality Web development and user experience design services across dozens of projects including the redesign of their flagship sites <a href="http://www.dishnetwork.com" target="_blank">www.dishnetwork.com</a> and <a href="www.dishtv.com" target="_blank">www.dishtv.com</a>.</div>
+                <div class="desc-ww">For the past eight years Spire has been providing the highest-quality Web development and user experience design services across dozens of projects including the redesign of their flagship sites <a href="http://www.dishnetwork.com" style="color:##AB2D18;" target="_blank">www.dishnetwork.com</a> and <a href="www.dishtv.com" style="color:##AB2D18;" target="_blank">www.dishtv.com</a>.</div>
             </div><!---  end .ww_text --->
             <div class="ww-social">
 				<div class="soc-fb"><a href="http://www.facebook.com/sharer.php?u=#variables.requestobject.getvar('siteurl')##variables.pageinfo.urlpath#dish-network/&t=#urlencodedformat(variables.pageinfo.title&' with Dish Network')#" class="socialpopup" target="_blank"></a></div>

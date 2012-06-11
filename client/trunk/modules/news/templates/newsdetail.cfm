@@ -1,4 +1,7 @@
 <cfoutput>
+ <style type="text/css">	
+	.newsDetail a { color:##b03517; text-decoration:none;}
+</style>
 <div class="newsDetail">
     <p>
         <cfif StructKeyExists(variables.data,"newsinfo")>

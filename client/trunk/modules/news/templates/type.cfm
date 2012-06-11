@@ -17,7 +17,7 @@
 						<div class="clearfloat"></div>
 					</div> 
 					
-					<div id="NCC">
+					<div id="NCC" style="padding-bottom:50px;">
 						<div class="coda-slider-wrapper">
 							<div class="coda-slider" id="coda-slider-1">
 								
@@ -48,8 +48,8 @@
 																		<cfset lcl.link = "/NewsAndEvents/News/#id#/">
 																	</cfif>																	
 																	<div class="newsBox">
-																		<div class="nb-date"><a href="#lcl.link#" style="color:white;">#DateFormat(itemdate, "mm.dd.yy")#</a></div>
-																		<div class="nb-title">#title#</div>
+																		<div class="nb-date"><a href="#lcl.link#" style="color:white; text-decoration:none;">#DateFormat(itemdate, "mm.dd.yy")#</a></div>
+																		<div class="nb-title"><a href="#lcl.link#" style="color:white; text-decoration:none;">#title#</a></div>
 																		<div class="nb-desc">#description#</div>
 																	</div>																
 																</cfif>
@@ -72,8 +72,8 @@
 																		<cfset lcl.link = "/NewsAndEvents/News/#id#/">
 																	</cfif>
 																	<div class="newsBox">
-																		<div class="nb-date"><a href="#lcl.link#" style="color:white;">#DateFormat(itemdate, "mm.dd.yy")#</a></div>
-																		<div class="nb-title">#title#</div>
+																		<div class="nb-date"><a href="#lcl.link#" style="color:white; text-decoration:none;">#DateFormat(itemdate, "mm.dd.yy")#</a></div>
+																		<div class="nb-title"><a href="#lcl.link#" style="color:white; text-decoration:none;">#title#</a></div>
 																		<div class="nb-desc">#description#</div>
 																	</div>																
 																</cfif>

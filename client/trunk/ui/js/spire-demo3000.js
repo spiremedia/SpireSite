@@ -56,6 +56,7 @@ $.doTimeout( 'scroll', 250, function(){
 
 //click start
    $(".btn-start").click(function() {
+						    //alert('bitches');
 	$.scrollTo('0px', 600, { axis:'x' });
 	});
 	
@@ -102,7 +103,7 @@ $.doTimeout( 'scroll', 250, function(){
 	var nextPos = endTwo;
 	$('.btn-history').trigger('click');
   	}
-	//$.scrollTo( nextPos+'px', 600, { axis:'x' });
+	$.scrollTo( nextPos+'px', 600, { axis:'x' });//leave this in.  
 	});	
 	
    $(".btn-fwdarw").click(function() {  

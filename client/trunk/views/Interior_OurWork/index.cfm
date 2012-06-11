@@ -29,39 +29,37 @@
 	<div id="mainWhat2">
 		<div id="main">
 			<div id="mw2">
+				<div class="ourworkgrid">
 				<div class="mw2-slide1">
 					<div id="scroller">
 			            <ul id="firstrow">
 			                <li><img src="/ui/images/web_corn.jpg" /><div class="weblink"><a class="fancybox btn-corn" href="##corn" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">CORN</span><br />WEB, MOBILE</div></a></div>
-			                <div class="nomobile"></div>
 			                </li>
 			                <li><img src="/ui/images/web_denwater.jpg" /><div class="weblink"><a class="fancybox btn-denver-water" href="##denwater" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DENVER WATER</span><br />WEB, MOBILE</div></a></div>
 			                </li>
 			                <li><img src="/ui/images/web_firstdata.jpg" /><div class="weblink"><a class="fancybox btn-first-data" href="##firstdata" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">FIRST DATA</span><br />WEB, MOBILE</div></a></div>
-			                <div class="nomobile"></div>
+			                <div class="noweb"></div>
 			                </li>
 			                <li><img src="/ui/images/web_50.jpg" /><div class="weblink"><a class="fancybox btn-50-cent" href="##50cent" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">50 CENT</span><br />WEB, MOBILE</div></a></div>
-			                <div class="noweb"></div>
+			                <div class="nomobile"></div>
 			                </li>			                
 			                <li><img src="/ui/images/web_pueblo.jpg" /><div class="weblink"><a class="fancybox btn-pueblo" href="##pueblo" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">PUEBLO</span><br />WEB</div></a></div>
-			                </li>
+			                <div class="nomobile"></div>
+							</li>
 			                <li><img src="/ui/images/web_wayin.jpg" /><div class="weblink"><a class="fancybox btn-wayin" href="##wayin" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">WAY IN</span><br />WEB, MOBILE</div></a></div>
-			                <div class="noweb"></div>
 			                </li>		                                    
 			            </ul>
 			            <div class="clearfloat"></div>
 						<ul>
 			            	<li><img src="/ui/images/web_dish.jpg" /><div class="weblink"><a class="fancybox btn-dish" href="##dish" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">DISH NETWORK</span><br />WEB, MOBILE</div></a></div>
-			                <div class="noweb"></div>
 			                </li>
 			                <li><img src="/ui/images/web_carepilot.jpg" /><div class="weblink"><a class="fancybox btn-care-pilot" href="##carepilot" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">CARE PILOT</span><br />WEB, MOBILE</div></a></div>
-			                <div class="noweb"></div>
+			                <div class="nomobile"></div>
 			                </li>
 			                <li><img src="/ui/images/web_core.jpg" /><div class="weblink"><a class="fancybox btn-core" href="##core" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">COREPOWER YOGA</span><br />WEB, MOBILE</div></a></div>
-			                <div class="nomobile"></div>
 			                </li>
 			                <li><img src="/ui/images/web_swiss.jpg" /><div class="weblink"><a class="fancybox btn-swiss" href="##swiss" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">SWISSLOG</span><br />WEB, MOBILE</div></a></div>
-			                <div class="nomobile"></div>
+			                <div class="noweb"></div>
 			                </li>
 			                <li><img src="/ui/images/web_intermountain.jpg" /><div class="weblink"><a class="fancybox btn-intermountain" href="##intermountain" ><div class="arwbox"></div><div class="titlebox"><span class="sz16">INTERMOUNTAIN HEALTHCARE</span><br />WEB, MOBILE</div></a></div>
 			                <div class="noweb"></div>
@@ -70,7 +68,7 @@
 			                <div class="noweb"></div>
 			                </li>			                
 			            </ul>
-			        </div>
+			        </div><!-- end scroller -->
 				</div>
 				<div class="mw2-slide2">
 				<div id="main_cl">
@@ -110,7 +108,7 @@
 				    <div id="CList2">
 						<div class="clientList2">
 				        	<div class="subtitle">Client List</div>
-				        	<div class="viewby"><a href="##client-list" class="btn-client">View by Logo</a></div>
+				        	<div class="viewby"><a href="##client-list" class="btn-client">View by Brand</a></div>
 							<div class="cl-col1">
 								<div class="listSection">
 									<span class="sz14px">TECHNOLOGY</span><br />
@@ -196,12 +194,15 @@
 	                </div>
 	            </div><!---- end #slideArrows --->      
 			</div><!--- end control box --->
+		</div><!--end ourworkgrid-->
 		</div><!---- end #mw2--->
     </div><!---- end #main --->
 </div><!---- end #mainWhat2 --->
 
 	<!-- footer -->
-	<cfinclude template="../footer.cfm">
+	<div id="fContainer">
+		<cfinclude template="../footer.cfm">
+	</div>
 	<!-- /footer -->
 	#showContentObject('middleItem_3_Content', 'Forms', 'moduleaction=contactform')#
 	

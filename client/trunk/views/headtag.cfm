@@ -12,7 +12,7 @@
 	<script src="/ui/js/jquery.bxSlider.min.js" type="text/javascript"></script><!--- this is needed TH --->
 	<!--- <script type="text/javascript" src="/ui/js/jquery.easing.1.3.js"></script>
 	<script type="application/javascript" src="/ui/js/iscroll.js"></script> --->	
-	<script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>	
+	<!--- <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>	 --->
 	<!--[if lt IE 9]>
 		<link rel="stylesheet" type="text/css" href="/ui/css/styles-ie.css" />
 	<![endif]-->

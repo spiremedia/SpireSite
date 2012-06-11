@@ -32,36 +32,36 @@
 	
 	<div id="mainWho2">
 	<div id="mainwwa">
-    	<div id="mwwa2" class="clearfix">
-	
-			<div class="mwwa2-slide1">				
-				<div id="main_wh">
-					<div id="WHO">
-					<div id="wh-left">      
-						<div class="title">Who We Are</div>
-						<div class="post">
-							Founded in 1998, SpireMedia is a privately owned and self-funded consulting firm based in Denver, Colorado that architects, designs, and develops web and mobile solutions for the world's top companies. Our mission is simple: to make technology more meaningful, more useful, and more successful.
-						</div>
-						<div style="position: relative; left:-60px;"><img src="/ui/images/whoweare_infographic.png"></div>
-						<!--- <div class="list">Phasellus pellentesque suscipit vulputat.</div>
-						<div class="list">Phasellus pellentesque suscipit vulputat. Cras aliquet arcu.</div>
-						<div class="list">Phasellus pellentesque suscipit vulputat.</div>
-						<div class="list">Phasellus pellentesque suscipit vulputat. Donec vel nisl ut leo consectetur.</div> --->
-					</div><!---  end ##wh-left --->
-					<div id="wh-right">
-						<ul id="firstboxes">
-						<li><div class="whr-box1"><a href="##leadership" class="btn-leadership">Leadership<div class="arw-goto"></div></a></div></li>
-						<li><div class="whr-box2"><a href="##history" class="btn-history">History<div class="arw-goto"></div></a></div></li>
-						<li><div class="whr-box3"><a href="##careers" class="btn-careers">Careers<div class="arw-goto"></div></a></div></li>
-						</ul>
-					  
-						<div class="clearfloat"></div>
-					</div><!-- end wh-right -->
-					<div class="clearfloat"></div>
-					</div>
-				</div><!--  end main_wh --> 
-			</div><!-- end mwwa2-slide1 -->
+    	<div id="mwwa2">
+			<div class="fudge">
 			
+			
+				<div class="mwwa2-BGslide1">			
+					<div class="mwwa2-slide1">				
+						<div id="main_wh">
+							<div id="WHO">
+								<div id="wh-left">      
+									<div class="title">Who We Are</div>
+									<div class="post">
+										Founded in 1998, SpireMedia is a privately owned and self-funded consulting firm based in Denver, Colorado that architects, designs, and develops web and mobile solutions for the world's top companies. Our mission is simple: to make technology more meaningful, more useful, and more successful.
+									</div>
+									<div style="position: relative; left:-60px;"><img src="/ui/images/whoweare_infographic.png"></div>
+								</div><!--  end wh-left -->
+								<div id="wh-right">
+									<ul id="firstboxes">
+										<li><div class="whr-box1"><a href="##leadership" class="btn-leadership">Leadership<div class="arw-goto"></div></a></div></li>
+										<li><div class="whr-box2"><a href="##history" class="btn-history">History<div class="arw-goto"></div></a></div></li>
+										<li><div class="whr-box3"><a href="##careers" class="btn-careers">Careers<div class="arw-goto"></div></a></div></li>
+									</ul>
+								  	<div class="clearfloat"></div>
+								</div><!-- end wh-right -->
+								<div class="clearfloat"></div>
+							</div><!-- end WHO -->
+						</div><!--  end main_wh --> 
+					</div><!-- end mwwa2-slide1 -->			
+				</div><!-- end mwwa2-BGslide1 -->
+		
+		<div class="mwwa2-BGslide2">			
 			<div class="mwwa2-slide2">
 				<div id="main_le">
 					<div id="people">
@@ -95,13 +95,6 @@
 						            </a>
 						        </div>
 						    </li>
-						    <!--- <li><img src="/ui/images/people1.jpg" />
-						    	<div class="darken">
-						        	<a class="fancybox" href="##person9">
-						        	<div class="dar-name" id="bio_1">MIKE JORDAN 9<br /><span class="sz14">CEO, PARTNER</span></div>
-						            </a>
-						        </div>
-						    </li> --->
 						</ul>
 						<div class="clearfloat"></div>
 						<ul>
@@ -134,18 +127,13 @@
 						            </a>
 						        </div>
 						    </li>
-						    <!--- <li><img src="/ui/images/people5.jpg" />
-						    	<div class="darken">
-						        	<a class="fancybox" href="##person10">
-						        	<div class="dar-name" id="bio_5">MIKE JORDAN5 10<br /><span class="sz14">CEO, PARTNER</span></div>
-						            </a>
-						        </div>
-						    </li> --->
 						</ul>
         			</div><!-- end people -->
 				</div><!-- end main_le -->
 			</div><!-- end mwwa2-slide2 -->
-
+		</div><!-- mwwa2-BGslide2 -->
+		
+		<div class="mwwa2-BGslide3">
 			<div class="mwwa2-slide3"> 
 				<div id="main_his">
         			<div id="scrollhis">
@@ -178,8 +166,9 @@
 							<div id="crane"></div>
         			</div><!--  end scrollhis -->
 				</div><!-- end main_his -->
-			</div><!-- end mwwa2-slide3 -->
-
+			</div><!-- end mwwa2-slide3 -->			
+		</div><!-- mwwa2-BGslide3 -->
+		<div class="mwwa2-BGslide4">		
 			<div class="mwwa2-slide4">
 				<div id="main_car">
 					<div id="CAR">
@@ -202,121 +191,106 @@
 								<script type="text/javascript" src="/ui/js/jquery-ui-1.7.1.min.js"></script>
 								<script type="text/javascript" src="/ui/js/jquery.accordion.min.1.7.1.js"></script>
 				                <div class="srbox1">Current Openings</div>
-				                <div class="bclear accordion-width">
-									<ul id="middleItem_1_Content_Accordion"  style="cursor:pointer;">
-										<li><a>User Experience Designers<span class="arrow"></span></a>
-												<div class="bclear">
-													<p>No positions currently open.</p>
-												</div>
-										</li>
-										<li ><a>Drupal Developers<span class="arrow"></span></a>
-												<div class="bclear">
-													<p>No positions currently open.</p>
-												</div>
-										</li>
-										<li ><a>Interface Designers<span class="arrow"></span></a>
-												<div class="bclear">
-													<p>No positions currently open.</p>
-												</div>
-										</li>
-										<li  style="z-index:200001;"><a>Quality Assurance Analyst<span class="arrow"></span></a>
-											<div class="bclear" style=" overflow-y:scroll; font-size:10px;">
-												<p>As Quality Assurance Analyst with Spiremedia, you will
-													work with the Vice President of Technology to develop, maintain and execute
-													Quality assurance testing procedures.  The primary responsible is to evaluate and test mobile and web
-													applications to ensure that they function according to specification. Your
-													responsibilities will include developing and executing test plans for our web
-													and mobile applications, entering defects into our bug tracking system, create
-													the necessary documentation to successfully test an application, write test
-													scripts, and validate installation instructions.<br><br>
-													 
-													Position responsibilities:<Br>
-													 
-													    * Develop and
-													maintain test plans, manual and automated test scripts for user interface,
-													functionality, system and "ad-hoc testing"<br>
-													    * Execute
-													regression tests, functional tests and data tests<br>
-													    * Document
-													quality assurance practices<br>
-													    * Report, track
-													and determine priority of reported bugs<br><br>
-													 
-													Requirements:<br>
-													 
-													    * BA/BS in
-													Computer Sciences/Engineering or associated discipline or the equivalent
-													experience<br>
-													    * Well-versed
-													in all testing methodologies (white vs. black box test work, system vs.
-													functional).<br>
-													    * Well-versed
-													in software process methodologies.<br>
-													    * A solid
-													understanding of quality assurance as part of the development process.<br>
-													    * Detail
-													oriented and a problem solver<br>
-													    * Ability to
-													work in a rapidly changing environment<br>
-													    * Automated
-													Testing with Selenium or Jmeter<br>
-													    * All
-													applicants applying for this position must be authorized to work in the United
-													States.<br>
-													 
-													About Spiremedia
-													 
-													SpireMedia creates business-critical Web and Mobile
-													applications.  We serve an international
-													clientèle from start-ups to Fortune 500 companies and have been in the Web
-													industry for more than 10 years.
-													
-													If interested please send your resume and salary requirements to: kecnav at yahoo dot com</p>
-											</div>
-										</li>
-									</ul>
-									<script type="text/javascript">
-										$(function(){
-											$("##middleItem_1_Content_Accordion").accordion({
-												autoHeight: false, 
-												active:false
-											});
-										});
-									</script>
+				                <div class="weblinkjob"><a class="fancybox btn-corn" href="##QAAnalyst" ><div class="titlebox">Quality Assurance Analyst</span></div></a></div>
+				                
+				                <div id="QAAnalyst" class="popupWeb">											
+						            <div style="padding:30px 20px 0px 30px;">
+						                <div style="font-family: lubalingraphstd-demi,Helvetica,sans-serif; font-size: 28px; font-weight: normal; margin-bottom: 20px;">
+							                Quality Assurance Analyst</div>
+						                <div style="border-left: 4px solid ##A23217; line-height: 1.2; margin-bottom: 40px; padding-left: 5px;">
+											<p>As Quality Assurance Analyst with Spiremedia, you will
+											work with the Vice President of Technology to develop, maintain and execute
+											Quality assurance testing procedures.  The primary responsible is to evaluate and test mobile and web
+											applications to ensure that they function according to specification. Your
+											responsibilities will include developing and executing test plans for our web
+											and mobile applications, entering defects into our bug tracking system, create
+											the necessary documentation to successfully test an application, write test
+											scripts, and validate installation instructions.<br><br>
+											 
+											Position responsibilities:<Br>
+											 
+											    * Develop and
+											maintain test plans, manual and automated test scripts for user interface,
+											functionality, system and "ad-hoc testing"<br>
+											    * Execute
+											regression tests, functional tests and data tests<br>
+											    * Document
+											quality assurance practices<br>
+											    * Report, track
+											and determine priority of reported bugs<br><br>
+											 
+											Requirements:<br>
+											 
+											    * BA/BS in
+											Computer Sciences/Engineering or associated discipline or the equivalent
+											experience<br>
+											    * Well-versed
+											in all testing methodologies (white vs. black box test work, system vs.
+											functional).<br>
+											    * Well-versed
+											in software process methodologies.<br>
+											    * A solid
+											understanding of quality assurance as part of the development process.<br>
+											    * Detail
+											oriented and a problem solver<br>
+											    * Ability to
+											work in a rapidly changing environment<br>
+											    * Automated
+											Testing with Selenium or Jmeter<br>
+											    * All
+											applicants applying for this position must be authorized to work in the United
+											States.<br>
+											 
+											About Spiremedia
+											 
+											SpireMedia creates business-critical Web and Mobile
+											applications.  We serve an international
+											clientèle from start-ups to Fortune 500 companies and have been in the Web
+											industry for more than 10 years.
+											
+											If interested please send your resume and salary requirements to: kecnav at yahoo dot com</p>
+										</div>
+						            </div><!---  end .ww_text --->										            
+								</div><!---- end .popupWeb --->
+										
 									
-								</div>
+								
 							<div class="srlink" id="submitResume"><a class="fancybox" href="##resume">Submit Resume</a></div>                
 				            <div class="clearfloat"></div>
 				           
-				        </div><!---  end .careers --->
+				        </div><!--  end careers -->
 					</div><!--  end CAR -->
-				</div><!-- end main_car -->  --->               
+				</div><!-- end main_car -->                 
 			</div><!-- end mwwa2-slide4 -->
+		</div> <!--  end .mwwa2-BGslide4 -->
+		<div class="clearfloat"></div>      
 
-			<div class="clearfloat"></div>      
 
-			<div id="controlBox">
-	            <div id="slideReturn">
-	                <div class="sl-return">
-	                    <div class="slr-btn-off"><a href="##our-work" class="btn-start"></a></div>
-	                </div>
-	            </div><!---- end #slideReturn --->
-	            <div id="slideArrows">
-	                <div class="sl-arrows">
-	                	<div class="sla-up-off"></div>
-	                    <div class="sla-down-off"></div>
-	                    <div class="sla-left-off"><div class="btn-backarw"></div></div>
-	                    <div class="sla-right-off"><div class="btn-fwdarw"></div></div>
-	                </div>
-	            </div><!-- end slideArrows -->      
-			</div><!-- end controlBox -->
-		
+		<div id="controlBox">
+            <div id="slideReturn">
+                <div class="sl-return">
+                    <div class="slr-btn-off"><a href="##our-work" class="btn-start"></a></div>
+                </div>
+            </div><!---- end #slideReturn --->
+            <div id="slideArrows">
+                <div class="sl-arrows">
+                	<div class="sla-up-off"></div>
+                    <div class="sla-down-off"></div>
+                    <div class="sla-left-off"><div class="btn-backarw"></div></div>
+                    <div class="sla-right-off"><div class="btn-fwdarw"></div></div>
+                </div>
+            </div><!-- end slideArrows -->      
+		</div><!-- end controlBox -->
+	</div><!-- end fudge-->
+			
 		</div><!-- end mwwa2 -->
     </div><!-- end main -->
 </div><!-- end mainWho2 -->
 
 	<!--- footer --->
-	<cfinclude template="../footer.cfm">
+	<div id="fContainer">
+		<cfinclude template="../footer.cfm">
+	</div>
 	<!--- /footer --->	
 	#showContentObject('middleItem_2_Content', 'Forms', 'moduleaction=contactform')#
 
@@ -339,16 +313,14 @@
 			<br><br>
 			Gellman is a sought out speaker and has given lectures at The University of Denver Daniels College of Business, The University of Colorado Leeds School of Business, and South by Southwest among others. He is also a published author, an avid world traveler, and a self-professed "entrepreneurial nerd". 
         </div>	
-    </div>
-	
-		<div class="pu-btns-lt">
-	    	<div class="pub1">&nbsp;</div>
-	        <div class="pub2"><a href="http://www.linkedin.com/in/mgellman" target="_blank"></a></div>
-	        <div class="pub3"><a href="http://twitter.com/mgellman" target="_blank"></a></div>
-	    </div>
-	    <div class="clearfloat"></div>
-	
-</div><!---- end .popup --->
+    </div>	
+	<div class="pu-btns-lt">
+	  	<div class="pub1">&nbsp;</div>
+	      <div class="pub2"><a href="http://www.linkedin.com/in/mgellman" target="_blank"></a></div>
+	      <div class="pub3"><a href="http://twitter.com/mgellman" target="_blank"></a></div>
+	 </div>
+	 <div class="clearfloat"></div>	
+</div><!-- end popup -->
 
 <div id="person2" class="popup">
 	<div class="pu-left"><img src="/ui/images/bio_adam.jpg" /></div>

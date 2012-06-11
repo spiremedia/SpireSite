@@ -51,8 +51,9 @@
 									<div class="btn-fb"><a href="https://www.facebook.com/pages/SpireMedia/124962880899722"></a></div>
 									<div class="btn-tw"><a href="http://twitter.com/SpireUX"></a></div>
 								</div><!---  end tweetbox --->							
-								#showContentObject('middleItem_2_Content', 'Forms', 'moduleaction=spirewire')#							
+							#showContentObject('middleItem_2_Content', 'Forms', 'moduleaction=spirewire')#
 							</div><!--  end .mnNews -->			
+														
 						</div><!---  end MNWRAP --->
 					</div><!---  end mnMain --->
 				</div><!---  end main --->

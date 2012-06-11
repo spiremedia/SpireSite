@@ -8,9 +8,9 @@
 <cfoutput>
 	<cfhtmlhead text="#thisJavascript#">
 
-<div id="fContainer">
+
 	<div id="footer">
-		<div id="foot">
+		<div id="foot" style=" color:##a9a9a9;">
 	    	<div class="footLeft">2911 Walnut Street  |  Denver, CO 80205  |  303.620.9974</div>
 	        <div class="footRight">
 	        	<div class="fr-box">
@@ -63,7 +63,7 @@
 	                <p><a href="#careersurl#">Careers</a></p>
 	            </div>
 	            <div class="fr-box4">
-	            	<div class="title-fo"><a href="" class="contactFooter">Contact Us</a></div>
+	            	<div class="title-fo"><a href="" class="contactFooter" style="color: ##ab2d18;">Contact Us</a></div>
 	                <p><a href="/spire-news">Spire News</a></p>
 	                <p><a href="/">Home</a></p>
 	            </div>
@@ -72,5 +72,5 @@
 	        <div class="clearfloat"></div>
 	    </div><!--- end foot --->
 	</div><!--- end footer --->
-</div><!--- end fContainer --->
+
 </cfoutput>

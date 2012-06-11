@@ -50,7 +50,7 @@
 				<div id="splashContent">
 					Founded in 1998, SpireMedia is a consulting firm that architects, designs, and develops web and mobile solutions for the world's top companies. Our mission is simple: to make technology more meaningful, more useful, and more successful.
 				</div> <!--  end splashContent -->
-			   <a href="##"><img src="/ui/images/btn_red.png" width="31" height="31" id="redbutton" /></a>
+			   <a href="/what-we-do"><img src="/ui/images/btn_red.png" width="31" height="31" id="redbutton" /></a>
 			</div><!-- end splash -->
 		</div><!--end shell -->
 		
@@ -67,18 +67,18 @@
 				<div class="mimRight">
 	            	<div class="boxTitle">Clients</div>
 	                <div class="logoClients">
-	                	<div class="lc-box clientDish" id="0"></div>
-	                    <div class="lc-box clientUsda" id="1"></div>
-	                    <div class="lc-box clientWesternUnion" id="2"></div>
-	                    <div class="lc-box clientRac" id="3"></div>
-	                    <div class="lc-box clientIntermountain" id="4"></div>
-	                    <div class="lc-box clientCharter" id="5"></div>
-	                    <div class="lc-box clientFirstData" id="6"></div>
-	                    <div class="lc-box clientToys" id="7"></div>
-	                    <div class="lc-box clientCochlear" id="8"></div>
-	                    <div class="lc-box clientDell" id="9"></div>
-	                    <div class="lc-box clientCorn" id="10"></div>
-	                    <div class="lc-box clientVw" id="11"></div>
+	                	<div class="lc-box clientDish clientLogoPadding" id="0"></div>
+	                    <div class="lc-box clientUsda clientLogoPadding" id="1"></div>
+	                    <div class="lc-box clientWesternUnion clientLogoPadding" id="2"></div>
+	                    <div class="lc-box clientRac clientLogoPadding" id="3"></div>
+	                    <div class="lc-box clientIntermountain clientLogoPadding" id="4"></div>
+	                    <div class="lc-box clientCharter clientLogoPadding" id="5"></div>
+	                    <div class="lc-box clientFirstData clientLogoPadding" id="6"></div>
+	                    <div class="lc-box clientToys clientLogoPadding" id="7" ></div>
+	                    <div class="lc-box clientCochlear clientLogoPadding" id="8"></div>
+	                    <div class="lc-box clientDell clientLogoPadding" id="9"></div>
+	                    <div class="lc-box clientCorn clientLogoPadding" id="10"></div>
+	                    <div class="lc-box clientVw clientLogoPadding" id="11"></div>
 	                    <div class="clearfloat"></div>
 	                </div><!--- <<<< end .logoClients --->
                 	<div class="boxClients">
