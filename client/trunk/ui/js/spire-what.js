@@ -37,10 +37,10 @@ function resizeMain()
 {
     var h = $(window).height();
     var w = $(window).width();
-	var largest = 671;
+	var largest = 946;
 	var minWindow = largest + (119*2);
 	
-	if ( h > minWindow){
+	/*if ( h > minWindow){
 		$("#WWD").css('height',(h - (119*2)));
 		//$("#mainWWD").css('margin-top',(-(h -119)));
 		$("#mainWhat, .bg0, .bg1, .bg2, .bg3, .bg4").css('height',(h - (119*2)));
@@ -48,12 +48,13 @@ function resizeMain()
 		//$("#sliderInfo").css('width',1026);
 	}
 	else {
+		*/
 		$("#WWD").css('height',largest);
 		//$("#mainWWD").css('margin-top',(-(671)));
 		$("#mainWhat, .bg0, .bg1, .bg2, .bg3, .bg4").css('height',largest);
 		//$("#wwd-0, #wwd-1, #wwd-2, #wwd-3, #wwd-4").css('height',671 -45);
 		//$("#sliderInfo").css('width',1006);
-	}
+	//}
 	
 	if ( w < 1398){
 	var halfW = (w-758)/2;

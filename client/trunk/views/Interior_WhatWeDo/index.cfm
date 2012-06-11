@@ -28,7 +28,7 @@
 				<div id="main_wwd">
 					<ul id="slider1">
 					  <li style="margin-right:2400px;">
-						<div class="bg0">
+						<div class="bg0" style="height:-303px;">
 							<div id="wwd-0">
 								<ul id="firstboxes">
 									<li><div class="box1 btn-uxd"><a href="##ux-design">UX Design</a></div></li>
