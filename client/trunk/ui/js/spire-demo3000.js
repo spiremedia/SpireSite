@@ -9,14 +9,14 @@ jQuery(document).ready(function(){
 	$('#mwwa2').hide();
 
 //define element end scroll points
-	var endOne = 1398;//maximum scroll
-	var endTwo = endOne + 2048 ;
-	var endThree = endTwo + 2600;
-	var endFour = endThree + 1398;
+	var endOne = 1398;//1398 maximum scroll
+	var endTwo = endOne + 2048 ;//2048
+	var endThree = endTwo + 2600;//2600
+	var endFour = endThree + 1398;//1398
 	
 //on event scroll, change up the buttons
 	$(window).scroll(function () {
-$.doTimeout( 'scroll', 250, function(){		
+	$.doTimeout( 'scroll', 250, function(){		
 	var curPos = $(window).scrollLeft();
 	if ( 0 <= curPos && curPos < endOne){
 	//show fwd only
@@ -26,24 +26,27 @@ $.doTimeout( 'scroll', 250, function(){
   	}
 	//if between endOne and endTwo next is three
 	if ( endOne <= curPos && curPos < endTwo){
+	//alert('one'+curPos);
 	var nextPos = 0;
 	$('.btn-start').fadeIn('fast');
 	$('.btn-backarw').fadeIn('fast');
 	$('.btn-fwdarw').fadeIn('fast');
   	}
 	if ( endTwo <= curPos && curPos < endThree){
+	//alert('two'+curPos);
 	var nextPos = endOne;
 	$('.btn-start').fadeIn('fast');
 	$('.btn-backarw').fadeIn('fast');
 	$('.btn-fwdarw').fadeIn('fast');
   	}
 	if ( endThree <= curPos && curPos < endFour){
+	//alert('three'+curPos);
 	var nextPos = endTwo;
 	$('.btn-start').fadeIn('fast');
 	$('.btn-backarw').fadeIn('fast');
 	$('.btn-fwdarw').fadeOut('fast');
   	}
-
+//alert('curPos: '+curPos);
 	
 	//$('#header, #footer').animate({'padding-left': $(this).scrollLeft()}, 400);
 	//$('#controlBox').animate({'left': $(this).scrollLeft()}, 400);
@@ -56,7 +59,7 @@ $.doTimeout( 'scroll', 250, function(){
 
 //click start
    $(".btn-start").click(function() {
-						    //alert('bitches');
+						    //alert('hola');
 	$.scrollTo('0px', 600, { axis:'x' });
 	});
 	
@@ -106,6 +109,8 @@ $.doTimeout( 'scroll', 250, function(){
 	$.scrollTo( nextPos+'px', 600, { axis:'x' });//leave this in.  
 	});	
 	
+//----------------------------  FWD --------------------------------	
+	
    $(".btn-fwdarw").click(function() {  
   	var curPos = $(window).scrollLeft();
   	//if between 0 ad endOne next is two
@@ -115,15 +120,16 @@ $.doTimeout( 'scroll', 250, function(){
 	var nextPos = endOne;
 	$('.btn-leadership').trigger('click');
   	}
+	//alert(curPos);
 	//if between endOne and endTwo next is three
 	if ( endOne <= curPos && curPos < endTwo){
 		$('.subnav li a').removeClass('active');	
-	var nextPos = endTwo;
-		if ( curPos >= 2422){
+	var nextPos = endTwo;//the 1666 position is the end of the second "leadership" slide.
+		if ( curPos >= 1666){
 		$('.btn-history').trigger('click');
 		}
 		else{
-		$.scrollTo( '2422px', 600, { axis:'x' });
+		$.scrollTo( '1666px', 600, { axis:'x' });
 		$('.subnav li .btn-leadership').addClass('active');
 		}
   	} 
@@ -132,15 +138,15 @@ $.doTimeout( 'scroll', 250, function(){
 	
 	var nextPos = endThree;
 		// 3446 + 665 and  1355
-		if ( curPos >= 4111 && curPos < 4801){
-			$.scrollTo( '4801px', 600, { axis:'x' });
+		if ( curPos >= 4417 && curPos < 4201){//4417 and 4201
+			$.scrollTo( '4201', 600, { axis:'x' });
 			$('.subnav li .btn-history').addClass('active');
 		}
-		else if ( curPos >= 4801){ 
+		else if ( curPos >= 4201){ 
 			$('.btn-careers').trigger('click');
 		}
 		else{
-		$.scrollTo( '4111px', 600, { axis:'x' });
+		$.scrollTo( '4417', 600, { axis:'x' });
 		$('.subnav li .btn-history').addClass('active');
 		}
 	

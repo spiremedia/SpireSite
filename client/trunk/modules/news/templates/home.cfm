@@ -3,14 +3,14 @@
 	<div class="boxNews">
 		<div class="bnCol1">
 			<cfif variables.newsitems.recordcount>
-				<cfoutput query="variables.newsitems">
-					<cfif variables.newsitems.currentrow lte 3>						
+				<cfoutput query="variables.newsitems">					
+					<cfif variables.newsitems.currentrow lte 3><!--- show 3 --->					
 						<cfif variables.newsitems.linkpageid NEQ "">
 							<cfset lcl.link = "{{link[#variables.requestObject.getVar("siteid")#][#variables.newsitems.linkpageid#]}}">
 						<cfelse>
 							<cfset lcl.link = "/NewsAndEvents/News/#id#/">
 						</cfif>
-							<div class="bn-date"><a href="#lcl.link#" style="color:white;">#dateformat(itemdate, "mm.dd.yy")#</a></div>
+							<div class="bn-date"><a href="#lcl.link#" style="color:white;text-decoration:none;">#dateformat(itemdate, "mm.dd.yy")#</a></div>
 							<div class="bn-desc">
 						    	<!--- <a href="#lcl.link#">#title#</a> --->
 						    	#description#
@@ -22,16 +22,16 @@
 		<div class="bnCol2">
 			<cfif variables.newsitems.recordcount gt 3>			
 			<cfoutput query="variables.newsitems">
-				<cfif variables.newsitems.currentrow gt 3 and variables.newsitems.currentrow lt 6 >
+				<cfif variables.newsitems.currentrow gt 3 and variables.newsitems.currentrow lt 6 ><!--- show only 2 more. --->
 					<cfif variables.newsitems.linkpageid NEQ "">
 						<cfset lcl.link = "{{link[#variables.requestObject.getVar("siteid")#][#variables.newsitems.linkpageid#]}}">
 					<cfelse>
 						<cfset lcl.link = "/NewsAndEvents/News/#id#/">
 					</cfif>
-					<div class="bn-date"><a href="#lcl.link#" style="color:white;">#dateformat(itemdate, "mm.dd.yy")#</a></div>
+					<div class="bn-date"><a href="#lcl.link#" style="color:white; text-decoration:none;">#dateformat(itemdate, "mm.dd.yy")#</a></div>
 					<div class="bn-desc">
 				    	<!--- <a href="#lcl.link#">#title#</a> --->
-				    	#description#
+				    	#rereplacenocase(description,"<img .* />","","ALL")#
 				    </div>
 				</cfif>
 			</cfoutput>

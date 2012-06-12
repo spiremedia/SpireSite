@@ -72,5 +72,13 @@
 	        <div class="clearfloat"></div>
 	    </div><!--- end foot --->
 	</div><!--- end footer --->
-
+	<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	// <![CDATA[
+	try {
+	_uacct = "UA-87846-1";
+	urchinTracker('Home');
+	} catch(e) {}
+	// ]]>
+	</script>
 </cfoutput>

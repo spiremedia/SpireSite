@@ -20,7 +20,7 @@
 	</div>
 	
 	<div id="hContainer">
-		<div id="header">
+		<div id="header" >
 			<div id="head">
 				<div id="logo">
 					<a href="/"></a>
@@ -200,7 +200,7 @@
 						                <div style="border-left: 4px solid ##A23217; line-height: 1.2; margin-bottom: 40px; padding-left: 5px;">
 											<p>As Quality Assurance Analyst with Spiremedia, you will
 											work with the Vice President of Technology to develop, maintain and execute
-											Quality assurance testing procedures.  The primary responsible is to evaluate and test mobile and web
+											Quality assurance testing procedures.  The primary responsibility is to evaluate and test mobile and web
 											applications to ensure that they function according to specification. Your
 											responsibilities will include developing and executing test plans for our web
 											and mobile applications, entering defects into our bug tracking system, create

@@ -185,7 +185,7 @@
 										<div class="accordion">
 											<div class="acBox">
 										    	<div class="heading">iPhone and iPad</div>
-										        <div class="hidden">Combining our deep experience of iPhone SDK along with our knowledge of Objective-C, Spire's developers bring to life complex mobile applications for the enterprise optimized for with the iPhone, iPad, or both.</div>
+										        <div class="hidden">Combining our deep experience of iPhone SDK along with our knowledge of Objective-C, Spire's developers bring to life complex mobile applications for the enterprise optimized for the iPhone, iPad, or both.</div>
 										    </div>
 											<div class="acBox">
 										    	<div class="heading">Android</div>

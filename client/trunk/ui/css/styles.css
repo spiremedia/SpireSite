@@ -156,7 +156,7 @@ box-shadow: 0 0 5px 5px #000;}
 .mimLeft .boxNews { width:584px; height:318px; background:url(/ui/images/trans70.png); padding:18px; color:#FFFFFF; line-height:1.2; font-family: din_medium, Helvetica, sans-serif; font-size:14px; position:relative;}
 
 .bnCol1 { float:left; width:280px;}
-.bnCol2 { float:right; width:280px; height:290px; overflow-x: hidden; overflow-y: scroll;}
+.bnCol2 { float:right; width:280px; height:300px;}/* overflow-x: hidden; overflow-y: scroll;*/
 
 .mimLeft .boxNews .bn-date { font-size:12px; text-align:center; width:62px; height:28px; line-height:26px; background:url(/ui/images/bg_bndate.png) no-repeat;}
 .mimLeft .boxNews .bn-desc { margin-bottom:30px;}
