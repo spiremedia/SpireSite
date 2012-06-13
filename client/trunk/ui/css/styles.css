@@ -3,7 +3,7 @@
 
 body {
 	font: 100%/1.4 Helvetica, Arial, Verdana, sans-serif;
-	background:url(/ui/images/bgg_main-grid.png) #0c0c0c;
+	background-color: #0c0c0c;
 	margin: 0;
 	padding: 0;
 	color: #999999;
@@ -95,7 +95,7 @@ a:hover, a:active, a:focus { text-decoration: none;}
 #nav ul.subnav li a.active { color:#fff;}
 
 /* ~~ HEADER 2 (Index) ~~ */
-#header2 { width:100%; height:450px;}
+#header2 { width:100%; height:450px; border-bottom:1px solid #4c4c4c;}
 #head2 { width:1006px; height:119px; margin:0 auto; padding:0 88px; position:relative;} /* totalwidth = width:1398px;*/
 
 
@@ -146,7 +146,7 @@ box-shadow: 0 0 5px 5px #000;}
 
 
 /* ~~ MAIN (INDEX) ~~ */
-#mainIndex{ width:100%; background:url(/ui/images/bg_main-index.png) top center no-repeat #0c0c0c;} /* background:url(/ui/images/bg_main-what.jpg) top center*/
+#mainIndex{ width:100%; background:url(/ui/images/bg_main-index.jpg) top center no-repeat #0c0c0c;} /* background:url(/ui/images/bg_main-what.jpg) top center*/
 #main2 { background:url(/ui/images/bgg_main-grid.png);}
 #main  { background:url(/ui/images/bgg_main-grid.png) #0c0c0c;}
 
@@ -366,6 +366,11 @@ margin-right:88px;
 .ww-social .soc-de { position:absolute; left:71px; top:0; width:29px; height:24px;}
 .ww-social .soc-fb a, .ww-social .soc-tw a, .ww-social .soc-de a { display:block; width:29px; height:24px;}
 
+.whowe-social { position:absolute; left:25px; bottom:20px; width:101px; height:24px; background:url(/ui/images/bg_whowe-social.png) no-repeat;}
+.whowe-social .soc-tw { position:absolute; left:0; top:0; width:29px; height:24px;}
+.whowe-social .soc-de { position:absolute; left:36px; top:0; width:29px; height:24px;}
+.whowe-social .soc-fb a, .whowe-social .soc-tw a, .whowe-social .soc-de a { display:block; width:29px; height:24px;}
+
 #navigator { position:absolute; top:520px; left:0px; width:121px; height:39px; background:url(/ui/images/wwd_controlbg.png); position:relative;}
 #navigator .btn-prev { position:absolute; left:0; top:0; width:30px; height:39px;}
 #navigator .btn-next { position:absolute; right:0; top:0; width:30px; height:39px;}
@@ -425,23 +430,28 @@ margin-right:88px;
 	background:url(/ui/images/trans70.png);
 	z-index:1001;
 }
-.popup { position:relative; width:850px; color:#fff; background:#252424; line-height:1; font-family: din_medium, Helvetica, sans-serif; font-size:14px; color:#fff; z-index:300; padding:20px;}
-.popup .pu-left { float:left; height:358px; width:354px; }
-.popup .pu-right { float:right; width:465px; font-size:14px; } 
+.popuppadding{padding:20px;}
+.popup { position:relative; width:900px; color:#fff; background:#252424; line-height:1; font-family: din_medium, Helvetica, sans-serif; font-size:14px; color:#fff; z-index:300; }
+.popup .pu-left { float:left;  width:374px; }
+.popup .pu-right { float:left; width:455px; font-size:14px; } 
 .popup .pu-right .name {font-family: lubalingraphstd-demi, Helvetica, sans-serif; font-weight:normal; font-size:28px; margin-bottom:5px;}
 .popup .pu-right .title { font-size:16px; margin-bottom:20px;}
 .popup .pu-right .desc { border-left: 4px solid #a23217; padding-left:5px; line-height:1.2; margin-bottom:40px;}
 
+
 .popup .pu-close { position:absolute; right:20px; top:20px; width:29px; height:24px; background:url(/ui/images/popup_close.png)  no-repeat; cursor:pointer;}
-.popup .pu-btns { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns.png)  no-repeat;}
 
-.popup .pu-btns-l  { position:absolute; bottom:0px; width:99px; height:40px; background:url(/ui/images/popup_btns_linked-in.png)  no-repeat; width:100%; background-color:#1d1d1d; left:0px;}
-.popup .pu-btns-lt { position:absolute; bottom:0px; width:99px; height:40px; background:url(/ui/images/popup_btns_linked-in_twitter.png)  no-repeat;width:100%; background-color:#1d1d1d; left:0px;}
-.popup .pu-btns-t  { position:absolute; bottom:0px; width:99px; height:40px; background:url(/ui/images/popup_btns_twitter.png)  no-repeat;width:100%; background-color:#1d1d1d; left:0px;}
+/*.popup .pu-btns { position:absolute; right:20px; bottom:20px; width:99px; height:24px; background:url(/ui/images/popup_btns.png)  no-repeat;}
+.popup .pu-btns-l  { position:absolute; bottom:0px;  height:40px; background:url(/ui/images/popup_btns_linked-in.png)  no-repeat; width:100%; background-color:#1d1d1d; left:0px;}
+.popup .pu-btns-t  { position:absolute; bottom:0px;  height:40px; background:url(/ui/images/popup_btns_twitter.png)  no-repeat;width:100%; background-color:#1d1d1d; left:0px;}
+*/
 
+.popup .pu-btns-lt { position:absolute; bottom:0px;  height:35px; width:100%; background-color:#1d1d1d; left:0px;}
 .popup  .pub1 { position:absolute;  left:0; margin-top:0px; width:29px; height:24px;}
-.popup  .pub2 { position:absolute;  left:35px; margin-top:500px; width:29px; height:24px;}
-.popup  .pub3 { position:absolute;  left:70px; margin-top:0px; width:29px; height:24px;}
+/*.popup  .pub2 { position:absolute;  left:35px; margin-top:5px; width:29px; height:24px;}
+.popup  .pub3 { position:absolute;  left:70px; margin-top:5px; width:29px; height:24px;}*/
+.popup  .pub2 { position:absolute;  left:20px; margin-top:5px; width:29px; height:24px;}
+.popup  .pub3 { position:absolute;  left:60px; margin-top:5px; width:29px; height:24px;}
 .pub1 a, .pub2 a, .pub3 a { display:block; width:29px; height:24px;}
 
 /* ~~ MAIN (WHOWEARE careers) ~~ */
@@ -859,7 +869,7 @@ line-height: 32px; text-decoration:none; cursor:pointer;}
 .popupWeb .ww-social { bottom:7px;}
 
 /****MAIN WHO WE ARE 2***/
-#mainWho2{ background-color: #0c0c0c; background:url(/ui/images/bg_whoweare.jpg) top no-repeat; width:7444px;}/**/
+#mainWho2{ background-color: #0c0c0c; background:url(/ui/images/bg_whoweare.jpg) top left no-repeat; width:7444px;}/**/
 #mainwwa{background:url(/ui/images/bgg_main-grid.png); height:946px; }/**/
 #mwwa2 { position:relative; width:7444px;} /* demo 2000 container or list elements or floats*/
 

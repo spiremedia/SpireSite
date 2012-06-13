@@ -27,7 +27,7 @@
 	
 	
 	<div id="mainWhat2">
-		<div id="main">
+		<div id="main" style="width:9000px;">
 			<div id="mw2">
 				<div class="ourworkgrid">
 				<div class="mw2-slide1">

@@ -295,175 +295,184 @@
 	#showContentObject('middleItem_2_Content', 'Forms', 'moduleaction=contactform')#
 
 
-<div id="person1" class="popup" >
-	<div class="pu-left"><img src="/ui/images/bio_mike.jpg" /></div>
-    <div class="pu-right">    	
-        <div class="desc" style="font-size:13px;">
-			<div class="name">Michael Gellman</div>
-        	<div class="title">CEO</div>
-        	Michael Gellman is the founder and CEO of SpireMedia, where he is responsible for ensuring the success of every client and every employee.
-			<br /><br  />
-			He also directs Spire's management, vision, and strategy. Under his leadership, SpireMedia has grown to be a multi-million dollar company that has been profitable from day one without funding. Over the years, he has employed more than 300 people and prides himself on nurturing his staff and producing future leaders.
-			<br /><br  />
-			Prior to SpireMedia, Gellman founded his first company, GIG Media, in 1996. GIG was one of Colorado's first interactive agencies. Prior to GIG Media, he served as a writer and producer for television and film with companies including Troma Pictures and The Teaching Learning Network. He also performed stand-up comedy and had small acting roles in productions throughout New York City.
-			<br /><br />
-			Gellman earned a bachelor's degree in English from the University of Florida in 1994. In the following years, he gained a reputation as one of the industry's leading authorities on web technology, mobile applications, and social media.
-			<br><br>
-			Recently, Gellman was selected by Colorado Biz Magazine as a finalist for CEO of the Year. He has held a variety of board posts with industry groups and non-profits. In addition, he has been active on behalf of numerous philanthropic and political causes.
-			<br><br>
-			Gellman is a sought out speaker and has given lectures at The University of Denver Daniels College of Business, The University of Colorado Leeds School of Business, and South by Southwest among others. He is also a published author, an avid world traveler, and a self-professed "entrepreneurial nerd". 
-        </div>	
+<div id="person1" class="popup" style="height:590px;">
+	<div class="popuppadding">
+		<div class="pu-left"><img src="/ui/images/bio_mike.jpg" /></div>
+	    <div class="pu-right">    	
+	        	<div class="name">Michael Gellman</div>
+	        	<div class="title">CEO</div>
+	        	<div class="desc" style="font-size:13px;">
+	        	Michael Gellman is the founder and CEO of SpireMedia, where he is responsible for ensuring the success of every client and every employee.
+				<br /><br  />
+				He also directs Spire's management, vision, and strategy. Under his leadership, SpireMedia has grown to be a multi-million dollar company that has been profitable from day one without funding. Over the years, he has employed more than 300 people and prides himself on nurturing his staff and producing future leaders.
+				<br /><br  />
+				Prior to SpireMedia, Gellman founded his first company, GIG Media, in 1996. GIG was one of Colorado's first interactive agencies. Prior to GIG Media, he served as a writer and producer for television and film with companies including Troma Pictures and The Teaching Learning Network. He also performed stand-up comedy and had small acting roles in productions throughout New York City.
+				<br /><br />
+				Gellman earned a bachelor's degree in English from the University of Florida in 1994. In the following years, he gained a reputation as one of the industry's leading authorities on web technology, mobile applications, and social media.
+				<br><br>
+				Recently, Gellman was selected by Colorado Biz Magazine as a finalist for CEO of the Year. He has held a variety of board posts with industry groups and non-profits. In addition, he has been active on behalf of numerous philanthropic and political causes.
+				<br><br>
+				Gellman is a sought out speaker and has given lectures at The University of Denver Daniels College of Business, The University of Colorado Leeds School of Business, and South by Southwest among others. He is also a published author, an avid world traveler, and a self-professed "entrepreneurial nerd". 
+	        </div>	
+	    </div>
+	</div><!-- end popuppadding -->
+	<div class="clearfloat"></div>
+	 <div class="pu-btns-lt">
+        <div class="pub2"><a href="http://www.linkedin.com/in/mgellman" target="_blank"><img src="/ui/images/pupop_btn_linkedin.png"></a></div>
+        <div class="pub3"><a href="http://twitter.com/mgellman" target="_blank"><img src="/ui/images/pupop_btn_twitter.png"></a></div>
     </div>	
-	<div class="pu-btns-lt">
-	  	<div class="pub1">&nbsp;</div>
-	      <div class="pub2"><a href="http://www.linkedin.com/in/mgellman" target="_blank"></a></div>
-	      <div class="pub3"><a href="http://twitter.com/mgellman" target="_blank"></a></div>
-	 </div>
-	 <div class="clearfloat"></div>	
 </div><!-- end popup -->
 
+
 <div id="person2" class="popup">
-	<div class="pu-left"><img src="/ui/images/bio_adam.jpg" /></div>
-    <div class="pu-right">
-    	<div class="name">Adam Hasemeyer</div>
-        <div class="title">VP of Sales</div>
-        <div class="desc">
-        	As Vice President of Sales, Adam Hasemeyer is responsible for leading the direct sales efforts at Spire, as well as organizing the teams that will scope and perform the projects sold.  He began as an account executive in 2006 and quickly rose through the ranks to attain his current position.
-			<br /><br  />
-			Hasemeyer is recognized as a thought leader in the application development world. Business leaders look to him as a source of knowledge on new technological advancements and how they affect e-commerce. In his role, he has developed numerous ideas and initiatives that were instrumental in taking Spire from a local player to a national presence.
-			<br><Br>
-			Committed to giving back to the community, Hasemeyer has devoted his time to Volunteers of America and Toys for Tots in addition to numerous other organizations. He is a Miami University alumnus and enjoys golfing, snowboarding, fishing, and music. Hasemeyer has a passion for bringing people together to deliver great results for his clients and volunteer organizations.
-        </div>
-    </div>
-    <div class="pu-btns-lt">
-    	<div class="pub1"></div>
-        <div class="pub2"><a href="http://www.linkedin.com/in/adamhasemeyer" target="_blank"></a></div>
-        <div class="pub3"><a href="http://twitter.com/Hasemeyer" target="_blank"></a></div>
-    </div>
+	<div class="popuppadding">
+		<div class="pu-left"><img src="/ui/images/bio_adam.jpg" /></div>
+	    <div class="pu-right">
+	    	<div class="name">Adam Hasemeyer</div>
+	        <div class="title">VP of Sales</div>
+	        <div class="desc">
+	        	As Vice President of Sales, Adam Hasemeyer is responsible for leading the direct sales efforts at Spire, as well as organizing the teams that will scope and perform the projects sold.  He began as an account executive in 2006 and quickly rose through the ranks to attain his current position.
+				<br /><br  />
+				Hasemeyer is recognized as a thought leader in the application development world. Business leaders look to him as a source of knowledge on new technological advancements and how they affect e-commerce. In his role, he has developed numerous ideas and initiatives that were instrumental in taking Spire from a local player to a national presence.
+				<br><Br>
+				Committed to giving back to the community, Hasemeyer has devoted his time to Volunteers of America and Toys for Tots in addition to numerous other organizations. He is a Miami University alumnus and enjoys golfing, snowboarding, fishing, and music. Hasemeyer has a passion for bringing people together to deliver great results for his clients and volunteer organizations.
+	        </div>
+	    </div>
+	</div><!-- end popuppadding -->
     <div class="clearfloat"></div>
+	<div class="pu-btns-lt">
+        <div class="pub2"><a href="http://www.linkedin.com/in/adamhasemeyer" target="_blank"><img src="/ui/images/pupop_btn_linkedin.png"></a></div>
+        <div class="pub3"><a href="http://twitter.com/Hasemeyer" target="_blank"><img src="/ui/images/pupop_btn_twitter.png"></a></div>
+    </div>	
 </div><!---- end .popup --->
 
+
 <div id="person3" class="popup">
-	<div class="pu-left"><img src="/ui/images/bio_jim.jpg" /></div>
-    <div class="pu-right">
-    	<div class="name">James P. Orsi</div>
-        <div class="title">VP of Strategy and User Experience</div>
-        <div class="desc">
-        	Orsi leads the strategy and user experience design department at Spire. He has been mastering interactive solutions since 1996, when he helped build the nascent online advertising department for Time Inc.’s Pathfinder division, one of the web’s first news and entertainment portals. Since then he has spearheaded product development and user experience design efforts for a wide variety of customers, from Fortune 100 companies to government agencies and early-stage startups. He has over 16 years of executive experience in delivering intelligent, functional product solutions to major customers such as J.P. Morgan, The City of New York, Nestle Waters, USDA, Sprint, Swisslog, and Hearst Publications. 
-        	<br><br>
-        	Orsi is passionate about deploying user-centered design methods for creating products that delight customers and drive business results. He is an expert in interface design and business analysis, and uses his understanding of finance, management, and technology to sell and deliver effective answers for his clients.
-        	<br><br>
-        	Orsi received a bachelor's degree with High Honors in English from Colgate University, and a Masters of Public Administration from Columbia University. In his free time Orsi enjoys backcountry skiing and ski mountaineering in Colorado’s San Juan and Elk ranges, and hiking or rock climbing those same mountains once the snow melts. 
-        </div>
-    </div>
-    <div class="pu-btns-lt">
-    	<div class="pub1"></div>
-        <div class="pub2"><a href="http://www.linkedin.com/in/jimorsi" target="_blank"></a></div>
-        <div class="pub3"><a href="http://twitter.com/SpireUX" target="_blank"></a></div>
-    </div>
+	<div class="popuppadding">
+		<div class="pu-left"><img src="/ui/images/bio_jim.jpg" /></div>
+	    <div class="pu-right">
+	    	<div class="name">James P. Orsi</div>
+	        <div class="title">VP of Strategy and User Experience</div>
+	        <div class="desc">
+	        	Orsi leads the strategy and user experience design department at Spire. He has been mastering interactive solutions since 1996, when he helped build the nascent online advertising department for Time Inc.’s Pathfinder division, one of the web’s first news and entertainment portals. Since then he has spearheaded product development and user experience design efforts for a wide variety of customers, from Fortune 100 companies to government agencies and early-stage startups. He has over 16 years of executive experience in delivering intelligent, functional product solutions to major customers such as J.P. Morgan, The City of New York, Nestle Waters, USDA, Sprint, Swisslog, and Hearst Publications. 
+	        	<br><br>
+	        	Orsi is passionate about deploying user-centered design methods for creating products that delight customers and drive business results. He is an expert in interface design and business analysis, and uses his understanding of finance, management, and technology to sell and deliver effective answers for his clients.
+	        	<br><br>
+	        	Orsi received a bachelor's degree with High Honors in English from Colgate University, and a Masters of Public Administration from Columbia University. In his free time Orsi enjoys backcountry skiing and ski mountaineering in Colorado’s San Juan and Elk ranges, and hiking or rock climbing those same mountains once the snow melts. 
+	        </div>
+	    </div>
+	</div><!-- end popuppadding -->
     <div class="clearfloat"></div>
+	<div class="pu-btns-lt">
+        <div class="pub2"><a href="http://www.linkedin.com/in/jimorsi" target="_blank"><img src="/ui/images/pupop_btn_linkedin.png"></a></div>
+        <div class="pub3"><a href="http://twitter.com/SpireUX" target="_blank"><img src="/ui/images/pupop_btn_twitter.png"></a></div>
+    </div>
 </div><!---- end .popup --->
 
 <div id="person4" class="popup">
-	<div class="pu-left"><img src="/ui/images/bio_kendra.jpg" /></div>
-    <div class="pu-right">
-    	<div class="name">Kendra Smith</div>
-        <div class="title">Director of Project Management</div>
-        <div class="desc">
-        	Kendra Smith is the Director of our Project Management team at SpireMedia, and is responsible for the execution and success of web development and mobile projects.  Her goal is to have every project come in on time and within budget.
-        	<br><br>
-        	She has an extensive background in managing technology projects and teams, she enjoys translating technical jargon to information that lay people can understand.   She enjoys building teams that product outstanding results, and takes pride in getting it right.
-        	<br><br>
-        	Kendra also enjoys giving back to the communities in which she lives and works.  She has spent over 5 years leading community service efforts in which her teams help the less fortunate.  
-		 </div>	
-    </div>
-    <div class="pu-btns-l">
-    	<!--- <div class="pub1"></div> --->
-        <div class="pub2"><a href="http://www.linkedin.com/pub/kendra-smith/23/400/278" target="_blank"></a></div>
-        <!--- <div class="pub3"><a href="http://twitter.com/" target="_blank"></a></div> --->
-    </div>
+	<div class="popuppadding">
+		<div class="pu-left"><img src="/ui/images/bio_kendra.jpg" /></div>
+	    <div class="pu-right">
+	    	<div class="name">Kendra Smith</div>
+	        <div class="title">Director of Project Management</div>
+	        <div class="desc">
+	        	Kendra Smith is the Director of our Project Management team at SpireMedia, and is responsible for the execution and success of web development and mobile projects.  Her goal is to have every project come in on time and within budget.
+	        	<br><br>
+	        	She has an extensive background in managing technology projects and teams, she enjoys translating technical jargon to information that lay people can understand.   She enjoys building teams that product outstanding results, and takes pride in getting it right.
+	        	<br><br>
+	        	Kendra also enjoys giving back to the communities in which she lives and works.  She has spent over 5 years leading community service efforts in which her teams help the less fortunate.  
+			 </div>	
+	    </div>
+	</div><!-- end popuppadding -->
     <div class="clearfloat"></div>
+	<div class="pu-btns-lt">
+        <div class="pub2"><a href="http://www.linkedin.com/pub/kendra-smith/23/400/278" target="_blank"><img src="/ui/images/pupop_btn_linkedin.png"></a></div>
+    </div>
 </div><!---- end .popup --->
 
 <div id="person5" class="popup">
-	<div class="pu-left"><img src="/ui/images/bio_thad.jpg" /></div>
-    <div class="pu-right">
-    	<div class="name">Thaddeus Batt</div>
-        <div class="title">CTO</div>
-        <div class="desc">
-        	Utilizing his 13 years of technical experience, Batt provides SpireMedia and its clients with strategic analysis and planning as well as application and system architecture. His agnostic stance on technology offers an objective perspective to clients and allows him to effectively lead the R&D efforts of SpireMedia.
-        	<br><br>
-        	Prior to joining SpireMedia in 1999, Batt developed Internet applications for San Mateo-based Siebel Systems, Inc. (Nasdaq: SEBL) out of their Boston location, where he applied his experience to Web-enable Siebel's flagship cient/server product offering. He also worked on the development, installation, and launch of Siebel's Sales.com SFA portal. Batt joined Siebel via the acquisition of Web-based sales force automation startup InterActive WorkPlace, where he was a founding member of the initial development team.
-			<br><br>
-			Previously, he was the technical producer for Hearst New Media & Technology, where he was responsible for the implementation, maintenance, and re-launch of the Homearts Network at www.homearts.com. Prior to that, Batt was production manager for Technologic Partners, publisher of ComputerLetter, VentureFinance, and VentureWire.
-			<br><br>
-			Batt earned a B.A. degree in Literature and Education from the University of Colorado at Boulder during the Orange Bowl Years. He enjoys spending time with his wife, Sarah, his children, Griffin and Genevieve, and his dogs, which are often at work.
-        </div>
-    </div>
-    <div class="pu-btns-l">
-    	<!--- <div class="pub1"></div> --->
-        <div class="pub2"><a href="http://www.linkedin.com/in/thaddeusbatt" target="_blank"></a></div>
-        <!--- <div class="pub3"><a href="http://twitter.com/SpireUX" target="_blank"></a></div> --->
-    </div>
+	<div class="popuppadding">
+		<div class="pu-left"><img src="/ui/images/bio_thad.jpg" /></div>
+	    <div class="pu-right">
+	    	<div class="name">Thaddeus Batt</div>
+	        <div class="title">CTO</div>
+	        <div class="desc">
+	        	Utilizing his 13 years of technical experience, Batt provides SpireMedia and its clients with strategic analysis and planning as well as application and system architecture. His agnostic stance on technology offers an objective perspective to clients and allows him to effectively lead the R&D efforts of SpireMedia.
+	        	<br><br>
+	        	Prior to joining SpireMedia in 1999, Batt developed Internet applications for San Mateo-based Siebel Systems, Inc. (Nasdaq: SEBL) out of their Boston location, where he applied his experience to Web-enable Siebel's flagship cient/server product offering. He also worked on the development, installation, and launch of Siebel's Sales.com SFA portal. Batt joined Siebel via the acquisition of Web-based sales force automation startup InterActive WorkPlace, where he was a founding member of the initial development team.
+				<br><br>
+				Previously, he was the technical producer for Hearst New Media & Technology, where he was responsible for the implementation, maintenance, and re-launch of the Homearts Network at www.homearts.com. Prior to that, Batt was production manager for Technologic Partners, publisher of ComputerLetter, VentureFinance, and VentureWire.
+				<br><br>
+				Batt earned a B.A. degree in Literature and Education from the University of Colorado at Boulder during the Orange Bowl Years. He enjoys spending time with his wife, Sarah, his children, Griffin and Genevieve, and his dogs, which are often at work.
+	        </div>
+	    </div>
+	</div><!-- end popuppadding -->
     <div class="clearfloat"></div>
+	<div class="pu-btns-lt">
+        <div class="pub2"><a href="http://www.linkedin.com/in/thaddeusbatt" target="_blank"><img src="/ui/images/pupop_btn_linkedin.png"></a></div>
+    </div>
 </div><!---- end .popup --->
 
 <div id="person6" class="popup">
-	<div class="pu-left"><img src="/ui/images/bio_steve.jpg" /></div>
-    <div class="pu-right">
-    	<div class="name">Stephen Lloyd</div>
-        <div class="title">CFO</div>
-        <div class="desc">
-       		Steve Lloyd oversees all of the firm's financial activities. Lloyd also heads up company administration and project management.
-			<br><br>
-			In addition to public accounting experience, Lloyd's career includes nearly thirty years in the communications industry, spanning a variety of roles from technician to corporate operations manager.
-			<br><br>
-			Lloyd graduated Magna Cum Laude from the University of North Florida with a BS in Accounting. He holds active CPA licenses in both Florida and Colorado. He is also a US Navy veteran.
-			<br><br>
-			Lloyd is active in community service, having served on the Board of Directors for a Jefferson County Open Space Park in Conifer.
-			<br><br>
-			In his off time, Lloyd, a licensed pilot, enjoys maintaining and flying his aircraft. He can also be found riding his Harley in the Colorado foothills or snowboarding at one of Colorado's beautiful ski resorts.
-		</div>
-    </div>    
+	<div class="popuppadding">
+		<div class="pu-left"><img src="/ui/images/bio_steve.jpg" /></div>
+	    <div class="pu-right">
+	    	<div class="name">Stephen Lloyd</div>
+	        <div class="title">CFO</div>
+	        <div class="desc">
+	       		Steve Lloyd oversees all of the firm's financial activities. Lloyd also heads up company administration and project management.
+				<br><br>
+				In addition to public accounting experience, Lloyd's career includes nearly thirty years in the communications industry, spanning a variety of roles from technician to corporate operations manager.
+				<br><br>
+				Lloyd graduated Magna Cum Laude from the University of North Florida with a BS in Accounting. He holds active CPA licenses in both Florida and Colorado. He is also a US Navy veteran.
+				<br><br>
+				Lloyd is active in community service, having served on the Board of Directors for a Jefferson County Open Space Park in Conifer.
+				<br><br>
+				In his off time, Lloyd, a licensed pilot, enjoys maintaining and flying his aircraft. He can also be found riding his Harley in the Colorado foothills or snowboarding at one of Colorado's beautiful ski resorts.
+			</div>
+	    </div>    
+	 </div><!-- end popuppadding -->   
     <div class="clearfloat"></div>
 </div><!---- end .popup --->
 
 <div id="person7" class="popup">
-	<div class="pu-left"><img src="/ui/images/bio_josh.jpg" /></div>
-    <div class="pu-right">
-    	<div class="name">Josh Fuller</div>
-        <div class="title">Creative Directore</div>
-        <div class="desc">
-        	Josh Fuller leads all things creative for SpireMedia. His approach is rather simple, involving three key aspects: know your audience; know your technology; know your brand. He manages the creative team with a clear understanding of each client's goals by advocating clean, detailed, and strategy-driven design standards. 
-			<br><Br>
-			Prior to joining Spire, Fuller founded and operated TrebleRed, an interactive agency that produced award-winning work for more than nine years. Throughout his tenure there, he worked with some of Denver's top companies and agencies. 
-			<br><Br>
-			Fuller applies a sincere passion and proven understanding for design and strategy, ensuring each project connects and resonates with its intended audience. His clear understanding of the strategy behind user experience design, and his early involvement in that process, enables him to deliver the solid user interface solutions that are compelling, functional, and practical. 
-			<br><Br>
-			When not engaged with Spire's clients or his team of designers, Fuller is often found behind the screen of his MacBook Pro, creating, creating, and creating more. He also may be playing tennis or roaming the Front Range with his Newfoundland-Border Collie, Eastwood.
-		</div>	
-    </div>
-    <div class="pu-btns-l">
-    	<!--- <div class="pub1"></div> --->
-        <div class="pub2"><a href="http://www.linkedin.com/in/treblered" target="_blank"></a></div>
-        <!--- <div class="pub3"><a href="http://twitter.com/SpireUX" target="_blank"></a></div> --->
-    </div>
+	<div class="popuppadding">
+		<div class="pu-left"><img src="/ui/images/bio_josh.jpg" /></div>
+	    <div class="pu-right">
+	    	<div class="name">Josh Fuller</div>
+	        <div class="title">Creative Directore</div>
+	        <div class="desc">
+	        	Josh Fuller leads all things creative for SpireMedia. His approach is rather simple, involving three key aspects: know your audience; know your technology; know your brand. He manages the creative team with a clear understanding of each client's goals by advocating clean, detailed, and strategy-driven design standards. 
+				<br><Br>
+				Prior to joining Spire, Fuller founded and operated TrebleRed, an interactive agency that produced award-winning work for more than nine years. Throughout his tenure there, he worked with some of Denver's top companies and agencies. 
+				<br><Br>
+				Fuller applies a sincere passion and proven understanding for design and strategy, ensuring each project connects and resonates with its intended audience. His clear understanding of the strategy behind user experience design, and his early involvement in that process, enables him to deliver the solid user interface solutions that are compelling, functional, and practical. 
+				<br><Br>
+				When not engaged with Spire's clients or his team of designers, Fuller is often found behind the screen of his MacBook Pro, creating, creating, and creating more. He also may be playing tennis or roaming the Front Range with his Newfoundland-Border Collie, Eastwood.
+			</div>	
+	    </div>
+	</div><!-- end popuppadding -->
     <div class="clearfloat"></div>
+	<div class="pu-btns-lt">
+        <div class="pub2"><a href="http://www.linkedin.com/in/treblered" target="_blank"><img src="/ui/images/pupop_btn_linkedin.png"></a></div>
+    </div>
 </div><!---- end .popup --->
 
 <div id="person8" class="popup">
-	<div class="pu-left"><img src="/ui/images/bio_gregg.jpg" /></div>
-    <div class="pu-right">
-    	<div class="name">Gregg Larson</div>
-        <div class="title">VP of Technology</div>
-        <div class="desc">
-        	Gregg Larson oversees the software development process at SpireMedia. Gregg brings years of technical leadership to the Spire team, helping Fortune 500 clients plan, develop and implement e-commerce systems generating over $200 million dollars in annual revenue. Prior to joining Spire, Gregg earned a Masters Degree in Engineering Management, focusing on statistical methods for software development. He was also a Lead Architect at Cable Television Laboratories where he developed B2B platforms for the Cable Industry and national retailers including Best Buy, Wal-Mart, and Sprint.
-		</div>
-    </div>
-    <div class="pu-btns-l">
-    	<div class="pub2"><a href="http://www.linkedin.com/in/gregglarson" target="_blank"></a></div>
-   </div>
+	<div class="popuppadding">
+		<div class="pu-left"><img src="/ui/images/bio_gregg.jpg" /></div>
+	    <div class="pu-right">
+	    	<div class="name">Gregg Larson</div>
+	        <div class="title">VP of Technology</div>
+	        <div class="desc">
+	        	Gregg Larson oversees the software development process at SpireMedia. Gregg brings years of technical leadership to the Spire team, helping Fortune 500 clients plan, develop and implement e-commerce systems generating over $200 million dollars in annual revenue. Prior to joining Spire, Gregg earned a Masters Degree in Engineering Management, focusing on statistical methods for software development. He was also a Lead Architect at Cable Television Laboratories where he developed B2B platforms for the Cable Industry and national retailers including Best Buy, Wal-Mart, and Sprint.
+			</div>
+	    </div>
+	</div><!-- end popuppadding -->
     <div class="clearfloat"></div>
+	<div class="pu-btns-lt">
+        <div class="pub2"><a href="http://www.linkedin.com/in/gregglarson" target="_blank"><img src="/ui/images/pupop_btn_linkedin.png"></a></div>
+    </div>
 </div><!---- end .popup --->
 
 

@@ -5,14 +5,13 @@
 <cfsavecontent variable="pageHead">
 	<script type="text/javascript" src="/ui/js/plax.js"></script>
 	<script type="text/javascript" src="/ui/js/spire-index.js"></script>
-	<script type="text/javascript" src="/ui/js/header-wave.js"></script>
 	<link rel="stylesheet" href="/ui/css/homeanimation.css" type="text/css" media="screen" />
 </cfsavecontent>
 <cfhtmlhead text="#pageHead#">
 <body>
 	<div id="header2">
 		<div id="shell">
-			<img src="/ui/images/plaximg/dot1.png" width="22" height="14" id="plax-dot-1" class="header-dot" />
+		  <img src="/ui/images/plaximg/dot1.png" width="22" height="14" id="plax-dot-1" class="header-dot" />
           <img src="/ui/images/plaximg/dot2.png" width="23" height="14" id="plax-dot-2" class="header-dot" />
           <img src="/ui/images/plaximg/dot3.png" width="25" height="12" id="plax-dot-3" class="header-dot" />
           <img src="/ui/images/plaximg/dot4.png" width="19" height="8" id="plax-dot-4" class="header-dot" />
@@ -148,7 +147,9 @@
         	</div><!--  end miMain -->
     	</div><!--  end main -->
 	</div><!-- end mainIndex -->
-	<cfinclude template="../footer.cfm">
+	<div id="fContainer">
+		<cfinclude template="../footer.cfm">
+	</div>
 	#showContentObject('middleItem_3_Content', 'Forms', 'moduleaction=contactform')#
 </body>
 </html>
