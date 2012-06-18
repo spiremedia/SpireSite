@@ -43,7 +43,7 @@
 							<div class="mnNews">						
 								<cfif contentObjectNotEmpty('middleItem_1_Content')>
 									#showContentObject('middleItem_1_Content', 'HTMLContent,Assets,dhtmlPager,Events,Forms,News,ProductCatalog,SiteMaps,TextContent,Videos,Forms,MultiSpot,AssetImages', 'editable')#
-								</cfif>				
+								</cfif>
 								<div id="tweetbox">
 									<div style="width:360px; height:55px; position:relative; left:110px; ">
 										<span id="twitter_update_list"></span>

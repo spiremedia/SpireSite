@@ -184,7 +184,7 @@ box-shadow: 0 0 5px 5px #000;}
 .clientUsda{display: block; background: url('/ui/images/logo_usda.png') bottom no-repeat; text-indent: -99999px;}
 .clientUsda:hover{display: block; background: url('/ui/images/logo_usdaro.png') bottom no-repeat; text-indent: -99999px; }
 .clientWesternUnion{display: block; background: url('/ui/images/logo_westernunion.png') bottom no-repeat; text-indent: -99999px;}
-.clientWesternUnion:hover{display: block; background: url('/ui/images/logo_westsernunionRO.png') bottom no-repeat; text-indent: -99999px;}
+.clientWesternUnion:hover{display: block; background: url('/ui/images/logo_westernunionRO.png') bottom no-repeat; text-indent: -99999px;}
 .clientRac{display: block; background: url('/ui/images/logo_rac.png') bottom no-repeat; text-indent: -99999px;}
 .clientRac:hover{display: block; background: url('/ui/images/logo_racro.png') bottom no-repeat; text-indent: -99999px;}
 .clientIntermountain{display: block; background: url('/ui/images/logo_intermountain.png') bottom no-repeat; text-indent: -99999px;}
@@ -197,7 +197,7 @@ box-shadow: 0 0 5px 5px #000;}
 .clientToys:hover{display: block; background: url('/ui/images/logo_toysrusro.png') bottom no-repeat; text-indent: -99999px;}
 .clientCochlear{display: block; background: url('/ui/images/logo_cochlear.png') bottom no-repeat; text-indent: -99999px;}
 .clientCochlear:hover{display: block; background: url('/ui/images/logo_cochlearro.png') bottom no-repeat; text-indent: -99999px;}
-.clientDell{display: block; background: url('/ui/images/logo_ dell.png') bottom no-repeat; text-indent: -99999px;}
+.clientDell{display: block; background: url('/ui/images/logo_dell.png') bottom no-repeat; text-indent: -99999px;}
 .clientDell:hover{display: block; background: url('/ui/images/logo_dellRO.png') bottom no-repeat; text-indent: -99999px;}
 .clientCorn{display: block; background: url('/ui/images/logo_corn.png') bottom no-repeat; text-indent: -99999px;}
 .clientCorn:hover{display: block; background: url('/ui/images/logo_cornro.png') bottom no-repeat; text-indent: -99999px;}
@@ -380,8 +380,9 @@ margin-right:88px;
 
 /* ~~ MAIN (OURWORK clientlist) ~~ */
 #mainClient{ width:100%; overflow-x:hidden; overflow-y:hidden;} /* background:url(/ui/images/bg_main-what.jpg) top center*/
-#main_cl { position:relative; width:1006px; margin:0 0 0 80px; padding:0;} /* 1398px size of background, total = 1182px*/
-#clientlist { position:relative; margin:0; width:1006px; height:450px; padding:60px 0 0 0; background:url(/ui/images/trans70.png);}
+#main_cl { position:relative; width:1700px; margin:0 0 0 80px; padding:0; background:url(/ui/images/trans70.png); background-color:rgba(0,0,0,1);} /* 1398px size of background, total = 1182px*/
+#main_cl2 { position:relative; width:1700px; margin:0 0 0 40px; padding:0; background:url(/ui/images/trans70.png);} /* 1398px size of background, total = 1182px*/
+#clientlist { position:relative; margin:0; width:1006px; height:450px; padding:50px 0 0 0; background-color:#0a0a0a;}
 #clientlist .subtitle { position:absolute; top:15px; left:26px; color:#fff; font-family: lubalingraphstd-demi, Helvetica, sans-serif; font-weight:normal; font-size:28px;}
 #clientlist .cl-box { float:left; width:190px; height:95px; margin:5.5px;}
 #clientlist .viewby { position:absolute; right:20px; top:15px; font-size:14px; font-family: din_medium, Helvetica, sans-serif;}
@@ -753,17 +754,17 @@ z-index: 1;
 #wrapper3 .myScrollbarH { top:520px;}
 /**/
 
-#CList {  width:1002px; padding:45px 0 0 0; margin:0 auto;}
+#CList {  width:1002px; padding:0; margin:0 auto; float:left;}
 
 #mainClient2 { width:100%; height:100%; overflow-x:hidden; background:#0c0c0c;} /* background:url(/ui/images/bg_main-what.jpg) top center*/
 #CLBG { position:absolute; left:3000px; top:0; width:1380px; margin:0 auto; background:url(/ui/images/bg_main-what-b1.jpg) no-repeat;}
 
 
-#CList2 { width:1006px; min-height:536px; margin:0; overflow:visible;}
-.clientList2 { position:relative; margin:0; width:946px; min-height:456px; padding:60px 30px 20px 30px; background:url(/ui/images/trans70.png); color:#fff; font-family: din_medium, Helvetica, sans-serif; font-weight:normal; font-size:14px;}
+#CList2 { width:1700px; height:500px; margin:0; overflow:visible;}
+.clientList2 { position:relative; margin:0; width:2300px; min-height:456px; padding:40px 0px 0px 30px; background:url(/ui/images/trans70.png); color:#fff; font-family: din_medium, Helvetica, sans-serif; font-weight:normal; font-size:14px;}
 
-.cl-col1, .cl-col2, .cl-col3 { float:left; width:220px; margin:0 20px 0 0;}
-.cl-col4 { float:left; width:220px; margin:0;}
+.cl-col1, .cl-col2, .cl-col3, .cl-col4, .cl-col5, .cl-col6, .cl-col7, .cl-col8 { font-size:12px; float:left; width:220px; height:450px; margin:10px 20px 0 0;}
+.cl-col9 { float:left; width:220px; margin:10px 0px 0px 0px; height:450px; font-size:12px;}
 
 .clientList2 .listSection { border-left: 4px solid #a23217; padding-left:10px; margin-top:20px;}
 .clientList2 .listSection a { color:#fff; text-decoration:none;}
@@ -844,14 +845,14 @@ line-height: 32px; text-decoration:none; cursor:pointer;}
 
 
 /****MAIN WHAT 2***/
-#mainWhat2 { width:100%; background-color:#0c0c0c;}
+#mainWhat2 { width:9000px; background-color:#0c0c0c;}
 #main { background:url(/ui/images/bgg_main-grid.png) ;}  /*do the grid*/
 
-#mw2 { position:relative; width:5976px; height:auto; background:url(/ui/images/bg_ourwork.jpg)  top no-repeat;} /* demo 2000 container or list elements or floats*/
-.ourworkgrid{background:url(/ui/images/bgg_main-grid.png); height:946px;}
+#mw2 { position:relative; width:6150px; height:auto; background:url(/ui/images/bg_ourwork.jpg)  top no-repeat;} /* demo 2000 container or list elements or floats*/
+.ourworkgrid{background:url(/ui/images/bgg_main-grid.png); height:946px; margin-left:-3px; width:100%;}
 .mw2-slide1 { float:left; width:3000px; padding:60px 90px 40px 90px;}
-.mw2-slide2 { float:left; width:1398px; padding:15px 0 40px 0;}
-.mw2-slide3 { float:left; width:1398px; padding:60px 0 40px 0;}
+.mw2-slide2 { float:left; width:2898px; padding:15px 0 40px 0; /*background-color: #0c0c0c*/; height: 500px; margin-top:60px;}
+.mw2-slide3 { float:left; width:1500px; background-color:#0c0c0c; /*padding:60px 0 40px 0;*/ float:left}
 .mw2-slide2 img, .mw2-slide3 img { margin:0 0 0 0;}
 
 #controlBox { position:absolute; top:0; left:0px;}
