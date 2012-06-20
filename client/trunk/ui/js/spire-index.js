@@ -38,8 +38,44 @@ jQuery(document).ready(function(){
 	$.plax.enable({ "activityTarget": $('#shell')})
 	
 //### Clients Slider ###//
-	//Hide slider
-	$('.boxClients').hide();
+
+
+//Hide Rollovers
+//Hide slider
+$('.boxClients').hide();//hides the old scroller boxes that used to be here.
+	
+$('#logoClients div').hover(function(){
+     $(this).removeClass('fade').siblings().addClass('fade');
+},function(){
+     $(this).siblings().andSelf().removeClass('fade');
+})
+
+	function showBox1() {	
+		
+  $(this).animate({ 'padding-top' : 10 }, 500);
+
+    		
+	}			
+	function hideBox1() {
+		 $(this).animate({
+    'padding-top' : 0,
+    'padding-right' : 0,
+    'padding-bottom' : 0,
+    'padding-left' : 0,
+  }, "slow");
+	}
+	
+	$('.clientDish, .clientUsda, .clientWesternUnion, .clientRac, .clientIntermountain, .clientCharter, .clientFirstData, .clientToys, .clientCochlear, .clientDell, .clientCorn, .clientVw').hoverIntent({		
+	sensitivity: 1, // number = sensitivity threshold (must be 1 or higher)
+	interval: 0,   // number = milliseconds of polling interval (we don't need this as it is initiated on click rather than hover)
+	over: showBox1,  // function = onMouseOver callback (required)
+	timeout: 0,   // number = milliseconds delay before onMouseOut function call
+	out: hideBox1   // function = onMouseOut callback (required)	
+	})
+	
+	
+	
+	
 
 //load clientslider
 var slider = $('#sliderClient').bxSlider({
@@ -56,8 +92,8 @@ $('#nextClient').click(function(){
 
 //onclick load client slider
 $('.lc-box').click(function() {
-	//slider.goToSlide(this.id);
-	 var pos = $(this).attr('id');
+	
+	/* var pos = $(this).attr('id');
 	$('.logoClients').fadeOut('slow');
 	 
     $('.boxClients').fadeIn('slow', function() {
@@ -65,9 +101,9 @@ $('.lc-box').click(function() {
 	slider.goToSlide(pos);
       });
 
-    //goPos(pos);
+    
 	
-    return false;
+    return false;*/
   	});
 
 //close client slider
@@ -78,8 +114,8 @@ $('.btn-closeic').click(function() {
     return false;
   	});
 
-//### Resize MAIN INDEX ###//
-
+//### Resize FOOTER ###//
+	$("#footer").css('width','100%');
 
 //**** UNIVERSAL NO EDITS***///
 //### CONTACT SLIDER ###//	

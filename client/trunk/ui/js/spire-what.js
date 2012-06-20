@@ -40,6 +40,8 @@ function resizeMain()
 	var largest = 946;
 	var minWindow = largest + (119*2);
 	
+		//set footer width according  main slide area
+		$("#footer").css('width','100%');
 	/*if ( h > minWindow){
 		$("#WWD").css('height',(h - (119*2)));
 		//$("#mainWWD").css('margin-top',(-(h -119)));

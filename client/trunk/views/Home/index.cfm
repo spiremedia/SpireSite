@@ -64,20 +64,19 @@
 			<div id="miMain">
         		#showContentObject('hometim', 'News', 'moduleaction=home')#
 				<div class="mimRight">
-	            	<div class="boxTitle">Clients</div>
-	                <div class="logoClients">
-	                	<div class="lc-box clientDish clientLogoPadding" id="0"></div>
-	                    <div class="lc-box clientUsda clientLogoPadding" id="1"></div>
-	                    <div class="lc-box clientWesternUnion clientLogoPadding" id="2"></div>
-	                    <div class="lc-box clientRac clientLogoPadding" id="3"></div>
-	                    <div class="lc-box clientIntermountain clientLogoPadding" id="4"></div>
-	                    <div class="lc-box clientCharter clientLogoPadding" id="5"></div>
-	                    <div class="lc-box clientFirstData clientLogoPadding" id="6"></div>
-	                    <div class="lc-box clientToys clientLogoPadding" id="7" ></div>
-	                    <div class="lc-box clientCochlear clientLogoPadding" id="8"></div>
-	                    <div class="lc-box clientDell clientLogoPadding" id="9"></div>
-	                    <div class="lc-box clientCorn clientLogoPadding" id="10"></div>
-	                    <div class="lc-box clientVw clientLogoPadding" id="11"></div>
+	            	<div class="logoClients" id="logoClients">
+	                	<div class="lc-box  clientLogoPadding" id="0"><div class="bouncebox clientDish"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="1"><div class="bouncebox clientUsda"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="2"><div class="bouncebox clientWesternUnion"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="3"><div class="bouncebox clientRac"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="4"><div class="bouncebox clientIntermountain"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="5"><div class="bouncebox clientCharter"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="6"><div class="bouncebox clientFirstData"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="7"><div class="bouncebox clientToys"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="8"><div class="bouncebox clientCochlear"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="9"><div class="bouncebox clientDell"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="10"><div class="bouncebox clientCorn"></div></div>
+	                    <div class="lc-box  clientLogoPadding" id="11"><div class="bouncebox clientVw"></div></div>
 	                    <div class="clearfloat"></div>
 	                </div><!--- <<<< end .logoClients --->
                 	<div class="boxClients">
@@ -147,9 +146,9 @@
         	</div><!--  end miMain -->
     	</div><!--  end main -->
 	</div><!-- end mainIndex -->
-	<div id="fContainer">
+	
 		<cfinclude template="../footer.cfm">
-	</div>
+	
 	#showContentObject('middleItem_3_Content', 'Forms', 'moduleaction=contactform')#
 </body>
 </html>

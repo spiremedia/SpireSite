@@ -9,7 +9,9 @@ jQuery(document).ready(function(){
 		$(this).parent().siblings('.mnyBox').removeClass('active');
     return false;
   	});
-	
+// ** NEW FOOTER ** //
+	$("#footer").css('width','100%');
+		
 //**** UNIVERSAL NO EDITS***///
 //### CONTACT SLIDER ###//	
 	//Hide slider

@@ -43,7 +43,8 @@ jQuery(document).ready(function(){
 	$('.btn-backarw').fadeIn('fast');
 	$('.btn-fwdarw').fadeOut('fast');
   	}
-
+	
+	$('#footer').animate({ left: curPos+'px', }, 0 );
 	
 	//$('#header, #footer').animate({'padding-left': $(this).scrollLeft()}, 400);
 	//$('#controlBox').animate({'left': $(this).scrollLeft()}, 400);
@@ -60,7 +61,7 @@ jQuery(document).ready(function(){
 	});
 	
 	$(".btn-backarw").click(function() {  
-  		var curPos = $(window).scrollLeft();
+  		var curPos = $(window).scrollLeft();		
   		//if between 0 ad endOne next is two
 		if ( 0 <= curPos && curPos < endOne){
 			$('.subnav li a').removeClass('active');
@@ -223,16 +224,27 @@ var mainWidth = $('#mwwa2').width();
 		var mhLarge = h - (119*2);
 		
 		var newPadding = (w-1182) / 2;
+
+		//set footer width according  main slide area
+		var fullWidth = $('#mwwa2').outerWidth();
+		var fullEverything = fullWidth + (newPadding*2);
+		
+		$("#footer").css('position','absolute');
+
 		
 	   if (w < 1182){
 		   $("#mwwa2").css('padding-left',0);
 		   $("#mwwa2").css('padding-right',0);
 		   //var nowPadding = 0;
+		   $("#fContainer").css('width',fullWidth);
 	   }
 	   else {
 			$("#mwwa2").css('padding-left',newPadding);
 			$("#mwwa2").css('padding-right',newPadding);
 			//var nowPadding = newPadding;
+			$("#fContainer").css('width',fullWidth);
+			$("#footer").css('padding-left',newPadding);
+			$("#footer").css('padding-right',newPadding);
 		   }
 		if (h > mhPlus){
 		   $('#main').css('height',mhLarge);
